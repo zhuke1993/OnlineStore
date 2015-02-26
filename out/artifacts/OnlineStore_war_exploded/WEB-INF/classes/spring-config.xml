@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+    <!--引入数据库配置的资源文件，这样在后面配置中就可以直接引用properties资源文件了，一$的形式-->
+    <!--<context:property-placeholder location="classpath:spring-db.properties"/>-->
+    <!--&lt;!&ndash; 配置 C3P0 数据源 &ndash;&gt;-->
+    <!--<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">-->
+        <!--<property name="user" value="zhuke"></property>-->
+        <!--<property name="password" value="929184318"></property>-->
+        <!--<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/online_store"></property>-->
+        <!--<property name="driverClass" value="com.mysql.jdbc.Driver"></property>-->
+    <!--</bean>-->
+    <!--&lt;!&ndash;配置spring的sessionFactory&ndash;&gt;-->
+    <!--<bean class="org.springframework.orm.hibernate4.LocalSessionFactoryBean" id="sessionFactory">-->
+        <!--<property name="dataSource" ref="dataSource"/>-->
+    <!--</bean>-->
+    <!--配置实体bean-->
+    <bean class="com.onlinestore.entity.User" id="user">
+        <property name="id" value="1"/>
+        <property name="name" value="fdjsalfj"/>
+        <property name="pwd" value="fjdklasjfdlskfjsdla"/>
+    </bean>
+    <!--将action交由spring的上下文进行管理-->
+    <bean class="TestAction" id="testAction" scope="prototype"/>
+</beans>
