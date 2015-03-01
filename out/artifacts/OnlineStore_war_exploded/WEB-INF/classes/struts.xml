@@ -6,6 +6,7 @@
 
 <struts>
         <package name="struts" extends="struts-default" namespace="/">
+                <!--在这里配置的class就需要填写spring中某action的id-->
                 <action name="test" class="testAction">
                         <result name="success">/1.jsp</result>
                 </action>
