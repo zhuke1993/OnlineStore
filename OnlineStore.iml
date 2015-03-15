@@ -57,5 +57,6 @@
     <orderEntry type="library" name="c3p0" level="project" />
     <orderEntry type="library" name="hibernate-c3p0-4.3.6.Final" level="project" />
     <orderEntry type="library" name="struts2-spring-plugin-2.3.4.1" level="project" />
+    <orderEntry type="library" name="javassist-3.18.1-GA" level="project" />
   </component>
 </module>

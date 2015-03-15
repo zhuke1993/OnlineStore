@@ -17,17 +17,13 @@
 
 
     <!--配置声明式属性-->
-    <bean class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+    <bean class="org.springframework.orm.hibernate4.HibernateTransactionManager" id="hibernateTransactionManager">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
 
     <!--配置实体bean-->
-    <bean class="com.onlinestore.entity.User" id="user">
-        <property name="id" value="1"/>
-        <property name="name" value="fdjsalfj"/>
-        <property name="pwd" value="fjdklasjfdlskfjsdla"/>
-    </bean>
+
     <!--将action交由spring的上下文进行管理-->
     <bean class="TestAction" id="testAction" scope="prototype"/>
 </beans>

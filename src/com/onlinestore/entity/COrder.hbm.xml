@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class table="c_order" name="com.onlinestore.entity.COrder">
+        <id name="id" type="java.lang.Integer" column="order_id">
+            <generator class="increment"/>
+        </id>
+        <property name="price"/>
+        <property name="postage"/>
+        <property name="status"/>
+        <property name="bargainDate"/>
+        <property name="paymentDate"/>
+        <property name="confirmDate"/>
+        <many-to-one name="customer" column="customer_id" class="com.onlinestore.entity.Customer"/>
+    </class>
+</hibernate-mapping>

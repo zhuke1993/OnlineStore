@@ -1,7 +1,7 @@
 package com.onlinestore.entity;
 
 import java.util.Date;
-import java.util.List;
+import java.util.Set;
 
 /**
  * Created by zhuke on 2015/3/1.
@@ -14,16 +14,16 @@ public class Shop {
     private String phone;
     private String email;
     private Date reg_date;//注册时间
-    private List<Address> Addresses;//收货地址
-    private List<Order> orders;//订单
+    private Set<Address> Addresses;//收货地址
+    private Set<COrder> orders;//订单
     private int credit;//信誉等级
-    private List<Goods> goodsList;
+    private Set<Goods> goodsSet;
     private String brief;//店铺简介
 
     public Shop() {
     }
 
-    public Shop(int id, String name, String pwd, String phone, String email, Date reg_date, List<Address> addresses, List<Order> orders, int credit, List<Goods> goodsList, String brief) {
+    public Shop(int id, String name, String pwd, String phone, String email, Date reg_date, Set<Address> addresses, Set<COrder> orders, int credit, Set<Goods> goodsSet, String brief) {
         this.id = id;
         this.name = name;
         this.pwd = pwd;
@@ -33,7 +33,7 @@ public class Shop {
         Addresses = addresses;
         this.orders = orders;
         this.credit = credit;
-        this.goodsList = goodsList;
+        this.goodsSet = goodsSet;
         this.brief = brief;
     }
 
@@ -49,7 +49,7 @@ public class Shop {
                 ", Addresses=" + Addresses +
                 ", orders=" + orders +
                 ", credit=" + credit +
-                ", goodsList=" + goodsList +
+                ", goodsSet=" + goodsSet +
                 ", brief='" + brief + '\'' +
                 '}';
     }
@@ -102,19 +102,19 @@ public class Shop {
         this.reg_date = reg_date;
     }
 
-    public List<Address> getAddresses() {
+    public Set<Address> getAddresses() {
         return Addresses;
     }
 
-    public void setAddresses(List<Address> addresses) {
+    public void setAddresses(Set<Address> addresses) {
         Addresses = addresses;
     }
 
-    public List<Order> getOrders() {
+    public Set<COrder> getOrders() {
         return orders;
     }
 
-    public void setOrders(List<Order> orders) {
+    public void setOrders(Set<COrder> orders) {
         this.orders = orders;
     }
 
@@ -126,12 +126,12 @@ public class Shop {
         this.credit = credit;
     }
 
-    public List<Goods> getGoodsList() {
-        return goodsList;
+    public Set<Goods> getGoodsSet() {
+        return goodsSet;
     }
 
-    public void setGoodsList(List<Goods> goodsList) {
-        this.goodsList = goodsList;
+    public void setGoodsSet(Set<Goods> goodsSet) {
+        this.goodsSet = goodsSet;
     }
 
     public String getBrief() {

@@ -6,7 +6,6 @@ package com.onlinestore.entity;
  */
 public class Address {
     private int id;
-    private User user;
     private String receiverName;
     private String phoneNumber;
     private String detailAddress;
@@ -16,7 +15,6 @@ public class Address {
     public String toString() {
         return "Address{" +
                 "id=" + id +
-                ", user=" + user +
                 ", receiverName='" + receiverName + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", detailAddress='" + detailAddress + '\'' +
@@ -27,9 +25,7 @@ public class Address {
     public Address() {
     }
 
-    public Address(int id, User user, String receiverName, String phoneNumber, String detailAddress, int postCode) {
-        this.id = id;
-        this.user = user;
+    public Address(String receiverName, String phoneNumber, String detailAddress, int postCode) {
         this.receiverName = receiverName;
         this.phoneNumber = phoneNumber;
         this.detailAddress = detailAddress;
@@ -42,14 +38,6 @@ public class Address {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
     }
 
     public String getReceiverName() {

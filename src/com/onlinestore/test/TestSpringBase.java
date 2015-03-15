@@ -1,9 +1,8 @@
 package com.onlinestore.test;
 
-import com.onlinestore.entity.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.junit.Test;
+import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;
 import org.springframework.context.ApplicationContext;
@@ -16,12 +15,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class TestSpringBase{
 
     ApplicationContext context = null;
-    @Test
+    SessionFactory sessionFactory = null;
+    Session session = null;
+    @Before
     public void initContext(){
         context =new ClassPathXmlApplicationContext("spring-config.xml");
-        SessionFactory sessionFactory = (SessionFactory) context.getBean("sessionFactory");
-        Session session = sessionFactory.openSession();
-        System.out.println(session.get(User.class,1));
+        sessionFactory = (SessionFactory) context.getBean("sessionFactory");
+        session = sessionFactory.openSession();
     }
 
 }

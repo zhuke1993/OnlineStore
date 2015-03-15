@@ -1,7 +1,7 @@
 package com.onlinestore.entity;
 
 import java.util.Date;
-import java.util.List;
+import java.util.Set;
 
 /**
  * Created by zhuke on 2015/3/1.
@@ -13,9 +13,8 @@ public class Customer {
     private String phone;
     private String email;
     private Date reg_date;//注册时间
-    private List<Address> Addresses;//收货地址
-    private List<Order> orders;//订单
-
+    private Set<Address> Addresses;//收货地址
+    private Set<COrder> orders;//订单
     @Override
     public String toString() {
         return "Customer{" +
@@ -26,15 +25,14 @@ public class Customer {
                 ", email='" + email + '\'' +
                 ", reg_date=" + reg_date +
                 ", Addresses=" + Addresses +
-                ", orders=" + orders +
+                ", orders=" + orders.size() +
                 '}';
     }
 
     public Customer() {
     }
 
-    public Customer(int id, String name, String pwd, String phone, String email, Date reg_date, List<Address> addresses, List<Order> orders) {
-        this.id = id;
+    public Customer( String name, String pwd, String phone, String email, Date reg_date, Set<Address> addresses, Set<COrder> orders) {
         this.name = name;
         this.pwd = pwd;
         this.phone = phone;
@@ -92,19 +90,19 @@ public class Customer {
         this.reg_date = reg_date;
     }
 
-    public List<Address> getAddresses() {
+    public Set<Address> getAddresses() {
         return Addresses;
     }
 
-    public void setAddresses(List<Address> addresses) {
+    public void setAddresses(Set<Address> addresses) {
         Addresses = addresses;
     }
 
-    public List<Order> getOrders() {
+    public Set<COrder> getOrders() {
         return orders;
     }
 
-    public void setOrders(List<Order> orders) {
+    public void setOrders(Set<COrder> orders) {
         this.orders = orders;
     }
 }
