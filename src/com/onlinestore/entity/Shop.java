@@ -15,15 +15,13 @@ public class Shop {
     private String email;
     private Date reg_date;//注册时间
     private Set<Address> Addresses;//收货地址
-    private Set<COrder> orders;//订单
     private int credit;//信誉等级
-    private Set<Goods> goodsSet;
     private String brief;//店铺简介
 
     public Shop() {
     }
 
-    public Shop(int id, String name, String pwd, String phone, String email, Date reg_date, Set<Address> addresses, Set<COrder> orders, int credit, Set<Goods> goodsSet, String brief) {
+    public Shop(int id, String name, String pwd, String phone, String email, Date reg_date, Set<Address> addresses, int credit, String brief) {
         this.id = id;
         this.name = name;
         this.pwd = pwd;
@@ -31,9 +29,7 @@ public class Shop {
         this.email = email;
         this.reg_date = reg_date;
         Addresses = addresses;
-        this.orders = orders;
         this.credit = credit;
-        this.goodsSet = goodsSet;
         this.brief = brief;
     }
 
@@ -47,9 +43,7 @@ public class Shop {
                 ", email='" + email + '\'' +
                 ", reg_date=" + reg_date +
                 ", Addresses=" + Addresses +
-                ", orders=" + orders +
                 ", credit=" + credit +
-                ", goodsSet=" + goodsSet +
                 ", brief='" + brief + '\'' +
                 '}';
     }
@@ -110,28 +104,12 @@ public class Shop {
         Addresses = addresses;
     }
 
-    public Set<COrder> getOrders() {
-        return orders;
-    }
-
-    public void setOrders(Set<COrder> orders) {
-        this.orders = orders;
-    }
-
     public int getCredit() {
         return credit;
     }
 
     public void setCredit(int credit) {
         this.credit = credit;
-    }
-
-    public Set<Goods> getGoodsSet() {
-        return goodsSet;
-    }
-
-    public void setGoodsSet(Set<Goods> goodsSet) {
-        this.goodsSet = goodsSet;
     }
 
     public String getBrief() {

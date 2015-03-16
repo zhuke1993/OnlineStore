@@ -1,6 +1,6 @@
 package com.onlinestore.entity;
 
-import java.util.List;
+import java.util.Set;
 
 /**
  * Created by zhuke on 2015/3/1.
@@ -10,18 +10,15 @@ public class Category {
     private int id;
     private String name;
     private String remark;//备注
-    private List<Category> fathers;//父结点
-    private List<Category> sons;//子节点
+    private Category father;//父结点
+    private Set<Category> sons;//子节点
 
     public Category() {
     }
 
-    public Category(int id, String name, String remark, List<Category> fathers, List<Category> sons) {
-        this.id = id;
+    public Category(String name, String remark) {
         this.name = name;
         this.remark = remark;
-        this.fathers = fathers;
-        this.sons = sons;
     }
 
     @Override
@@ -30,8 +27,8 @@ public class Category {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", remark='" + remark + '\'' +
-                ", fathers=" + fathers +
-                ", sons=" + sons +
+                ", father=" + father.getName() +
+                ", sons=" + sons.size() +
                 '}';
     }
 
@@ -59,19 +56,19 @@ public class Category {
         this.remark = remark;
     }
 
-    public List<Category> getFathers() {
-        return fathers;
+    public Category getFather() {
+        return father;
     }
 
-    public void setFathers(List<Category> fathers) {
-        this.fathers = fathers;
+    public void setFather(Category father) {
+        this.father = father;
     }
 
-    public List<Category> getSons() {
+    public Set<Category> getSons() {
         return sons;
     }
 
-    public void setSons(List<Category> sons) {
+    public void setSons(Set<Category> sons) {
         this.sons = sons;
     }
 }

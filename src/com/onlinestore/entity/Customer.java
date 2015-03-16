@@ -32,14 +32,12 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer( String name, String pwd, String phone, String email, Date reg_date, Set<Address> addresses, Set<COrder> orders) {
+    public Customer( String name, String pwd, String phone, String email, Date reg_date) {
         this.name = name;
         this.pwd = pwd;
         this.phone = phone;
         this.email = email;
         this.reg_date = reg_date;
-        Addresses = addresses;
-        this.orders = orders;
     }
 
     public int getId() {

@@ -12,8 +12,7 @@ public class GoodsPicture {
     public GoodsPicture() {
     }
 
-    public GoodsPicture(int id, Goods goods, String url) {
-        this.id = id;
+    public GoodsPicture(Goods goods, String url) {
         this.goods = goods;
         this.url = url;
     }

@@ -3,16 +3,16 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class table="c_order" name="com.onlinestore.entity.COrder">
-        <id name="id" type="java.lang.Integer" column="order_id">
+    <class table="category" name="com.onlinestore.entity.Category">
+        <id name="id" type="java.lang.Integer" column="category_id">
             <generator class="increment"/>
         </id>
-        <property name="price"/>
-        <property name="postage"/>
-        <property name="status"/>
-        <property name="bargainDate"/>
-        <property name="paymentDate"/>
-        <property name="confirmDate"/>
-        <many-to-one name="customer" column="customer_id" class="com.onlinestore.entity.Customer"/>
+        <property name="name"/>
+        <property name="remark"/>
+        <many-to-one name="father" column="father_id" class="com.onlinestore.entity.Category" cascade="all"/>
+        <set name="sons" inverse="true" cascade="all">
+            <key column="father_id"></key>
+            <one-to-many class="com.onlinestore.entity.Category"/>
+        </set>
     </class>
 </hibernate-mapping>

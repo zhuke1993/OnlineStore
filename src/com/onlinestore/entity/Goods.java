@@ -1,6 +1,6 @@
 package com.onlinestore.entity;
 
-import java.util.List;
+import java.util.Set;
 
 /**
  * Created by zhuke on 2015/3/1.
@@ -9,31 +9,25 @@ import java.util.List;
 public class Goods {
     private int id;
     private String name;
-    private float price;
+    private double price;
     private String briefIntroduction;//简介
     private String specification;//规格
-    private float inventory;//库存数量
-    private float postage;//邮费
+    private double inventory;//库存数量
+    private double postage;//邮费
     private Shop shop;
-    private List<Evaluation> evaluationList;
-    private List<GoodsPicture> pictureList;
-    private List<Category> categoryList;
+    private Set<GoodsPicture> pictureSet;
+    private Set<Category> categorySet;
 
     public Goods() {
     }
 
-    public Goods(int id, String name, float price, String briefIntroduction, String specification, float inventory, float postage, Shop shop, List<Evaluation> evaluationList, List<GoodsPicture> pictureList, List<Category> categoryList) {
-        this.id = id;
+    public Goods(String name, double price, String briefIntroduction, String specification, double inventory, double postage) {
         this.name = name;
         this.price = price;
         this.briefIntroduction = briefIntroduction;
         this.specification = specification;
         this.inventory = inventory;
         this.postage = postage;
-        this.shop = shop;
-        this.evaluationList = evaluationList;
-        this.pictureList = pictureList;
-        this.categoryList = categoryList;
     }
 
     @Override
@@ -47,9 +41,8 @@ public class Goods {
                 ", inventory=" + inventory +
                 ", postage=" + postage +
                 ", shop=" + shop +
-                ", evaluationList=" + evaluationList +
-                ", pictureList=" + pictureList +
-                ", categoryList=" + categoryList +
+                ", pictureSet=" + pictureSet +
+                ", categorySet=" + categorySet +
                 '}';
     }
 
@@ -69,11 +62,11 @@ public class Goods {
         this.name = name;
     }
 
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -93,19 +86,19 @@ public class Goods {
         this.specification = specification;
     }
 
-    public float getInventory() {
+    public double getInventory() {
         return inventory;
     }
 
-    public void setInventory(float inventory) {
+    public void setInventory(double inventory) {
         this.inventory = inventory;
     }
 
-    public float getPostage() {
+    public double getPostage() {
         return postage;
     }
 
-    public void setPostage(float postage) {
+    public void setPostage(double postage) {
         this.postage = postage;
     }
 
@@ -117,27 +110,19 @@ public class Goods {
         this.shop = shop;
     }
 
-    public List<Evaluation> getEvaluationList() {
-        return evaluationList;
+    public Set<GoodsPicture> getPictureSet() {
+        return pictureSet;
     }
 
-    public void setEvaluationList(List<Evaluation> evaluationList) {
-        this.evaluationList = evaluationList;
+    public void setPictureSet(Set<GoodsPicture> pictureSet) {
+        this.pictureSet = pictureSet;
     }
 
-    public List<GoodsPicture> getPictureList() {
-        return pictureList;
+    public Set<Category> getCategorySet() {
+        return categorySet;
     }
 
-    public void setPictureList(List<GoodsPicture> pictureList) {
-        this.pictureList = pictureList;
-    }
-
-    public List<Category> getCategoryList() {
-        return categoryList;
-    }
-
-    public void setCategoryList(List<Category> categoryList) {
-        this.categoryList = categoryList;
+    public void setCategorySet(Set<Category> categorySet) {
+        this.categorySet = categorySet;
     }
 }

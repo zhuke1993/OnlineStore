@@ -3,22 +3,20 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class table="customer" name="com.onlinestore.entity.Customer">
+    <class table="shop" name="com.onlinestore.entity.Shop">
         <id name="id" type="java.lang.Integer" column="p_id">
             <generator class="increment"/>
         </id>
         <property name="name"/>
-        <property name="phone"/>
         <property name="pwd"/>
+        <property name="phone"/>
         <property name="email"/>
         <property name="reg_date"/>
-        <set name="addresses" cascade="all" lazy="true">
+        <set name="addresses">
             <key column="p_id"></key>
             <one-to-many class="com.onlinestore.entity.Address"/>
         </set>
-        <set name="orders">
-            <key column="customer_id"></key>
-            <one-to-many class="com.onlinestore.entity.COrder" />
-        </set>
+        <property name="credit"/>
+        <property name="brief"/>
     </class>
 </hibernate-mapping>

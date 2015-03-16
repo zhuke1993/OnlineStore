@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class table="goods" name="com.onlinestore.entity.Goods">
+        <id name="id" type="java.lang.Integer" column="goods_id">
+            <generator class="increment"/>
+        </id>
+        <property name="name"/>
+        <property name="price"/>
+        <property name="briefIntroduction"/>
+        <property name="specification"/>
+        <property name="inventory"/>
+        <property name="postage"/>
+        <many-to-one name="shop" column="shop_id" class="com.onlinestore.entity.Shop" cascade="all" />
+        <set name="pictureSet" cascade="all" lazy="true">
+            <key column="gp_id"></key>
+            <one-to-many class="com.onlinestore.entity.GoodsPicture"/>
+        </set>
+        <set name="categorySet">
+            <key column="category_id"></key>
+            <one-to-many class="com.onlinestore.entity.Category"/>
+        </set>
+        </class>
+</hibernate-mapping>

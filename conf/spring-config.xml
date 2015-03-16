@@ -10,9 +10,9 @@
     <!--配置sessionfactory-->
     <bean class="org.springframework.orm.hibernate4.LocalSessionFactoryBean" id="sessionFactory">
         <!--引入hibernate的配置文件-->
-        <property name="configLocation" value="classpath:hibernate.cfg.xml"/>
+        <property name="configLocation" value="classpath:*.cfg.xml"/>
         <!--引入hibernate实体类的配置文件集-->
-        <property name="mappingLocations" value="classpath:com/onlinestore/entity/*.hbm.xml"/>
+        <property name="mappingLocations" value="classpath:com/onlinestore/entity/Category.hbm.xml"/>
     </bean>
 
 

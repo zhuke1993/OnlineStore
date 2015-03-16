@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class table="evaluation" name="com.onlinestore.entity.Evaluation">
+        <id name="id" type="java.lang.Integer" column="p_id">
+            <generator class="increment"/>
+        </id>
+        <property name="level"/>
+        <property name="detail"/>
+        <property name="date"/>
+        <many-to-one name="goods" column="goods_id" class="com.onlinestore.entity.Goods"/>
+    </class>
+</hibernate-mapping>

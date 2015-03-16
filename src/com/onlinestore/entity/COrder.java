@@ -1,6 +1,7 @@
 package com.onlinestore.entity;
 
 import java.util.Date;
+import java.util.Set;
 
 /**
  * Created by zhuke on 2015/3/1.
@@ -9,21 +10,21 @@ import java.util.Date;
 public class COrder {
     private int id;
     private Customer customer;
-
+    private Shop shop;
     private float price;
     private float postage;
     private int status;
     private Date bargainDate;//成交时间
     private Date paymentDate;//付款时间
     private Date confirmDate;//确认时间
+    private Set<Goods> goodsSet;//商品列表
 
     public COrder() {
     }
 
-    public COrder(Customer customer, float price, float postage, int status, Date bargainDate, Date paymentDate, Date confirmDate) {
-        this.id = id;
+    public COrder(Customer customer, Shop shop, float price, float postage, int status, Date bargainDate, Date paymentDate, Date confirmDate) {
         this.customer = customer;
-
+        this.shop = shop;
         this.price = price;
         this.postage = postage;
         this.status = status;
@@ -34,16 +35,26 @@ public class COrder {
 
     @Override
     public String toString() {
-        return "Order{" +
+        return "COrder{" +
                 "id=" + id +
-                ", customer=" + customer.getName() +
+                ", customer=" + customer +
+                ", shop=" + shop.getName() +
                 ", price=" + price +
                 ", postage=" + postage +
                 ", status=" + status +
                 ", bargainDate=" + bargainDate +
                 ", paymentDate=" + paymentDate +
                 ", confirmDate=" + confirmDate +
+                ", goodsSet=" + goodsSet.size() +
                 '}';
+    }
+
+    public Set<Goods> getGoodsSet() {
+        return goodsSet;
+    }
+
+    public void setGoodsSet(Set<Goods> goodsSet) {
+        this.goodsSet = goodsSet;
     }
 
     public int getId() {
@@ -62,7 +73,13 @@ public class COrder {
         this.customer = customer;
     }
 
+    public Shop getShop() {
+        return shop;
+    }
 
+    public void setShop(Shop shop) {
+        this.shop = shop;
+    }
 
     public float getPrice() {
         return price;
