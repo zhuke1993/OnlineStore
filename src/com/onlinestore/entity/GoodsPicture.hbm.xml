@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
     <class table="goods_picture" name="com.onlinestore.entity.GoodsPicture">
-        <id name="id" type="java.lang.Integer" column="gp_id">
+        <id name="id" type="java.lang.Integer" column="goods_picture_id">
             <generator class="increment"/>
         </id>
         <many-to-one name="goods" class="com.onlinestore.entity.Goods" column="goods_id"/>

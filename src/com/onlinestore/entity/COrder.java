@@ -11,8 +11,8 @@ public class COrder {
     private int id;
     private Customer customer;
     private Shop shop;
-    private float price;
-    private float postage;
+    private double price;
+    private double postage;
     private int status;
     private Date bargainDate;//成交时间
     private Date paymentDate;//付款时间
@@ -22,7 +22,7 @@ public class COrder {
     public COrder() {
     }
 
-    public COrder(Customer customer, Shop shop, float price, float postage, int status, Date bargainDate, Date paymentDate, Date confirmDate) {
+    public COrder(Customer customer, Shop shop, double price, double postage, int status, Date bargainDate, Date paymentDate, Date confirmDate) {
         this.customer = customer;
         this.shop = shop;
         this.price = price;
@@ -81,19 +81,19 @@ public class COrder {
         this.shop = shop;
     }
 
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
-    public float getPostage() {
+    public double getPostage() {
         return postage;
     }
 
-    public void setPostage(float postage) {
+    public void setPostage(double postage) {
         this.postage = postage;
     }
 

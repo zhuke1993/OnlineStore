@@ -27,31 +27,49 @@ public class Evaluation {
     public Evaluation() {
     }
 
-    public Evaluation(int id, int level, String detail, Date date, Goods goods) {
-        this.id = id;
+    public Evaluation( int level, String detail, Date date) {
         this.level = level;
         this.detail = detail;
         this.date = date;
-        this.goods = goods;
     }
 
     public int getId() {
         return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public int getLevel() {
         return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
     }
 
     public String getDetail() {
         return detail;
     }
 
+    public void setDetail(String detail) {
+        this.detail = detail;
+    }
+
     public Date getDate() {
         return date;
     }
 
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
     public Goods getGoods() {
         return goods;
+    }
+
+    public void setGoods(Goods goods) {
+        this.goods = goods;
     }
 }

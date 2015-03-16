@@ -17,7 +17,7 @@
             <one-to-many class="com.onlinestore.entity.Address"/>
         </set>
         <set name="orders">
-            <key column="customer_id"></key>
+            <key column="p_id"></key>
             <one-to-many class="com.onlinestore.entity.COrder" />
         </set>
     </class>

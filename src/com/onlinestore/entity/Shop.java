@@ -15,20 +15,18 @@ public class Shop {
     private String email;
     private Date reg_date;//注册时间
     private Set<Address> Addresses;//收货地址
-    private int credit;//信誉等级
+    private int credit;//信誉等级4
     private String brief;//店铺简介
 
     public Shop() {
     }
 
-    public Shop(int id, String name, String pwd, String phone, String email, Date reg_date, Set<Address> addresses, int credit, String brief) {
-        this.id = id;
+    public Shop(String name, String pwd, String phone, String email, Date reg_date, int credit, String brief) {
         this.name = name;
         this.pwd = pwd;
         this.phone = phone;
         this.email = email;
         this.reg_date = reg_date;
-        Addresses = addresses;
         this.credit = credit;
         this.brief = brief;
     }
