@@ -1,11 +1,16 @@
 package com.onlinestore.entity;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
 
 /**
  * Created by zhuke on 2015/3/1.
  * 评价
  */
+@Component
+@Scope("prototype")
 public class Evaluation {
     private int id;
     private int level;

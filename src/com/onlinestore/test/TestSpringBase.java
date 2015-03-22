@@ -17,12 +17,12 @@ public class TestSpringBase{
 
     ApplicationContext context = null;
     SessionFactory sessionFactory = null;
-    Session session = null;
+    //Session session = null;
     @Before
     public void initContext(){
         context =new ClassPathXmlApplicationContext("spring-config.xml");
         sessionFactory = (SessionFactory) context.getBean("sessionFactory");
-        session = sessionFactory.openSession();
+        //session = sessionFactory.openSession();
     }
 
 }

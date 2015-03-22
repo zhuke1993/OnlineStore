@@ -14,7 +14,7 @@ public class HibernateTableTest extends TestSpringBase {
 
     @Test
     public void testall() {
-        Transaction tx = session.beginTransaction();
+        /*Transaction tx = session.beginTransaction();
 
         Address address1 = new Address("朱轲", "18883283704", "重庆市南岸区重庆邮电大学", 400065);
         Address address2 = new Address("张三", "18883283704", "重庆市南岸区重庆邮电大学", 400065);
@@ -32,7 +32,7 @@ public class HibernateTableTest extends TestSpringBase {
         addressHashSet1.add(address3);
         addressHashSet1.add(address4);
 
-        Customer customer = new Customer("朱轲", "123", "18883283704", "929184318@qq.com", new Date());
+        Customer customer = new Customer("朱轲",1, "123", "18883283704", "929184318@qq.com", new Date());
         customer.setAddresses(addressHashSet1);
         session.save(customer);
 
@@ -122,8 +122,7 @@ public class HibernateTableTest extends TestSpringBase {
         cOrderHashSet.add(order1);
         customer.setOrders(cOrderHashSet);
 
-        tx.commit();
+        tx.commit();*/
 
         }
-
 }

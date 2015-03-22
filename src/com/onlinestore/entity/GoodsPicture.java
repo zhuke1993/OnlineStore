@@ -1,9 +1,14 @@
 package com.onlinestore.entity;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
 /**
  * Created by zhuke on 2015/3/1.
  * 商品图片
  */
+@Component
+@Scope("prototype")
 public class GoodsPicture {
     private int id;
     private Goods goods;

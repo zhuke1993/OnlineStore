@@ -1,9 +1,14 @@
 package com.onlinestore.entity;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
 /**
  * Created by zhuke on 2015/3/1.
  * 收货地址
  */
+@Component
+@Scope("prototype")
 public class Address {
     private int id;
     private String receiverName;

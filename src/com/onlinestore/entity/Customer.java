@@ -1,11 +1,16 @@
 package com.onlinestore.entity;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
 import java.util.Set;
 
 /**
  * Created by zhuke on 2015/3/1.
  */
+@Component
+@Scope("prototype")
 public class Customer {
     private int id;
     private String name;
@@ -15,29 +20,48 @@ public class Customer {
     private Date reg_date;//注册时间
     private Set<Address> Addresses;//收货地址
     private Set<COrder> orders;//订单
+    private int level;
+
     @Override
     public String toString() {
         return "Customer{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", levle='" + level + '\'' +
                 ", pwd='" + pwd + '\'' +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
                 ", reg_date=" + reg_date +
-                ", Addresses=" + Addresses +
-                ", orders=" + orders.size() +
+               // ", Addresses=" + Addresses +
+               // ", orders=" + orders.size() +
                 '}';
     }
 
     public Customer() {
     }
 
-    public Customer( String name, String pwd, String phone, String email, Date reg_date) {
+    public Customer( String name,int levle, String pwd, String phone, String email, Date reg_date) {
         this.name = name;
+        this.level = levle;
         this.pwd = pwd;
         this.phone = phone;
         this.email = email;
         this.reg_date = reg_date;
+    }
+    public Customer( String name,int levle, String pwd, String phone, String email) {
+        this.name = name;
+        this.level = levle;
+        this.pwd = pwd;
+        this.phone = phone;
+        this.email = email;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
     }
 
     public int getId() {

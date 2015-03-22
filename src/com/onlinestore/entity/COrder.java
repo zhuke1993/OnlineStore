@@ -1,5 +1,8 @@
 package com.onlinestore.entity;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
 import java.util.Set;
 
@@ -7,6 +10,8 @@ import java.util.Set;
  * Created by zhuke on 2015/3/1.
  * 订单
  */
+@Component
+@Scope("prototype")
 public class COrder {
     private int id;
     private Customer customer;

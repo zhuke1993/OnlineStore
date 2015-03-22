@@ -1,5 +1,8 @@
 package com.onlinestore.entity;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
 import java.util.Set;
 
@@ -7,6 +10,8 @@ import java.util.Set;
  * Created by zhuke on 2015/3/1.
  * 店铺
  */
+@Component
+@Scope("prototype")
 public class Shop {
     private int id;
     private String name;
@@ -15,7 +20,7 @@ public class Shop {
     private String email;
     private Date reg_date;//注册时间
     private Set<Address> Addresses;//收货地址
-    private int credit;//信誉等级4
+    private int credit;//信誉等级
     private String brief;//店铺简介
 
     public Shop() {

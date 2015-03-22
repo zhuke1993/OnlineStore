@@ -1,11 +1,16 @@
 package com.onlinestore.entity;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
 import java.util.Set;
 
 /**
  * Created by zhuke on 2015/3/1.
  * 商品类别
  */
+@Component
+@Scope("prototype")
 public class Category {
     private int id;
     private String name;
