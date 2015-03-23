@@ -10,11 +10,11 @@ import java.util.HashSet;
 /**
  * Created by zhuke on 2015/3/16.
  */
-public class HibernateTableTest extends TestSpringBase {
+public class HibernateTableTest{
 
-    @Test
+   /* @Test
     public void testall() {
-        /*Transaction tx = session.beginTransaction();
+        Transaction tx = session.beginTransaction();
 
         Address address1 = new Address("朱轲", "18883283704", "重庆市南岸区重庆邮电大学", 400065);
         Address address2 = new Address("张三", "18883283704", "重庆市南岸区重庆邮电大学", 400065);
@@ -117,12 +117,16 @@ public class HibernateTableTest extends TestSpringBase {
         session.save(c7);
 
         COrder order1 = new COrder(customer,shop,1,0,1,new Date(),new Date(),new Date());
+        HashSet<Goods> goodsHashSet = new HashSet<Goods>();
+        goodsHashSet.add(g1);
+        goodsHashSet.add(g2);
+        order1.setGoodsSet(goodsHashSet);
         session.save(order1);
         HashSet<COrder> cOrderHashSet = new HashSet<COrder>();
         cOrderHashSet.add(order1);
         customer.setOrders(cOrderHashSet);
 
-        tx.commit();*/
+        tx.commit();
 
-        }
+        }*/
 }

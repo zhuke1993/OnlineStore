@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-                            http://www.springframework.org/schema/beans/spring-beans.xsd
-                            http://www.springframework.org/schema/tx
-                            http://www.springframework.org/schema/tx/spring-tx.xsd">
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--开启类扫描机制-->
+    <context:component-scan base-package="com.onlinestore"/>
+    <!--配置属性自动注入-->
+    <context:annotation-config/>
 
     <!--配置sessionfactory-->
     <bean class="org.springframework.orm.hibernate4.LocalSessionFactoryBean" id="sessionFactory">
@@ -13,21 +20,41 @@
         <property name="configLocation" value="classpath:hibernate.cfg.xml"/>
         <!--引入hibernate实体类的配置文件集-->
         <property name="mappingLocations" value="classpath:com/onlinestore/entity/*.hbm.xml"/>
+
     </bean>
-
-
-    <!--配置声明式属性-->
-    <bean class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+    <!--配置hibernate声明式事务-->
+    <bean class="org.springframework.orm.hibernate4.HibernateTransactionManager" name="hibernateTransactionManager">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
-
-
-    <!--配置实体bean-->
-    <bean class="com.onlinestore.entity.User" id="user">
-        <property name="id" value="1"/>
-        <property name="name" value="fdjsalfj"/>
-        <property name="pwd" value="fjdklasjfdlskfjsdla"/>
+    <!--配置事务的注解实现-->
+    <!--<tx:annotation-driven transaction-manager="hibernateTransactionManager"/>-->
+    <!--配置事务相关属性-->
+    <tx:advice id="txAdvice" transaction-manager="hibernateTransactionManager">
+        <tx:attributes>
+            <!-- 根据方法名指定事务的属性 -->
+            <tx:method name="add*" propagation="REQUIRES_NEW"/>
+            <!--该属性为true指示事务是只读的（典型地，
+                对于只执行查询的事务你会将该属性设为true，
+                如果出现了更新、插入或是删除语句时只读事务就会失败）-->
+            <tx:method name="get*" read-only="true"/>
+            <tx:method name="find*" read-only="true"/>
+        </tx:attributes>
+    </tx:advice>
+    <!--设置横切面，对事务进行切面拦截-->
+    <aop:config proxy-target-class="true">
+        <aop:pointcut id="txPointCut" expression="execution(* com.onlinestore.dao.impl.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointCut"/>
+    </aop:config>
+    <bean class="org.apache.commons.dbcp.BasicDataSource" id="basicDataSource">
+        <property name="username" value="zhuke"/>
+        <property name="password" value="929184318"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/online_store"/>
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
     </bean>
-    <!--将action交由spring的上下文进行管理-->
-    <bean class="TestAction" id="testAction" scope="prototype"/>
+    <bean class="org.springframework.jdbc.core.JdbcTemplate" id="jdbcTemplate">
+        <property name="dataSource" ref="basicDataSource"/>
+    </bean>
+    <bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager" name="dataSourceTransactionManager">
+        <property name="dataSource" ref="basicDataSource"/>
+    </bean>
 </beans>
