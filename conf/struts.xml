@@ -11,7 +11,11 @@
         <package name="struts" extends="struts-default" namespace="/">
                 <!--在这里配置的class就需要填写spring中某action的id-->
                 <action name="register" class="registerAction">
-                        <result name="success">/1.jsp</result>
+                        <result name="success">/admin/login.html</result>
+                </action>
+                <action name="login" class="loginAction">
+                        <result name="success">/admin/index.html</result>
+                        <result name="input">/admin/login.html</result>
                 </action>
         </package>
 </struts>

@@ -33,4 +33,6 @@ public interface CustomerDao {
     public int delCustomer(int id);
 
     public List<Customer> findAllCustomer();
+
+    public int findLogin(Customer customer);
 }

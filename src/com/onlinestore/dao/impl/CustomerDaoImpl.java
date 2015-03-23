@@ -2,6 +2,7 @@ package com.onlinestore.dao.impl;
 
 import com.onlinestore.dao.CustomerDao;
 import com.onlinestore.entity.Customer;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,5 +41,14 @@ public class CustomerDaoImpl implements CustomerDao {
     @Override
     public List<Customer> findAllCustomer() {
         return null;
+    }
+
+    @Override
+    public int findLogin(Customer customer) {
+        Session session = sessionFactory.getCurrentSession();
+        Query query = session.createQuery("select id from Customer where name=? and pwd = ?");
+        query.setString(0,customer.getName());
+        query.setString(1,customer.getPwd());
+        return query.list().size();
     }
 }

@@ -10,7 +10,7 @@ import java.util.HashSet;
 /**
  * Created by zhuke on 2015/3/16.
  */
-public class HibernateTableTest{
+public class HibernateTableTest extends TestSpringBase{
 
    /* @Test
     public void testall() {
