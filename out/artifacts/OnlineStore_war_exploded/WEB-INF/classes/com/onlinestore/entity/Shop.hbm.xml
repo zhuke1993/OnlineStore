@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class table="shop" name="com.onlinestore.entity.Shop">
+        <id name="id" type="java.lang.Integer" column="shop_id">
+            <generator class="increment"/>
+        </id>
+        <property name="name"/>
+        <property name="pwd"/>
+        <property name="phone"/>
+        <property name="email"/>
+        <property name="reg_date"/>
+        <set name="addresses">
+            <key column="shop_id"></key>
+            <one-to-many class="com.onlinestore.entity.Address"/>
+        </set>
+        <property name="credit"/>
+        <property name="brief"/>
+    </class>
+</hibernate-mapping>
