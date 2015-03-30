@@ -29,4 +29,6 @@ public interface ShopDao {
      * @return 数据库改变的条数
      */
     public int delShop(int id);
+
+    public int findLogin(Shop shop);
 }

@@ -13,12 +13,12 @@
         <property name="specification"/>
         <property name="inventory"/>
         <property name="postage"/>
-        <many-to-one name="shop" column="shop_id" class="com.onlinestore.entity.Shop" cascade="all"/>
+        <many-to-one name="shop" column="shop_id" class="com.onlinestore.entity.Shop"/>
         <set name="pictureSet" cascade="all" lazy="true">
             <key column="goods_id"></key>
             <one-to-many class="com.onlinestore.entity.GoodsPicture"/>
         </set>
-        <set name="categorySet" table="goods_category" cascade="all" lazy="true">
+        <set name="categorySet" table="goods_category" lazy="true">
             <key column="goods_id"></key>
             <many-to-many column="category_id" class="com.onlinestore.entity.Category"/>
         </set>

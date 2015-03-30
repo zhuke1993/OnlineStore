@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -19,7 +20,7 @@ public class Shop {
     private String phone;
     private String email;
     private Date reg_date;//注册时间
-    private Set<Address> Addresses;//收货地址
+    private Set<Address> addresses = new HashSet<Address>();//收货地址
     private int credit;//信誉等级
     private String brief;//店铺简介
 
@@ -45,7 +46,7 @@ public class Shop {
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
                 ", reg_date=" + reg_date +
-                ", Addresses=" + Addresses +
+                ", Addresses=" + addresses.size() +
                 ", credit=" + credit +
                 ", brief='" + brief + '\'' +
                 '}';
@@ -100,11 +101,11 @@ public class Shop {
     }
 
     public Set<Address> getAddresses() {
-        return Addresses;
+        return addresses;
     }
 
     public void setAddresses(Set<Address> addresses) {
-        Addresses = addresses;
+        addresses = addresses;
     }
 
     public int getCredit() {

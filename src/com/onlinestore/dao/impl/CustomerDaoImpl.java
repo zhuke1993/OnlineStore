@@ -26,6 +26,7 @@ public class CustomerDaoImpl implements CustomerDao {
     public void addCustomer(Customer customer) {
         Session session = sessionFactory.getCurrentSession();
         session.save(customer);
+        session.flush();
     }
 
     @Override
@@ -43,12 +44,24 @@ public class CustomerDaoImpl implements CustomerDao {
         return null;
     }
 
+    /**
+     * 根据传入的customer判断是否登陆成功
+     *
+     * @param customer 待判断登陆的customer对象
+     * @return -1---登陆失败，登陆成功返回该customer的id
+     */
     @Override
     public int findLogin(Customer customer) {
         Session session = sessionFactory.getCurrentSession();
-        Query query = session.createQuery("select id from Customer where name=? and pwd = ?");
-        query.setString(0,customer.getName());
-        query.setString(1,customer.getPwd());
-        return query.list().size();
+        Query query = session.createQuery("from Customer where name=? and pwd = ?");
+        query.setString(0, customer.getName());
+        query.setString(1, customer.getPwd());
+        int size = query.list().size();
+        if (size == 0) {
+            return -1;
+        } else {
+            customer = (Customer) query.list().get(0);
+            return customer.getId();
+        }
     }
 }

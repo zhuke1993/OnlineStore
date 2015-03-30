@@ -10,7 +10,10 @@
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
     <!--开启类扫描机制-->
-    <context:component-scan base-package="com.onlinestore"/>
+    <context:component-scan base-package="com.onlinestore.entity"/>
+    <context:component-scan base-package="com.onlinestore.action"/>
+    <context:component-scan base-package="com.onlinestore.dao"/>
+    <context:component-scan base-package="com.onlinestore.util"/>
     <!--配置属性自动注入-->
     <context:annotation-config/>
 
@@ -38,6 +41,7 @@
                 如果出现了更新、插入或是删除语句时只读事务就会失败）-->
             <tx:method name="get*" read-only="true"/>
             <tx:method name="find*" read-only="true"/>
+            <tx:method name="*" propagation="REQUIRED"/>
         </tx:attributes>
     </tx:advice>
     <!--设置横切面，对事务进行切面拦截-->

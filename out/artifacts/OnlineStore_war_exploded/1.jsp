@@ -11,6 +11,9 @@
     <title>1.jsp</title>
 </head>
 <body>
-1.jsp
+<form action="fileUpload.action" method="post" enctype="multipart/form-data">
+  <input type="file" name="files">
+  <input type="submit" value="upload">
+</form>
 </body>
 </html>
