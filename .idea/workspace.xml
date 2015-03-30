@@ -763,7 +763,7 @@
       <workItem from="1427554243601" duration="632000" />
       <workItem from="1427614015746" duration="212000" />
       <workItem from="1427695143391" duration="11512000" />
-      <workItem from="1427726904180" duration="10031000" />
+      <workItem from="1427726904180" duration="10123000" />
     </task>
     <task id="LOCAL-00001" summary="调试通过现有的hbm.xml">
       <created>1426441994538</created>
@@ -823,7 +823,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136318000" />
+    <option name="totallyTimeSpent" value="136410000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
