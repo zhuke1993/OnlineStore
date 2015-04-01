@@ -26,13 +26,13 @@
 
     </bean>
     <!--配置hibernate声明式事务-->
-    <bean class="org.springframework.orm.hibernate4.HibernateTransactionManager" name="hibernateTransactionManager">
+    <bean class="org.springframework.orm.hibernate4.HibernateTransactionManager" name="transactionManager">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
     <!--配置事务的注解实现-->
     <!--<tx:annotation-driven transaction-manager="hibernateTransactionManager"/>-->
     <!--配置事务相关属性-->
-    <tx:advice id="txAdvice" transaction-manager="hibernateTransactionManager">
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
         <tx:attributes>
             <!-- 根据方法名指定事务的属性 -->
             <tx:method name="add*" propagation="REQUIRES_NEW"/>
@@ -41,6 +41,8 @@
                 如果出现了更新、插入或是删除语句时只读事务就会失败）-->
             <tx:method name="get*" read-only="true"/>
             <tx:method name="find*" read-only="true"/>
+            <tx:method name="modify*" propagation="REQUIRES_NEW"/>
+            <tx:method name="delete*" propagation="REQUIRES_NEW"/>
             <tx:method name="*" propagation="REQUIRED"/>
         </tx:attributes>
     </tx:advice>

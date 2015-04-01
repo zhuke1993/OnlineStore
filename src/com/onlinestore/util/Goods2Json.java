@@ -1,8 +1,13 @@
 package com.onlinestore.util;
 
+import com.onlinestore.dao.GoodsDao;
 import com.onlinestore.entity.Category;
 import com.onlinestore.entity.Goods;
 import com.onlinestore.entity.GoodsPicture;
+import com.onlinestore.test.SpringWebBaseTest;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.util.Iterator;
@@ -12,20 +17,20 @@ import java.util.List;
  * Created by zhuke on 2015/3/31.
  */
 @Component
-public class Goods2Json {
+public class Goods2Json extends SpringWebBaseTest {
 
-    /*@Autowired
+    @Autowired
     @Qualifier("goodsDaoImpl")
     private GoodsDao dao;
 
     @Test
     public void testthis() {
-        String s1 = new Goods2Json().goodslist2json(dao.allList(1));
+        String s1 = dao.allList(1, 1, 10);
         System.out.println(s1);
         System.out.println("+++++++++++++++++++++");
-        System.out.println(new Goods2Json().stringUtil(s1));
 
-    }*/
+    }
+
 
     /**
      * goods的arraylist转化为json字符串
@@ -78,19 +83,45 @@ public class Goods2Json {
         sb.append("\"postage\":" + goods.getPostage() + ",");
         sb.append("\"shop_id\":" + goods.getShop().getId() + ",");
         Iterator<GoodsPicture> iterator = goods.getPictureSet().iterator();
-        sb.append("\"pictureSet\":[");
+
+        StringBuffer sb1 = new StringBuffer();
+        sb1.append("\"pictureSet\":[");
         while (iterator.hasNext()) {
-            sb.append("{\"url\":\"" + iterator.next().getUrl() + "\"}");
+            sb1.append("{\"url\":\"" + iterator.next().getUrl() + "\"},");
         }
-        sb.append("],");
+        sb1.append("]");
+        if (sb1.toString().length() > 15) {
+            char[] temp = sb1.toString().toCharArray();
+            char[] chars = new char[temp.length - 1];
+            chars[chars.length - 1] = temp[temp.length - 1];
+            chars[chars.length - 2] = temp[temp.length - 3];
+            for (int i = chars.length - 3; i >= 0; i--) {
+                chars[i] = temp[i];
+            }
+            sb.append(new String(chars) + ",");
+        }else{
+            sb.append(sb1.toString()+",");
+        }
 
+        StringBuffer sb2 = new StringBuffer();
         Iterator<Category> iterator1 = goods.getCategorySet().iterator();
-        sb.append("\"categorySet\":[");
+        sb2.append("\"categorySet\":[");
         while (iterator1.hasNext()) {
-            sb.append("{\"category_id\":\"" + iterator1.next().getId() + "\"}");
+            sb2.append("{\"category_id\":\"" + iterator1.next().getId() + "\"},");
         }
-        sb.append("]");
-
+        sb2.append("]");
+        if (sb2.toString().length() > 16) {
+            char[] temp = sb2.toString().toCharArray();
+            char[] chars = new char[temp.length - 1];
+            chars[chars.length - 1] = temp[temp.length - 1];
+            chars[chars.length - 2] = temp[temp.length - 3];
+            for (int i = chars.length - 3; i >= 0; i--) {
+                chars[i] = temp[i];
+            }
+            sb.append(new String(chars));
+        }else{
+            sb.append(sb2.toString());
+        }
         return sb.toString();
     }
 }

@@ -45,9 +45,6 @@ public class Goods {
                 ", specification='" + specification + '\'' +
                 ", inventory=" + inventory +
                 ", postage=" + postage +
-                ", shop=" + shop.getName() +
-                ", pictureSet=" + pictureSet.size() +
-                ", categorySet=" + categorySet.size() +
                 '}';
     }
 

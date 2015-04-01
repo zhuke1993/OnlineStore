@@ -10,6 +10,7 @@ import com.onlinestore.util.Conf;
 import org.apache.struts2.dispatcher.DefaultActionSupport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import java.io.File;
@@ -24,6 +25,7 @@ import java.util.Set;
  * Created by zhuke on 2015/3/27.
  */
 @Controller
+@Scope("request")
 public class AddGoodsAction extends DefaultActionSupport {
     @Autowired
     @Qualifier("shopDaoImpl")

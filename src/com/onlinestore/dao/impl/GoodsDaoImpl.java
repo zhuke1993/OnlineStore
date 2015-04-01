@@ -1,12 +1,13 @@
 package com.onlinestore.dao.impl;
 
-import com.google.gson.Gson;
 import com.onlinestore.dao.GoodsDao;
 import com.onlinestore.dao.ShopDao;
 import com.onlinestore.entity.Goods;
+import com.onlinestore.util.Goods2Json;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -23,6 +24,22 @@ public class GoodsDaoImpl implements GoodsDao {
 
     @Autowired
     private ShopDao shopDao;
+
+    public SessionFactory getSessionFactory() {
+        return sessionFactory;
+    }
+
+    public void setSessionFactory(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
+
+    public ShopDao getShopDao() {
+        return shopDao;
+    }
+
+    public void setShopDao(ShopDao shopDao) {
+        this.shopDao = shopDao;
+    }
 
     @Override
     public void addGoods(Goods goods) {
@@ -44,8 +61,9 @@ public class GoodsDaoImpl implements GoodsDao {
         Session session = sessionFactory.getCurrentSession();
         ArrayList<Goods> list = new ArrayList<Goods>();
         String s;
-        s = "from Goods as g where g.shop =" + shopDao.findShop(shop_id);
+        s = "from Goods as g where g.shop =?";
         Query q = session.createQuery(s);
+        q.setParameter(0, shopDao.findShop(shop_id));
         int total = q.list().size();
         q.setFirstResult(rows * (page - 1));
         q.setMaxResults(rows * page);
@@ -55,8 +73,7 @@ public class GoodsDaoImpl implements GoodsDao {
         //拼接json字符串
         StringBuilder sb = new StringBuilder();
         sb.append("{\"total\":" + total + ",\"rows\":");
-        Gson json = new Gson();
-        sb.append(json.toJson(list) + "}");
+        sb.append(new Goods2Json().goodslist2json(list) + "}");
         return sb.toString();
     }
 
@@ -71,5 +88,36 @@ public class GoodsDaoImpl implements GoodsDao {
         q.setParameter(0, shopDao.findShop(shop_id));
         list = (ArrayList<Goods>) q.list();
         return list;
+    }
+
+    @Override
+    /**
+     * 返回为1，修改成功；
+     * 返回为0，修改失败
+     */
+    public int modifyGoods(Goods goods) {
+        Session session = sessionFactory.getCurrentSession();
+        try {
+            Goods goods1 = (Goods) session.get(Goods.class,goods.getId());
+            goods1.setName(goods.getName());
+            goods1.setPrice(goods.getPrice());
+            goods1.setBriefIntroduction(goods.getBriefIntroduction());
+            goods1.setSpecification(goods.getSpecification());
+            goods1.setInventory(goods.getInventory());
+            goods1.setPostage(goods.getPostage());
+            session.flush();
+            return 1;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return 0;
+        }
+    }
+
+    @Override
+    public int deleteGoods(int goods_id) {
+        Session session = sessionFactory.getCurrentSession();
+        session.delete(session.load(Goods.class, goods_id));
+        session.flush();
+        return 0;
     }
 }

@@ -27,5 +27,12 @@
         <action name="addGoods" class="addGoodsAction">
             <result type="redirect" name="success">/1.jsp</result>
         </action>
+        <action name="getPage" class="getPage">
+            <result name="null"></result>
+        </action>
+
+        <action name="modifyGoods" class="modifyGoodsAction">
+            <result name="null"></result>
+        </action>
     </package>
 </struts>
