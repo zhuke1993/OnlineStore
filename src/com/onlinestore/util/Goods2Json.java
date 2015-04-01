@@ -25,20 +25,11 @@ public class Goods2Json extends SpringWebBaseTest {
 
     @Test
     public void testthis() {
-<<<<<<< HEAD
         String s2 = new Goods2Json().goods2json(dao.findGoods(9));
         System.out.println(s2);
         System.out.println("+++++++++++++++++++++");
 
     }
-=======
-        String s1 = dao.allList(1, 1, 10);
-        System.out.println(s1);
-        System.out.println("+++++++++++++++++++++");
-
-    }
-
->>>>>>> 541d28fd81933f28c00bfa2fee38ffeae12005bb
 
     /**
      * goods的arraylist转化为json字符串
@@ -92,48 +83,31 @@ public class Goods2Json extends SpringWebBaseTest {
         sb.append("\"shop_id\":" + goods.getShop().getId() + ",");
 
         Iterator<GoodsPicture> iterator = goods.getPictureSet().iterator();
-<<<<<<< HEAD
-=======
-
->>>>>>> 541d28fd81933f28c00bfa2fee38ffeae12005bb
         StringBuffer sb1 = new StringBuffer();
         sb1.append("\"pictureSet\":[");
         while (iterator.hasNext()) {
             sb1.append("{\"url\":\"" + iterator.next().getUrl() + "\"},");
         }
         sb1.append("]");
-<<<<<<< HEAD
         char[] temp = sb1.toString().toCharArray();
         if (temp.length > 15) {
-=======
-        if (sb1.toString().length() > 15) {
-            char[] temp = sb1.toString().toCharArray();
->>>>>>> 541d28fd81933f28c00bfa2fee38ffeae12005bb
             char[] chars = new char[temp.length - 1];
             chars[chars.length - 1] = temp[temp.length - 1];
             chars[chars.length - 2] = temp[temp.length - 3];
             for (int i = chars.length - 3; i >= 0; i--) {
                 chars[i] = temp[i];
             }
-<<<<<<< HEAD
             sb.append(new String(chars));
         } else {
             sb.append(sb1.toString());
         }
         sb.append(",");
-=======
-            sb.append(new String(chars) + ",");
-        }else{
-            sb.append(sb1.toString()+",");
-        }
->>>>>>> 541d28fd81933f28c00bfa2fee38ffeae12005bb
 
         StringBuffer sb2 = new StringBuffer();
         Iterator<Category> iterator1 = goods.getCategorySet().iterator();
         sb2.append("\"categorySet\":[");
         while (iterator1.hasNext()) {
             sb2.append("{\"category_id\":\"" + iterator1.next().getId() + "\"},");
-<<<<<<< HEAD
         }
         sb2.append("]");
         temp = sb2.toString().toCharArray();
@@ -149,22 +123,6 @@ public class Goods2Json extends SpringWebBaseTest {
             sb.append(sb2.toString());
         }
         sb.append("}");
-=======
-        }
-        sb2.append("]");
-        if (sb2.toString().length() > 16) {
-            char[] temp = sb2.toString().toCharArray();
-            char[] chars = new char[temp.length - 1];
-            chars[chars.length - 1] = temp[temp.length - 1];
-            chars[chars.length - 2] = temp[temp.length - 3];
-            for (int i = chars.length - 3; i >= 0; i--) {
-                chars[i] = temp[i];
-            }
-            sb.append(new String(chars));
-        }else{
-            sb.append(sb2.toString());
-        }
->>>>>>> 541d28fd81933f28c00bfa2fee38ffeae12005bb
         return sb.toString();
     }
 }
