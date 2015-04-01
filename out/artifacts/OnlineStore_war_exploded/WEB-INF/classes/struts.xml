@@ -30,12 +30,5 @@
         <action name="getPage" class="getPage">
             <result name="null"></result>
         </action>
-<<<<<<< HEAD
-=======
-
-        <action name="modifyGoods" class="modifyGoodsAction">
-            <result name="null"></result>
-        </action>
->>>>>>> 541d28fd81933f28c00bfa2fee38ffeae12005bb
     </package>
 </struts>

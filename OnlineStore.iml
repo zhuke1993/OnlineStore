@@ -65,6 +65,7 @@
     <orderEntry type="library" name="jsp-api" level="project" />
     <orderEntry type="library" name="standard" level="project" />
     <orderEntry type="library" name="gson-1.6" level="project" />
-    <orderEntry type="library" name="javassist-3.18.1-GA (2)" level="project" />
+    <orderEntry type="library" name="javassist-3.18.1-GA" level="project" />
+    <orderEntry type="library" name="jandex-1.1.0.Final" level="project" />
   </component>
 </module>

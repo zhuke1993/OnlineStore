@@ -29,10 +29,6 @@ public class TestGetpage extends SpringWebBaseTest {
 
     @Test
     public void getPageTest() {
-        Goods goods =new Goods();
-        goods.setId(15);
-        goods.setName("就是这么帅000");
-        goods.setInventory(10000000);
-        dao.modifyGoods(goods);
+        System.out.println(dao.allList(1, 1, 10));
     }
 }

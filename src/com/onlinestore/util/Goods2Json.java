@@ -25,7 +25,7 @@ public class Goods2Json extends SpringWebBaseTest {
 
     @Test
     public void testthis() {
-        String s2 = new Goods2Json().goods2json(dao.findGoods(9));
+        String s2 = new Goods2Json().goodslist2json(dao.allList(1));
         System.out.println(s2);
         System.out.println("+++++++++++++++++++++");
 
