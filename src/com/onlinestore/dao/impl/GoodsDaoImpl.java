@@ -94,6 +94,14 @@ public class GoodsDaoImpl implements GoodsDao {
 
     @Override
     public void modifyGoods(Goods goods) {
-
+        Session session = sessionFactory.getCurrentSession();
+        Goods goods1 = (Goods) session.get(Goods.class, goods.getId());
+        goods1.setName(goods.getName());
+        goods1.setPrice(goods.getPrice());
+        goods1.setBriefIntroduction(goods.getBriefIntroduction());
+        goods1.setSpecification(goods.getSpecification());
+        goods1.setInventory(goods.getInventory());
+        goods1.setPostage(goods.getPostage());
+        session.flush();
     }
 }

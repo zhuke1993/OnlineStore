@@ -30,5 +30,8 @@
         <action name="getPage" class="getPage">
             <result name="null"></result>
         </action>
+        <action name="modifyGoods" class="modifyGoodsAction">
+            <result name="null"></result>
+        </action>
     </package>
 </struts>
