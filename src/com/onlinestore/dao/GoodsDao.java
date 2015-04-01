@@ -13,4 +13,8 @@ public interface GoodsDao {
     public String allList(int shiop_id, int page, int rows);
 
     public List allList(int shop_id);
+
+    public Goods findGoods(int id);
+
+    public Goods findGoods(String name);
 }

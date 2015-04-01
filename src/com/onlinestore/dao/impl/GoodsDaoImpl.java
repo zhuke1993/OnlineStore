@@ -31,6 +31,7 @@ public class GoodsDaoImpl implements GoodsDao {
         session.flush();
     }
 
+
     /**
      * 获得一页的数据
      *
@@ -71,5 +72,22 @@ public class GoodsDaoImpl implements GoodsDao {
         q.setParameter(0, shopDao.findShop(shop_id));
         list = (ArrayList<Goods>) q.list();
         return list;
+    }
+
+    @Override
+    public Goods findGoods(int id) {
+        Session session = sessionFactory.getCurrentSession();
+        return (Goods) session.get(Goods.class, id);
+    }
+
+    @Override
+    public Goods findGoods(String name) {
+        Session session = sessionFactory.getCurrentSession();
+        Query query = session.createQuery("from Goods where name = ?");
+        query.setParameter(0, name);
+        if (query.list().size() > 0) {
+            return (Goods) query.list().get(0);
+        }
+        return null;
     }
 }
