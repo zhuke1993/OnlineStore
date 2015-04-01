@@ -16,11 +16,19 @@ import java.util.List;
  * Created by zhuke on 2015/3/17.
  */
 @Repository
-@Scope("singleton")
+@Scope("prototype")
 public class CustomerDaoImpl implements CustomerDao {
     @Autowired
     @Qualifier("sessionFactory")
     private SessionFactory sessionFactory;
+
+    public SessionFactory getSessionFactory() {
+        return sessionFactory;
+    }
+
+    public void setSessionFactory(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
 
     @Override
     public void addCustomer(Customer customer) {

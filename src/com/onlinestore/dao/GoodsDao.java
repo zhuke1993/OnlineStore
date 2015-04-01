@@ -14,7 +14,13 @@ public interface GoodsDao {
 
     public List allList(int shop_id);
 
+<<<<<<< HEAD
     public Goods findGoods(int id);
 
     public Goods findGoods(String name);
+=======
+    public int modifyGoods(Goods goods);
+
+    public int deleteGoods(int goods_id);
+>>>>>>> 541d28fd81933f28c00bfa2fee38ffeae12005bb
 }

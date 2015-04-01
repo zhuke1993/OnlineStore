@@ -27,10 +27,6 @@
     <link rel="stylesheet" href="assets/css/daterangepicker.css"/>
     <link rel="stylesheet" href="assets/css/colorpicker.css"/>
 
-    <!--fonts-->
-
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300"/>
-
     <!--ace styles-->
 
     <link rel="stylesheet" href="assets/css/ace.min.css"/>
@@ -745,12 +741,12 @@
 
         <!--[if !IE]>-->
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="assets/js/notie-jquery.mini.js"></script>
 
         <!--<![endif]-->
 
         <!--[if IE]>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="assets/js/ie-jquery.mini.js"></script>
         <![endif]-->
 
         <!--[if !IE]>-->

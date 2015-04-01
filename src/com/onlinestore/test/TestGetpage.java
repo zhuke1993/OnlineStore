@@ -1,6 +1,8 @@
 package com.onlinestore.test;
 
 import com.onlinestore.dao.GoodsDao;
+import com.onlinestore.entity.Goods;
+import org.hibernate.SessionFactory;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -10,6 +12,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
  */
 public class TestGetpage extends SpringWebBaseTest {
 
+    @Autowired
+    private SessionFactory sessionFactory;
 
     @Autowired
     @Qualifier("goodsDaoImpl")
@@ -25,7 +29,10 @@ public class TestGetpage extends SpringWebBaseTest {
 
     @Test
     public void getPageTest() {
-        String s = dao.allList(1, 1, 10);
-        System.out.println(s);
+        Goods goods =new Goods();
+        goods.setId(15);
+        goods.setName("就是这么帅000");
+        goods.setInventory(10000000);
+        dao.modifyGoods(goods);
     }
 }

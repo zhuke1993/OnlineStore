@@ -3,12 +3,14 @@ package com.onlinestore.action;
 import com.opensymphony.xwork2.ActionContext;
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.dispatcher.DefaultActionSupport;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import java.io.*;
 import java.util.List;
 
 @Controller
+@Scope("request")
 public class FileUploadAction extends DefaultActionSupport {
 
     //注意，file并不是指前端jsp上传过来的文件本身，而是文件上传过来存放在临时文件夹下面的文件

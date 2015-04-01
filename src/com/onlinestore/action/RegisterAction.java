@@ -14,7 +14,7 @@ import java.util.Date;
  * Created by zhuke on 2015/3/23.
  */
 @Controller
-@Scope("session")
+@Scope("request")
 public class RegisterAction extends DefaultActionSupport {
     private String rg_name;
     private String rg_pwd;
