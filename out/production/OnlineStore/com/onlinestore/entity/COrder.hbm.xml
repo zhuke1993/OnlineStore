@@ -13,11 +13,11 @@
         <property name="bargainDate"/>
         <property name="paymentDate"/>
         <property name="confirmDate"/>
-        <set name="goodsSet" table="goods2order">
+        <set name="goodsSet" table="goods2order" lazy="false">
             <key column="order_id"></key>
-            <many-to-many class="com.onlinestore.entity.Goods" column="goods_id"/>
+            <many-to-many class="com.onlinestore.entity.Goods" column="goods_id" lazy="false"/>
         </set>
-        <many-to-one name="shop" column="shop_id" class="com.onlinestore.entity.Shop"/>
-        <many-to-one name="customer" column="customer_id" class="com.onlinestore.entity.Customer"/>
+        <many-to-one name="shop" column="shop_id" class="com.onlinestore.entity.Shop" lazy="false"/>
+        <many-to-one name="customer" column="customer_id" class="com.onlinestore.entity.Customer" lazy="false"/>
     </class>
 </hibernate-mapping>

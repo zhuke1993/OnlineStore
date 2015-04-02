@@ -9,8 +9,8 @@
         </id>
         <property name="name"/>
         <property name="remark"/>
-        <many-to-one name="father" column="father_id" class="com.onlinestore.entity.Category" cascade="all"/>
-        <set name="sons" inverse="true" cascade="all">
+        <many-to-one name="father" column="father_id" class="com.onlinestore.entity.Category" cascade="all" lazy="false"/>
+        <set name="sons" inverse="true" cascade="all" lazy="false">
             <key column="father_id"></key>
             <one-to-many class="com.onlinestore.entity.Category"/>
         </set>

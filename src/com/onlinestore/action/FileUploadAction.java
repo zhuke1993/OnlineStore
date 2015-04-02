@@ -57,6 +57,7 @@ public class FileUploadAction extends DefaultActionSupport {
                 f.mkdirs();
             }
             savePath = savePath + "/"+filesFileName.get(i);
+            System.out.println("文件保存路径："+savePath);
             FileOutputStream fos = new FileOutputStream(savePath);
             byte[] buf = new byte[1024];
             int len = 0;

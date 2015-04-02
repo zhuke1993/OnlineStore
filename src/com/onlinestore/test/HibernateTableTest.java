@@ -12,7 +12,7 @@ import java.util.HashSet;
  */
 public class HibernateTableTest extends TestSpringBase{
 
-   /* @Test
+    @Test
     public void testall() {
         Transaction tx = session.beginTransaction();
 
@@ -128,5 +128,5 @@ public class HibernateTableTest extends TestSpringBase{
 
         tx.commit();
 
-        }*/
+        }
 }

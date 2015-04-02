@@ -7,6 +7,7 @@ import com.onlinestore.entity.Goods;
 import com.onlinestore.entity.GoodsPicture;
 import com.onlinestore.entity.Shop;
 import com.onlinestore.util.Conf;
+import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.dispatcher.DefaultActionSupport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -19,6 +20,7 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -123,7 +125,12 @@ public class AddGoodsAction extends DefaultActionSupport {
 
     @Override
     public String execute() throws Exception {
-        int lg_id = Integer.parseInt("1");
+        Map session = ServletActionContext.getContext().getSession();
+        int lg_id = 0;
+        if (session.get("lg_id").toString() != null) {
+            lg_id = Integer.parseInt(session.get("lg_id").toString());
+        }
+        String server_path = ServletActionContext.getRequest().getRealPath("/");
         Set<GoodsPicture> goodsPictures = new HashSet<GoodsPicture>();
         Goods goods = new Goods(goods_name, Double.parseDouble(goods_price), goods_brief, goods_spe, Integer.parseInt(goods_inventory), Double.parseDouble(goods_postage));
         Shop shop = (Shop) shopDao.findShop(lg_id);
@@ -132,8 +139,8 @@ public class AddGoodsAction extends DefaultActionSupport {
         //判断是否全部为图片
         for (int i = 0; i < filesFileName.size(); i++) {
             if (filesContentType.get(i).equals("image/jpeg") || filesContentType.get(i).equals("image/png")) {
-                if (lg_id !=0) {
-                    String savePath = Conf.pictureUrlBase+"/" + lg_id;
+                if (lg_id != 0) {
+                    String savePath = server_path + "/" + lg_id;
                     InputStream is = new FileInputStream(files.get(i));
                     File f = new File(savePath);
                     if (!f.exists()) {
@@ -147,7 +154,7 @@ public class AddGoodsAction extends DefaultActionSupport {
                         fos.write(buf, 0, len);
                     }
                     fos.flush();
-                    String url = Conf.pictureUrlBase + "/" + new Integer(lg_id).toString()+"/" + filesFileName.get(i);
+                    String url = Conf.pictureUrlBase + "/" + new Integer(lg_id).toString() + "/" + filesFileName.get(i);
                     GoodsPicture goodsPicture = new GoodsPicture(goods, url);
                     pictureDao.addGoodsPicture(goodsPicture);
                     goodsPictures.add(goodsPicture);

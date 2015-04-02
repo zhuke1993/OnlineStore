@@ -10,7 +10,7 @@
     <constant name="struts.devMode" value="true"/>
     <constant name="struts.configuration.xml.reload" value="true"/>
     <!--解决乱码    -->
-    <constant name="struts.i18n.encoding" value="UTF-8" />
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
     <package name="struts" extends="struts-default" namespace="/">
         <!--在这里配置的class就需要填写spring中某action的id-->
         <action name="register" class="registerAction">
@@ -31,6 +31,12 @@
             <result name="null"></result>
         </action>
         <action name="modifyGoods" class="modifyGoodsAction">
+            <result name="null"></result>
+        </action>
+        <action name="deleteGoods" class="deleteGoodsAction">
+            <result name="null"></result>
+        </action>
+        <action name="findGoods" class="findGoodsAction">
             <result name="null"></result>
         </action>
     </package>

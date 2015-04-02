@@ -14,13 +14,13 @@
         <property name="inventory"/>
         <property name="postage"/>
         <many-to-one name="shop" column="shop_id" class="com.onlinestore.entity.Shop"/>
-        <set name="pictureSet" cascade="all" lazy="true">
+        <set name="pictureSet" cascade="all" lazy="false">
             <key column="goods_id"></key>
-            <one-to-many class="com.onlinestore.entity.GoodsPicture"/>
+            <one-to-many class="com.onlinestore.entity.GoodsPicture" />
         </set>
-        <set name="categorySet" table="goods_category" lazy="true">
+        <set name="categorySet" table="goods_category" lazy="false">
             <key column="goods_id"></key>
-            <many-to-many column="category_id" class="com.onlinestore.entity.Category"/>
+            <many-to-many column="category_id" class="com.onlinestore.entity.Category" lazy="false"/>
         </set>
     </class>
 </hibernate-mapping>

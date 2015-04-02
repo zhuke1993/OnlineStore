@@ -13,13 +13,13 @@
         <property name="email"/>
         <property name="reg_date"/>
         <property name="level"/>
-        <set name="addresses" cascade="all" lazy="true">
+        <set name="addresses" cascade="all" lazy="false">
             <key column="customer_id"></key>
             <one-to-many class="com.onlinestore.entity.Address"/>
         </set>
-        <set name="orders">
+        <set name="orders" lazy="false">
             <key column="customer_id"></key>
-            <one-to-many class="com.onlinestore.entity.COrder" />
+            <one-to-many class="com.onlinestore.entity.COrder"/>
         </set>
     </class>
 </hibernate-mapping>

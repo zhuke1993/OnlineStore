@@ -11,8 +11,11 @@
     <title>index.jsp</title>
   </head>
   <body>
-    <form action="test.action">
-      <input type="text" name="name">
+    <form action="deleteGoods.action">
+      <input type="text" name="id">
+      <input type="text" name="id">
+      <input type="text" name="id">
+      <input type="text" name="id">
       <input type="submit">
     </form>
   </body>

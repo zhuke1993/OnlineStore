@@ -10,6 +10,6 @@
         <property name="level"/>
         <property name="detail"/>
         <property name="date"/>
-        <many-to-one name="goods" column="goods_id" class="com.onlinestore.entity.Goods"/>
+        <many-to-one name="goods" column="goods_id" class="com.onlinestore.entity.Goods" lazy="false"/>
     </class>
 </hibernate-mapping>

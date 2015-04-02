@@ -1,6 +1,5 @@
 package com.onlinestore.dao.impl;
 
-import com.google.gson.Gson;
 import com.onlinestore.dao.GoodsDao;
 import com.onlinestore.dao.ShopDao;
 import com.onlinestore.entity.Goods;
@@ -102,6 +101,13 @@ public class GoodsDaoImpl implements GoodsDao {
         goods1.setSpecification(goods.getSpecification());
         goods1.setInventory(goods.getInventory());
         goods1.setPostage(goods.getPostage());
+        session.flush();
+    }
+
+    @Override
+    public void deleteGoods(int goods_id) {
+        Session session = sessionFactory.getCurrentSession();
+        session.delete(session.get(Goods.class,goods_id));
         session.flush();
     }
 }

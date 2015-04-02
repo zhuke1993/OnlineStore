@@ -1,3 +1,4 @@
+<%@ page import="org.apache.struts2.ServletActionContext" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -11,8 +12,8 @@
     <title>1.jsp</title>
 </head>
 <body>
-<form action="getPage.action" method="post">
-  <input type="submit" value="commit">
-</form>
+<%
+  out.print(request.getRealPath("/"));
+%>
 </body>
 </html>
