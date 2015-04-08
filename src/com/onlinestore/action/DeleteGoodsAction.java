@@ -5,12 +5,14 @@ import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.dispatcher.DefaultActionSupport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 /**
  * Created by zhuke on 2015/4/2.
  */
 @Controller
+@Scope("request")
 public class DeleteGoodsAction extends DefaultActionSupport {
 
     @Autowired

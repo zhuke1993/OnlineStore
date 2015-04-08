@@ -9,6 +9,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -18,6 +19,7 @@ import java.util.List;
  * Created by zhuke on 2015/3/27.
  */
 @Repository
+@Scope("singleton")
 public class GoodsDaoImpl implements GoodsDao {
     @Autowired
     private SessionFactory sessionFactory;
@@ -48,7 +50,7 @@ public class GoodsDaoImpl implements GoodsDao {
         String s;
         s = "from Goods as g where g.shop =?";
         Query q = session.createQuery(s);
-        q.setParameter(0,session.get(Shop.class,shop_id));
+        q.setParameter(0, session.get(Shop.class, shop_id));
         int total = q.list().size();
         q.setFirstResult(rows * (page - 1));
         q.setMaxResults(rows * page);
@@ -107,7 +109,27 @@ public class GoodsDaoImpl implements GoodsDao {
     @Override
     public void deleteGoods(int goods_id) {
         Session session = sessionFactory.getCurrentSession();
-        session.delete(session.get(Goods.class,goods_id));
+        session.delete(session.get(Goods.class, goods_id));
         session.flush();
+    }
+
+    /**
+     * 得到一页的goods信息
+     *
+     * @param page 页数
+     * @param rows 一页的数量
+     * @return 存储有一页goods信息的arraylist
+     */
+    @Override
+    public ArrayList<Goods> getGoodsPage(int page, int rows) {
+        Session session = sessionFactory.getCurrentSession();
+        ArrayList<Goods> list = new ArrayList<Goods>();
+        String s;
+        s = "from Goods";
+        Query q = session.createQuery(s);
+        int total = q.list().size();
+        q.setFirstResult(rows * (page - 1));
+        q.setMaxResults(rows * page);
+        return (ArrayList<Goods>) q.list();
     }
 }

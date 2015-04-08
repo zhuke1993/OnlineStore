@@ -10,6 +10,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:/spring-config.xml"})
-public class SpringWebBaseTest extends AbstractTransactionalJUnit4SpringContextTests{
+public class SpringWebBaseTest extends AbstractTransactionalJUnit4SpringContextTests {
 
 }

@@ -2,68 +2,356 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9ec4158-f767-4576-b187-e2ba577b652b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/DeleteGoodsAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/FindGoodsAction.java" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\upload20491201.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\upload\1\QQ截图20150122125457.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\upload\1\a1ab8e59jw1eqhubqft5mj20c82f2k59.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\upload\1\vs2013激活码.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\upload\1\win8.1激活码.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\upload\1\zhuke.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\upload\1\网页.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\upload\20491201.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\upload\2\网页.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\uploadnull0491201.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\uploadnullQQ截图20150122125457.jpg" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/img/alpha.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/avatars/avatar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/avatars/avatar1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/avatars/avatar2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/avatars/avatar3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/avatars/avatar4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/avatars/avatar5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/images/border.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/chosen-sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/chosen-sprite@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/images/controls.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/font/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/font/fontawesome-webfont_2d2816fe.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/font/fontawesome-webfont_aea8981c.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/font/fontawesome-webfont_aea8981c.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/font/fontawesome-webfont_aea8981c.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/img/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/img/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/img/hue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/images/gallery/image-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/images/gallery/image-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/images/gallery/image-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/images/gallery/image-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/images/gallery/image-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/images/gallery/image-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/images/loading_background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/images/overlay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/avatars/profile-pic.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/img/saturation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/select2-spinner.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/select2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/select2x2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/images/gallery/thumb-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/images/gallery/thumb-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/images/gallery/thumb-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/images/gallery/thumb-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/images/gallery/thumb-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/images/gallery/thumb-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/avatars/user.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/flot/0.8.1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/1.10.2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/1.10.3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/1.3.1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/1.6.1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/1.9.4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/2.0.0.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/2.0.3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/4.0em.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/@2x.$1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/AddressAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/onlinestore/dao/AddressDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/onlinestore/dao/impl/AddressDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/onlinestore/test/AddressTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/onlinestore/dao/GoodPicDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/GoodsDetailAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/onlinestore/util/GoodsPic2Json.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/onlinestore/test/GoodsPic2JsonTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/onlinestore/dao/impl/GoodsPicDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/markdown/URL/Link.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/Microsoft.XMLDOM.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/Microsoft.XMLHTTP.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/x-editable/Object.keys called on a non-object.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/PayAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/onlinestore/test/TestGetPageGoods.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/a.chzn-single.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/a.close.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/x-editable/ace-editable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/ace-elements.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/ace-ie.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/ace-responsive.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/ace-skins.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/ace.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/ace.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/add_goods_success.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/additional-methods.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/autosize.destroy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/autosize.resize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/autosize.resizeIncludeStyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/beforeactivate._change.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/blank.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/blur.inputlimiter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/blur.mask.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/blur.timepicker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/blur.validate-equalTo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/bootbox.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/bootstrap-colorpicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/bootstrap-datepicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/bootstrap-editable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/x-editable/bootstrap-editable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/markdown/bootstrap-markdown.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/bootstrap-responsive.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/bootstrap-tag.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/bootstrap-timepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/bootstrap-timepicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/bootstrap-wysiwyg.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/button.applyBtn.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/fuelux/button.btn-next.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/fuelux/button.btn-prev.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/button.clearBtn.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/cart_add_succ.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/change.DT.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/change._change.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/change.ace_inner_call.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/x-editable/change.editable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/change.select2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/changeTime.timepicker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/chosen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/chosen.jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/img/clear.png.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/click.DT.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/click._change.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/click._submit keypress._submit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/click.affix.data-api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/click.alert.data-api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/click.button.data-api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/click.carousel.data-api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/click.collapse.data-api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/click.dismiss.modal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/click.dropdown.data-api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/x-editable/click.editable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/markdown/click.markdown.data-api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/click.modal.data-api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/click.tab.data-api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/click.timepicker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/colorbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/colorpicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/ddd M/d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/dddd M/d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/datepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/daterangepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/daterangepicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/div.chzn-drop.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/div.chzn-search.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/div.dataTables_filter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/x-editable/div.editable-input.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/div.fc-day-content div.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/div.fc-event-time.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/div.fc-event-title.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/div.ui-draggable-iframeFix.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/excanvas.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/x-editable/focus.datepicker.data-api click.datepicker.data-api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/focus.mask.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/focus.timepicker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/focus.typeahead.data-api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/focusin.modal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/font-awesome-ie7.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/font/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/assets/fontopensans.font" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/fontopensans.font" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/fuelux/fuelux.spinner.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/fuelux/data/fuelux.tree-sampledata.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/fuelux/fuelux.tree.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/fuelux/fuelux.wizard.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/fullcalendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/fullcalendar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/images/gritter-light.png.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/images/gritter.png.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/hide.timepicker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/ie-jquery.mini.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/images/ie-spacer.gif.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/in.tag.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/input.autosize keyup.autosize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/input.autosize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/input.bootstrap-timepicker-hour.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/input.bootstrap-timepicker-meridian.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/input.bootstrap-timepicker-minute.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/input.bootstrap-timepicker-second.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/input.select2-input.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/invalid-form.validate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/jquery-1.10.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/js/jquery-1.11.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/jquery-2.0.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/jquery-ui-1.10.3.custom.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/jquery-ui-1.10.3.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/jquery.autosize-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/jquery.colorbox-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/jquery.dataTables.bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/jquery.dataTables.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/jquery.easy-pie-chart.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/flot/jquery.flot.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/flot/jquery.flot.pie.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/flot/jquery.flot.resize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/jquery.gritter.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/jquery.gritter.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/jquery.hotkeys.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/jquery.inputlimiter.1.3.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/jquery.knob.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/jquery.maskedinput.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/assets/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/jquery.mobile.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/jquery.slimscroll.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/jquery.sparkline.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/jquery.ui.touch-punch.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/jquery.validate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/assets/jquery1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/jquery1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/keydown.dropdown.data-api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/x-editable/keydown.editable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/keydown.mask.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/keydown.timepicker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/keypress.DT.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/keypress.inputlimiter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/keypress.mask.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/keyup.DT.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/keyup.dismiss.modal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/x-editable/keyup.editable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/keyup.inputlimiter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/keyup.k.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/lang-in.tag.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/lang-uq.val.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/li.active-result.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/fuelux/li.complete.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/li.dropdown.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/li.no-results.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/li.search-choice.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/li.search-field.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/li.select2-more-results.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/img/loading.gif.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/logout.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/markdown/markdown.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/moment.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/fuelux/mousedown.spinner.data-api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/mousedown.timepicker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/fuelux/mousedown.wizard.data-api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/mousemove.jqs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/mousemove.k mouseup.k keyup.k.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/mousemove.k.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/mouseup.k mousemove.k keyup.k.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/mouseup.k.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/notie-jquery.mini.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/pay.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/Please enter a valid time in 12-hour am/pm format.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/prettify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/propertychange._change.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/propertychange.autosize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/propertychange.select2 DOMAttrModified.select2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/resize.autosize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/resize.jqs scroll.jqs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/sale.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/sale_pre.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/x-editable/save.internal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/scroll.affix.data-api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/scroll.droppable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/scroll.scroll-spy.data-api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/select.monthselect.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/select.yearselect.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/css/select2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/select2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/selectstart.DT.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/selectstart.ui.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/show.timepicker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/fuelux/span.badge.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/span.bootstrap-timepicker-hour.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/span.bootstrap-timepicker-meridian.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/span.bootstrap-timepicker-minute.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/span.bootstrap-timepicker-second.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/spin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/submit._submit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/td.available.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/test.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/x-editable/tfoot th.clear.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/tfoot th.today.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/x-editable/tfoot th.today.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/th.fc-agenda-gutter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/th.fc-week-number.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/touchend.k.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/touchmove.k touchend.k.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/touchmove.k.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/ui.draggable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/ui.droppable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/ui.mouse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/ui.resizable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/ui.selectable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/ui.slider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/ui.sortable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/ul.chzn-choices.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/ul.chzn-results.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/uq.val.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/date-time/mm/dd/yyyy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/assets/js/x-editable/mm/dd/yyyy.html" />
+      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\WEB-INF\classes\com\onlinestore\entity\rowmapper\CustomerRowmapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\customer\details.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\customer\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\customer\sale.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\production\OnlineStore\com\onlinestore\entity\rowmapper\CustomerRowmapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\src\com\onlinestore\entity\rowmapper\CustomerRowmapper.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\customer\sale.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/action/AddGoodsAction.class" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/action/AddGoodsAction.class" />
-      <change type="MODIFICATION" beforePath="D:\Users\zhuke\OnlineStore\out\production\OnlineStore\com\onlinestore\action\AddGoodsAction.class" afterPath="D:\Users\zhuke\OnlineStore\out\production\OnlineStore\com\onlinestore\action\AddGoodsAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/action/FileUploadAction.class" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/action/FileUploadAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/action/FileUploadAction.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/action/FileUploadAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/action/AddGoodsAction.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/action/AddGoodsAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/util/Conf.class" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/util/Conf.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/util/Conf.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/util/Conf.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/action/GetPage.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/action/GetPage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/dao/GoodsDao.class" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/dao/GoodsDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/dao/GoodsDao.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/dao/GoodsDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/dao/impl/GoodsDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/dao/impl/GoodsDaoImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/dao/impl/GoodsDaoImpl.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/dao/impl/GoodsDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/test/HibernateTableTest.class" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/test/HibernateTableTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/test/HibernateTableTest.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/test/HibernateTableTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/test/TestSpringBase.class" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/test/TestSpringBase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/test/TestSpringBase.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/test/TestSpringBase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/action/LoginAction.class" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/action/LoginAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/action/LoginAction.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/action/LoginAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/action/RegisterAction.class" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/action/RegisterAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/action/RegisterAction.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/action/RegisterAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/Shop.class" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/Shop.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/Shop.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/Shop.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/dao/impl/ShopDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/dao/impl/ShopDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/dao/impl/ShopDaoImpl.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/dao/impl/ShopDaoImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/1.jsp" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/1.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/1.jsp" afterPath="$PROJECT_DIR$/web/1.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/action/AddGoodsAction.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/AddGoodsAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/COrder.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/COrder.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/COrder.hbm.xml" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/COrder.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/entity/COrder.hbm.xml" afterPath="$PROJECT_DIR$/src/com/onlinestore/entity/COrder.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/Category.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/Category.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/Category.hbm.xml" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/Category.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/entity/Category.hbm.xml" afterPath="$PROJECT_DIR$/src/com/onlinestore/entity/Category.hbm.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/util/Conf.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/util/Conf.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/Customer.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/Customer.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/Customer.hbm.xml" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/Customer.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/entity/Customer.hbm.xml" afterPath="$PROJECT_DIR$/src/com/onlinestore/entity/Customer.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/Evaluation.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/Evaluation.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/Evaluation.hbm.xml" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/Evaluation.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/entity/Evaluation.hbm.xml" afterPath="$PROJECT_DIR$/src/com/onlinestore/entity/Evaluation.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/action/FileUploadAction.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/FileUploadAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/Goods.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/Goods.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/Goods.hbm.xml" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/Goods.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/entity/Goods.hbm.xml" afterPath="$PROJECT_DIR$/src/com/onlinestore/entity/Goods.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/action/DeleteGoodsAction.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/DeleteGoodsAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/action/FindGoodsAction.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/FindGoodsAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/action/GetPage.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/GetPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/dao/GoodsDao.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/dao/GoodsDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/dao/impl/GoodsDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/dao/impl/GoodsDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/GoodsPicture.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/GoodsPicture.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/GoodsPicture.hbm.xml" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/GoodsPicture.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/entity/GoodsPicture.hbm.xml" afterPath="$PROJECT_DIR$/src/com/onlinestore/entity/GoodsPicture.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/test/HibernateTableTest.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/test/HibernateTableTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/Shop.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/Shop.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/Shop.hbm.xml" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/Shop.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/entity/Shop.hbm.xml" afterPath="$PROJECT_DIR$/src/com/onlinestore/entity/Shop.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/test/TestSpringBase.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/test/TestSpringBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/mannage_goods.jsp" afterPath="$PROJECT_DIR$/web/admin/mannage_goods.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/action/LoginAction.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/LoginAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/action/RegisterAction.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/RegisterAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/entity/Shop.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/entity/Shop.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/dao/impl/ShopDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/dao/impl/ShopDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/test/SpringWebBaseTest.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/test/SpringWebBaseTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/customer/accessories.html" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/customer/accessories.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/accessories.html" afterPath="$PROJECT_DIR$/web/customer/accessories.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/customer/contact.html" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/customer/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/contact.html" afterPath="$PROJECT_DIR$/web/customer/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/customer/handbags.html" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/customer/handbags.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/handbags.html" afterPath="$PROJECT_DIR$/web/customer/handbags.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/customer/js/jquery.min.js" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/customer/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/js/jquery.min.js" afterPath="$PROJECT_DIR$/web/customer/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/admin/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/admin/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/login.jsp" afterPath="$PROJECT_DIR$/web/admin/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/customer/service.html" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/customer/service.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/service.html" afterPath="$PROJECT_DIR$/web/customer/service.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/customer/shoes.html" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/customer/shoes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/shoes.html" afterPath="$PROJECT_DIR$/web/customer/shoes.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/struts.xml" afterPath="$PROJECT_DIR$/conf/struts.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/struts.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/struts.xml" afterPath="$PROJECT_DIR$/out/production/OnlineStore/struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/customer/css/style.css" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/customer/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/css/style.css" afterPath="$PROJECT_DIR$/web/customer/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/test.json" afterPath="$PROJECT_DIR$/web/admin/test.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/customer/wallets.html" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/customer/wallets.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/wallets.html" afterPath="$PROJECT_DIR$/web/customer/wallets.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\Users\zhuke\OnlineStore\web\customer\details.html" afterPath="$PROJECT_DIR$/web/customer/details.jsp" />
+      <change type="MOVED" beforePath="D:\Users\zhuke\OnlineStore\web\customer\index.html" afterPath="$PROJECT_DIR$/web/customer/index.jsp" />
     </list>
     <ignored path="OnlineStore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,6 +365,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -100,7 +393,50 @@
     <favorites_list name="OnlineStore" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="AddressAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/AddressAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="2052">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#718#719#0" expanded="true" />
+                <element signature="e#744#745#0" expanded="true" />
+                <element signature="e#786#787#0" expanded="true" />
+                <element signature="e#816#817#0" expanded="true" />
+                <element signature="e#855#856#0" expanded="true" />
+                <element signature="e#890#891#0" expanded="true" />
+                <element signature="e#946#947#0" expanded="true" />
+                <element signature="e#994#995#0" expanded="true" />
+                <element signature="e#1032#1033#0" expanded="true" />
+                <element signature="e#1066#1067#0" expanded="true" />
+                <element signature="e#1120#1121#0" expanded="true" />
+                <element signature="e#1166#1167#0" expanded="true" />
+                <element signature="e#1206#1207#0" expanded="true" />
+                <element signature="e#1242#1243#0" expanded="true" />
+                <element signature="e#1300#1301#0" expanded="true" />
+                <element signature="e#1350#1351#0" expanded="true" />
+                <element signature="e#1382#1383#0" expanded="true" />
+                <element signature="e#1413#1414#0" expanded="true" />
+                <element signature="e#1458#1459#0" expanded="true" />
+                <element signature="e#1498#1499#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pay.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/customer/pay.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.19101124" vertical-offset="519" max-vertical-offset="1134">
+              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -108,38 +444,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/web/admin/test.json" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/action/GetPage.java" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/test/TestGetpage.java" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/util/Goods2Json.java" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/Shop.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/GoodsPicture.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/Goods.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/Evaluation.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/Customer.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/COrder.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/Category.hbm.xml" />
+        <option value="$PROJECT_DIR$/web/customer/assets/fontopensans.font" />
+        <option value="$PROJECT_DIR$/web/customer/assets/jquery.min.js" />
+        <option value="$PROJECT_DIR$/web/customer/assets/jquery1.min.js" />
+        <option value="$PROJECT_DIR$/web/admin/login.jsp" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/dao/impl/ShopDaoImpl.java" />
+        <option value="$PROJECT_DIR$/web/customer/login.jsp" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/Shop.java" />
+        <option value="$PROJECT_DIR$/web/customer/index.jsp" />
+        <option value="$PROJECT_DIR$/web/customer/sale.html" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/dao/GoodsDao.java" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/test/SpringWebBaseTest.java" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/dao/impl/GoodsDaoImpl.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/action/DeleteGoodsAction.java" />
-        <option value="$PROJECT_DIR$/conf/struts.xml" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/action/FindGoodsAction.java" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/test/HibernateTableTest.java" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/test/TestSpringBase.java" />
-        <option value="$PROJECT_DIR$/conf/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/web/admin/mannage_goods.jsp" />
-        <option value="$PROJECT_DIR$/web/1.jsp" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/action/FileUploadAction.java" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/test/TestGetPageGoods.java" />
+        <option value="$PROJECT_DIR$/web/admin/add_goods.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/add_goods_success.html" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/action/AddGoodsAction.java" />
+        <option value="$PROJECT_DIR$/web/admin/add_goods_success.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/mannage_goods.jsp" />
+        <option value="$PROJECT_DIR$/web/customer/logout.jsp" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/Goods.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/Shop.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/dao/GoodPicDao.java" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/action/RegisterAction.java" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/test/GoodsPic2JsonTest.java" />
+        <option value="$PROJECT_DIR$/web/admin/test.json" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/util/GoodsPic2Json.java" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/util/Conf.java" />
+        <option value="$PROJECT_DIR$/web/customer/cart_add_succ.jsp" />
+        <option value="$PROJECT_DIR$/web/customer/test.jsp" />
+        <option value="$PROJECT_DIR$/web/customer/sale.jsp" />
+        <option value="$PROJECT_DIR$/web/customer/sale_pre.jsp" />
+        <option value="$PROJECT_DIR$/web/1.jsp" />
+        <option value="$PROJECT_DIR$/web/customer/js/jquery.min.js" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/action/CartAction.java" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/action/DeleteGoodsAction.java" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/action/FindGoodsAction.java" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/action/GetPage.java" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/action/GoodsDetailAction.java" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/action/LoginAction.java" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/action/PayAction.java" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/Address.java" />
+        <option value="$PROJECT_DIR$/web/customer/blank.html" />
+        <option value="$PROJECT_DIR$/web/customer/details.jsp" />
+        <option value="$PROJECT_DIR$/web/customer/css/style.css" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/dao/AddressDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/dao/AddressDao.java" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/dao/impl/AddressDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/test/AddressTest.java" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/action/AddressAction.java" />
+        <option value="$PROJECT_DIR$/conf/struts.xml" />
+        <option value="$PROJECT_DIR$/web/customer/pay.jsp" />
       </list>
     </option>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -172,8 +535,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -184,6 +545,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -204,41 +567,18 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.29229" />
     <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\zhuke\OnlineStore\web\customer\js" />
+      <recent name="D:\Users\zhuke\OnlineStore\web\admin\assets" />
+      <recent name="D:\Users\zhuke\OnlineStore\web\customer\assets" />
+      <recent name="D:\Users\zhuke\OnlineStore\web\customer" />
       <recent name="D:\Users\zhuke\OnlineStore\web\WEB-INF\lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.TOMCAT">
-    <configuration default="false" name="Goods2Json.testthis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.onlinestore.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="OnlineStore" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.onlinestore.util" />
-      <option name="MAIN_CLASS_NAME" value="com.onlinestore.util.Goods2Json" />
-      <option name="METHOD_NAME" value="testthis" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.AddressTest.testAddAddress">
     <configuration default="false" name="TestGetpage.getPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -267,7 +607,7 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="HibernateTableTest.testall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestGetPageGoods.getTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.onlinestore.test.*" />
@@ -278,8 +618,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.onlinestore.test" />
-      <option name="MAIN_CLASS_NAME" value="com.onlinestore.test.HibernateTableTest" />
-      <option name="METHOD_NAME" value="testall" />
+      <option name="MAIN_CLASS_NAME" value="com.onlinestore.test.TestGetPageGoods" />
+      <option name="METHOD_NAME" value="getTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -295,9 +635,88 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="1.jsp" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/1.jsp">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+    <configuration default="false" name="GoodsPic2JsonTest.goodspictest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.onlinestore.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="OnlineStore" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.onlinestore.test" />
+      <option name="MAIN_CLASS_NAME" value="com.onlinestore.test.GoodsPic2JsonTest" />
+      <option name="METHOD_NAME" value="goodspictest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="AddressTest.testGetAddress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.onlinestore.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="OnlineStore" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.onlinestore.test" />
+      <option name="MAIN_CLASS_NAME" value="com.onlinestore.test.AddressTest" />
+      <option name="METHOD_NAME" value="testGetAddress" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="AddressTest.testAddAddress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.onlinestore.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="OnlineStore" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.onlinestore.test" />
+      <option name="MAIN_CLASS_NAME" value="com.onlinestore.test.AddressTest" />
+      <option name="METHOD_NAME" value="testAddAddress" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -692,23 +1111,28 @@
       </ConfigurationWrapper>
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.Goods2Json.testthis" />
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.TOMCAT" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.TestGetpage.getPageTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.HibernateTableTest.testall" />
-      <item index="3" class="java.lang.String" itemvalue="Tomcat Server.TOMCAT" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.1.jsp" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestGetPageGoods.getTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.GoodsPic2JsonTest.goodspictest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.AddressTest.testGetAddress" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.AddressTest.testAddAddress" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.1.jsp" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.HibernateTableTest.testall" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestGetpage.getPageTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.Goods2Json.testthis" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AddressTest.testAddAddress" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AddressTest.testGetAddress" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.GoodsPic2JsonTest.goodspictest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestGetPageGoods.getTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestGetpage.getPageTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -722,12 +1146,16 @@
       <workItem from="1427911572166" duration="2599000" />
       <workItem from="1427914191190" duration="2176000" />
       <workItem from="1427956198080" duration="3822000" />
-      <workItem from="1427986399237" duration="5955000" />
+      <workItem from="1427986399237" duration="6029000" />
+      <workItem from="1428283710677" duration="156000" />
+      <workItem from="1428285606515" duration="30862000" />
+      <workItem from="1428474807059" duration="11778000" />
+      <workItem from="1428505576943" duration="5206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14794000" />
+    <option name="totallyTimeSpent" value="62870000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -736,23 +1164,23 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7908497" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.9330065" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7908497" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5702614" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25189108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -784,7 +1212,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -793,261 +1221,397 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/ModifyGoodsAction.java">
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/Address.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1320" max-vertical-offset="1890">
-          <caret line="99" column="22" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/impl/GoodsDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2700">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.46312177" vertical-offset="0" max-vertical-offset="583">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/Goods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="2511">
+        <state vertical-scroll-proportion="0.0" vertical-offset="243" max-vertical-offset="2511">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="215" max-vertical-offset="2862">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/impl/GoodsPicDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23156089" vertical-offset="0" max-vertical-offset="583">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/ShopDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="184" max-vertical-offset="1080">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.083333" vertical-offset="6072" max-vertical-offset="9558">
+          <caret line="241" column="56" selection-start-line="241" selection-start-column="56" selection-end-line="241" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/test/TestGetPageGoods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.509434" vertical-offset="0" max-vertical-offset="729">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/test/GoodsPic2JsonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="567">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/util/GoodsPic2Json.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="1620">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/logout.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.5" vertical-offset="0" max-vertical-offset="648">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/add_goods_success.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="459">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/mannage_goods.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5" vertical-offset="6588" max-vertical-offset="10152">
+          <caret line="254" column="11" selection-start-line="236" selection-start-column="8" selection-end-line="254" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="162">
+          <caret line="0" column="691" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="691" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/util/Conf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32418525" vertical-offset="0" max-vertical-offset="583">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/util/Goods2Json.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="917" max-vertical-offset="3321">
+          <caret line="58" column="56" selection-start-line="54" selection-start-column="8" selection-end-line="58" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0894737" vertical-offset="0" max-vertical-offset="918">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.88848263" vertical-offset="0" max-vertical-offset="729">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/shoes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7263">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/wallets.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.30337077" vertical-offset="405" max-vertical-offset="7263">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/cart_add_succ.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24680074" vertical-offset="0" max-vertical-offset="594">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3539326" vertical-offset="2268" max-vertical-offset="6291">
+          <caret line="91" column="6" selection-start-line="91" selection-start-column="6" selection-end-line="91" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/sale_pre.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.5301645" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55575866" vertical-offset="47" max-vertical-offset="756">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/js/jquery-1.11.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33268103" vertical-offset="217909" max-vertical-offset="278154">
+          <caret line="8089" column="50" selection-start-line="8089" selection-start-column="49" selection-end-line="8089" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.264045" vertical-offset="6318" max-vertical-offset="9612">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <marker date="1428298146130" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/FileUploadAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28421053" vertical-offset="0" max-vertical-offset="1539">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/struts.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/FindGoodsAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="474" max-vertical-offset="1134">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.3327616" vertical-offset="22" max-vertical-offset="1431">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/GetPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37049744" vertical-offset="0" max-vertical-offset="1701">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/GoodsDetailAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37049744" vertical-offset="0" max-vertical-offset="891">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/LoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37049744" vertical-offset="0" max-vertical-offset="2187">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/ModifyGoodsAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1134" max-vertical-offset="1890">
-          <caret line="98" column="31" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.42631578" vertical-offset="0" max-vertical-offset="1890">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/impl/GoodsDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/RegisterAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2511">
+        <state vertical-scroll-proportion="0.37049744" vertical-offset="0" max-vertical-offset="2025">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40175438" vertical-offset="27203" max-vertical-offset="75816">
+          <caret line="1016" column="38" selection-start-line="1016" selection-start-column="36" selection-end-line="1016" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/blank.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/sale.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8628886" vertical-offset="3402" max-vertical-offset="8100">
+          <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33268103" vertical-offset="964" max-vertical-offset="51111">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/details.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4722222" vertical-offset="244" max-vertical-offset="13554">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <marker date="1428510716728" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/PayAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41680962" vertical-offset="108" max-vertical-offset="864">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/GoodsDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="702">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/spring-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="942" max-vertical-offset="1917">
-          <caret line="45" column="56" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.32418525" vertical-offset="0" max-vertical-offset="810">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/GoodPicDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.048387095" vertical-offset="0" max-vertical-offset="558">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09677419" vertical-offset="0" max-vertical-offset="558">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="534">
-          <caret line="0" column="89" selection-start-line="0" selection-start-column="89" selection-end-line="0" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23684211" vertical-offset="0" max-vertical-offset="918">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.27787307" vertical-offset="0" max-vertical-offset="583">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/impl/CustomerDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="767" max-vertical-offset="1593">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2009" max-vertical-offset="2646">
+          <caret line="114" column="24" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+          <folding>
+            <element signature="e#2512#2513#0" expanded="true" />
+            <element signature="e#2544#2545#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/impl/GoodsPictureDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/impl/AddressDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="53" max-vertical-offset="1215">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/impl/ShopDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="1593">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/GoodsPictureDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32418525" vertical-offset="0" max-vertical-offset="583">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/ShopDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32418525" vertical-offset="0" max-vertical-offset="1080">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/CustomerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32418525" vertical-offset="0" max-vertical-offset="1134">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33157894" vertical-offset="0" max-vertical-offset="27270">
-          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="1080">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/onlinestore/test/TestGetpage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41680962" vertical-offset="0" max-vertical-offset="837">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="783">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/util/Goods2Json.java">
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/test/AddressTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14736842" vertical-offset="321" max-vertical-offset="3321">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="254" max-vertical-offset="837">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/GetPage.java">
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/AddGoodsAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1431">
-          <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3348">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/DeleteGoodsAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1188">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/Address.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="1728">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/GoodsPicture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="1350">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/Shop.hbm.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/AddressDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49056605" vertical-offset="146" max-vertical-offset="729">
-          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/Evaluation.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56842107" vertical-offset="0" max-vertical-offset="570">
-          <caret line="12" column="100" selection-start-line="12" selection-start-column="100" selection-end-line="12" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/Customer.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5831904" vertical-offset="227" max-vertical-offset="810">
-          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/COrder.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6631579" vertical-offset="162" max-vertical-offset="756">
-          <caret line="20" column="109" selection-start-line="20" selection-start-column="109" selection-end-line="20" selection-end-column="109" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/Address.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46312177" vertical-offset="0" max-vertical-offset="583">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/Category.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6631579" vertical-offset="0" max-vertical-offset="621">
-          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/ModifyGoodsAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.8421052" vertical-offset="0" max-vertical-offset="1890">
-          <caret line="99" column="39" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/impl/GoodsDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5831904" vertical-offset="2306" max-vertical-offset="2889">
-          <caret line="110" column="24" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/spring-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33684212" vertical-offset="1023" max-vertical-offset="1917">
-          <caret line="45" column="56" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/GoodsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.92624354" vertical-offset="0" max-vertical-offset="756">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/struts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6576087" vertical-offset="663" max-vertical-offset="1296">
-          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        <state vertical-scroll-proportion="2.2717392" vertical-offset="231" max-vertical-offset="1728">
+          <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1055,136 +1619,41 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/FindGoodsAction.java">
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/AddressAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.871355" vertical-offset="0" max-vertical-offset="1971">
-          <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/DeleteGoodsAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46312177" vertical-offset="0" max-vertical-offset="1296">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6101695" vertical-offset="0" max-vertical-offset="756">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/test/TestSpringBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52380955" vertical-offset="27" max-vertical-offset="702">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/struts.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="567">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/test/HibernateTableTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68231046" vertical-offset="0" max-vertical-offset="3591">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="2052">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="31" />
           <folding>
-            <element signature="e#887#896#0" expanded="true" />
-            <element signature="e#1032#1041#0" expanded="true" />
-            <element signature="e#2138#2152#0" expanded="true" />
-            <element signature="e#2303#2317#0" expanded="true" />
-            <element signature="e#2799#2811#0" expanded="true" />
-            <element signature="e#3341#3351#0" expanded="true" />
-            <element signature="e#3573#3583#0" expanded="true" />
-            <element signature="e#3753#3763#0" expanded="true" />
-            <element signature="e#3883#3893#0" expanded="true" />
-            <element signature="e#3991#4001#0" expanded="true" />
-            <element signature="e#4446#4453#0" expanded="true" />
-            <element signature="e#4640#4648#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
+            <element signature="e#1300#1301#0" expanded="true" />
+            <element signature="e#1350#1351#0" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1413#1414#0" expanded="true" />
+            <element signature="e#1458#1459#0" expanded="true" />
+            <element signature="e#1498#1499#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/hibernate.cfg.xml">
+    <entry file="file://$PROJECT_DIR$/web/customer/pay.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56137186" vertical-offset="121" max-vertical-offset="675">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.19101124" vertical-offset="519" max-vertical-offset="1134">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/Goods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.51929826" vertical-offset="566" max-vertical-offset="2511">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/Goods.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.509434" vertical-offset="243" max-vertical-offset="837">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/GoodsPicture.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28421053" vertical-offset="0" max-vertical-offset="570">
-          <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/mannage_goods.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.923218" vertical-offset="3746" max-vertical-offset="10152">
-          <caret line="279" column="27" selection-start-line="279" selection-start-column="27" selection-end-line="279" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.194445" vertical-offset="74" max-vertical-offset="675">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/FileUploadAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="618" max-vertical-offset="1539">
-          <caret line="44" column="63" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/util/Conf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27787307" vertical-offset="0" max-vertical-offset="583">
-          <caret line="6" column="52" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/AddGoodsAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5263158" vertical-offset="2373" max-vertical-offset="3267">
-          <caret line="156" column="48" selection-start-line="156" selection-start-column="48" selection-end-line="156" selection-end-column="48" />
-          <folding>
-            <element signature="e#3561#3575#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

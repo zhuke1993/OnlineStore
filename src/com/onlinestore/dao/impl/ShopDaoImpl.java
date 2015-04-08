@@ -51,6 +51,12 @@ public class ShopDaoImpl implements ShopDao {
         return 0;
     }
 
+    /**
+     * 判断是否登陆成功
+     *
+     * @param shop
+     * @return ==-1登陆失败，>0登陆成功，返回登陆成功的id
+     */
     @Override
     public int findLogin(Shop shop) {
         Session session = sessionFactory.getCurrentSession();

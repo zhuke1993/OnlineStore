@@ -13,19 +13,29 @@
     <constant name="struts.i18n.encoding" value="UTF-8"/>
     <package name="struts" extends="struts-default" namespace="/">
         <!--在这里配置的class就需要填写spring中某action的id-->
+        <!--注册-->
         <action name="register" class="registerAction">
-            <result name="success" type="redirect">/admin/login.jsp</result>
+            <result name="shop_success" type="redirect">/admin/login.jsp</result>
+            <result name="c_success" type="redirect">/customer/login.jsp</result>
         </action>
+        <!--登陆-->
         <action name="login" class="loginAction">
             <result name="success" type="redirect">/admin/index.jsp</result>
             <result name="input" type="redirect">/admin/login.jsp</result>
+            <result name="c_success" type="redirect">/customer/index.jsp</result>
+            <result name="c_input" type="redirect">/customer/login.jsp</result>
         </action>
         <action name="fileUpload" class="fileUploadAction">
             <result type="redirect" name="success">/1.jsp</result>
             <result type="redirect" name="input">/index.jsp</result>
         </action>
+        <!--添加商品-->
         <action name="addGoods" class="addGoodsAction">
-            <result type="redirect" name="success">/1.jsp</result>
+            <result type="redirect" name="success">/admin/add_goods_success.jsp</result>
+        </action>
+        <!--付款-->
+        <action name="pay" class="payAction">
+            <result name="success">/customer/pay_result.jsp</result>
         </action>
         <action name="getPage" class="getPage">
             <result name="null"></result>
@@ -37,6 +47,12 @@
             <result name="null"></result>
         </action>
         <action name="findGoods" class="findGoodsAction">
+            <result name="null"></result>
+        </action>
+        <action name="goodsDetail" class="goodsDetailAction">
+            <result name="null"></result>
+        </action>
+        <action name="address" class="addressAction">
             <result name="null"></result>
         </action>
     </package>

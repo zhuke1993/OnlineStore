@@ -27,15 +27,25 @@ public class Shop {
     public Shop() {
     }
 
-    public Shop(String name, String pwd, String phone, String email, Date reg_date, int credit, String brief) {
+    public Shop(String name, String pwd, String phone, String email, Date reg_date, int credit) {
         this.name = name;
         this.pwd = pwd;
         this.phone = phone;
         this.email = email;
         this.reg_date = reg_date;
         this.credit = credit;
-        this.brief = brief;
     }
+
+    public Shop(String name, String pwd, String phone, String email, Date reg_date, int credit, String bief) {
+        this.name = name;
+        this.pwd = pwd;
+        this.phone = phone;
+        this.email = email;
+        this.reg_date = reg_date;
+        this.credit = credit;
+        this.brief = bief;
+    }
+
 
     @Override
     public String toString() {

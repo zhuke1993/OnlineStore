@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
+import javax.persistence.metamodel.SetAttribute;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -158,11 +159,14 @@ public class AddGoodsAction extends DefaultActionSupport {
                     GoodsPicture goodsPicture = new GoodsPicture(goods, url);
                     pictureDao.addGoodsPicture(goodsPicture);
                     goodsPictures.add(goodsPicture);
+                    ServletActionContext.getRequest().getSession().setAttribute("add_goods_msg","上传成功");
                 } else {
                     System.out.println("用户未登陆，或者登陆时限过期");
+                   ServletActionContext.getRequest().getSession().setAttribute("add_goods_msg","用户未登陆，或者登陆时限过期");
                 }
             } else {
                 System.out.println("用户上传了非法文件类型");
+               ServletActionContext.getRequest().getSession().setAttribute("add_goods_msg","用户上传了非法文件类型");
             }
             goods.setPictureSet(goodsPictures);
         }

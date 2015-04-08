@@ -2,6 +2,7 @@ package com.onlinestore.dao;
 
 import com.onlinestore.entity.Goods;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,4 +22,6 @@ public interface GoodsDao {
     public void modifyGoods(Goods goods);
 
     public void deleteGoods(int goods_id);
+
+    public ArrayList<Goods> getGoodsPage(int page, int rows);
 }
