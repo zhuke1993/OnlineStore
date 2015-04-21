@@ -17,9 +17,5 @@
             <key column="customer_id"></key>
             <one-to-many class="com.onlinestore.entity.Address"/>
         </set>
-        <set name="orders" lazy="false">
-            <key column="customer_id"></key>
-            <one-to-many class="com.onlinestore.entity.COrder"/>
-        </set>
     </class>
 </hibernate-mapping>

@@ -10,6 +10,8 @@ import org.springframework.stereotype.Controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.util.Map;
 
 /**
  * Created by zhuke on 2015/3/30.
@@ -60,13 +62,18 @@ public class GetPage extends DefaultActionSupport {
 
     @Override
     public String execute() throws Exception {
+        Map session = ServletActionContext.getContext().getSession();
         if (flag == null) {
+            int lg_id = 0;
+            if (session.get("lg_id").toString() != null) {
+                lg_id = Integer.parseInt(session.get("shop_lg_id").toString());
+            }
             HttpServletRequest request = ServletActionContext.getRequest();
             HttpServletResponse response = ServletActionContext.getResponse();
             request.setCharacterEncoding("UTF-8");
             response.setCharacterEncoding("UTF-8");
             System.out.println("page=" + page + "\trows=" + rows);
-            response.getWriter().write(dao.allList(1, page, rows));
+            response.getWriter().write(dao.allList(lg_id, page, rows));
             return null;
         } else {
             HttpServletRequest request = ServletActionContext.getRequest();
@@ -74,7 +81,7 @@ public class GetPage extends DefaultActionSupport {
             request.setCharacterEncoding("UTF-8");
             response.setCharacterEncoding("UTF-8");
             System.out.println("用户请求获得商品列表");
-            request.getSession().setAttribute("goodsPage", dao.getGoodsPage(page, rows));
+            request.getSession().setAttribute("goodsPage", dao.allList());
             return null;
         }
 

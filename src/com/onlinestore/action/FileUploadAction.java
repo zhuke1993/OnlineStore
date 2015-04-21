@@ -50,7 +50,7 @@ public class FileUploadAction extends DefaultActionSupport {
     public String execute() throws Exception {
 
         for (int i = 0; i < filesFileName.size(); i++) {
-            String savePath =  ServletActionContext.getServletContext().getRealPath("/")+"upload/"+ ActionContext.getContext().getSession().get("lg_id");
+            String savePath =  ServletActionContext.getServletContext().getRealPath("/")+"upload/"+ ActionContext.getContext().getSession().get("shop_lg_id");
             InputStream is = new FileInputStream(files.get(i));
             File f = new File(savePath);
             if (!f.exists()) {

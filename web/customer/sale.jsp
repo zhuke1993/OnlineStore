@@ -88,8 +88,8 @@
                 </ul>
             </div>
             <div class="h_search">
-                <form>
-                    <input type="text" value="">
+                <form method="post" action="searchGoods.action">
+                    <input type="text" name="info">
                     <input type="submit" value="">
                 </form>
             </div>
@@ -169,11 +169,12 @@
                         <c:forEach items="${goodsPage}" var="g">
                             <div class="portfolio card" data-cat="card">
                                 <div class="portfolio-wrapper">
-                                    <a  href="details.jsp?goods_id=${g.id}">
+                                    <a href="details.jsp?goods_id=${g.id}">
                                         <c:forEach items="${g.pictureSet}" var="p" begin="0" end="0">
                                             <img src="${p.url}" alt="${g.name}"/>
                                         </c:forEach>
                                     </a>
+
                                     <div class="label">
                                         <div class="label-text">
                                             <a class="text-title">${g.name}</a>

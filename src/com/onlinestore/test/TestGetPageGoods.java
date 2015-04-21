@@ -19,7 +19,7 @@ public class TestGetPageGoods extends SpringWebBaseTest {
 
     @Test
     public void getTest() {
-        ArrayList<Goods> goodses = dao.getGoodsPage(1, 4);
+        ArrayList<Goods> goodses = dao.getGoodsPage(2, 1, 4);
         for (Goods g : goodses) {
             System.out.println(g);
         }

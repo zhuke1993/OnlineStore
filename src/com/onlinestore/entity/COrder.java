@@ -1,17 +1,11 @@
 package com.onlinestore.entity;
 
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
-
 import java.util.Date;
 import java.util.Set;
 
 /**
- * Created by zhuke on 2015/3/1.
- * 订单
+ * Created by zhuke on 2015/4/20.
  */
-@Component
-@Scope("prototype")
 public class COrder {
     private int id;
     private Customer customer;
@@ -22,44 +16,19 @@ public class COrder {
     private Date bargainDate;//成交时间
     private Date paymentDate;//付款时间
     private Date confirmDate;//确认时间
-    private Set<Goods> goodsSet;//商品列表
+    private Set<Goods2Num> goods2NumSet;//商品列表
+    private Address address;//邮寄地址*/
 
     public COrder() {
     }
 
-    public COrder(Customer customer, Shop shop, double price, double postage, int status, Date bargainDate, Date paymentDate, Date confirmDate) {
-        this.customer = customer;
-        this.shop = shop;
+    public COrder(double price, double postage, int status, Date bargainDate, Date paymentDate, Date confirmDate) {
         this.price = price;
         this.postage = postage;
         this.status = status;
         this.bargainDate = bargainDate;
         this.paymentDate = paymentDate;
         this.confirmDate = confirmDate;
-    }
-
-    @Override
-    public String toString() {
-        return "COrder{" +
-                "id=" + id +
-                ", customer=" + customer +
-                ", shop=" + shop.getName() +
-                ", price=" + price +
-                ", postage=" + postage +
-                ", status=" + status +
-                ", bargainDate=" + bargainDate +
-                ", paymentDate=" + paymentDate +
-                ", confirmDate=" + confirmDate +
-                ", goodsSet=" + goodsSet.size() +
-                '}';
-    }
-
-    public Set<Goods> getGoodsSet() {
-        return goodsSet;
-    }
-
-    public void setGoodsSet(Set<Goods> goodsSet) {
-        this.goodsSet = goodsSet;
     }
 
     public int getId() {
@@ -132,5 +101,38 @@ public class COrder {
 
     public void setConfirmDate(Date confirmDate) {
         this.confirmDate = confirmDate;
+    }
+
+    public Set<Goods2Num> getGoods2NumSet() {
+        return goods2NumSet;
+    }
+
+    public void setGoods2NumSet(Set<Goods2Num> goods2NumSet) {
+        this.goods2NumSet = goods2NumSet;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "COrder{" +
+                "id=" + id +
+                ", customer=" + customer.getName() +
+                ", shop=" + shop +
+                ", price=" + price +
+                ", postage=" + postage +
+                ", status=" + status +
+                ", bargainDate=" + bargainDate +
+                ", paymentDate=" + paymentDate +
+                ", confirmDate=" + confirmDate +
+                ", goods2NumSet=" + goods2NumSet.size() +
+                ", address=" + address.getDetailAddress() +
+                '}';
     }
 }

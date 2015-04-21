@@ -1,1 +1,37 @@
-{"prod_1": {"main": {"orig": "http://localhost:8080/1/DSC_0138.JPG","main": "http://localhost:8080/1/DSC_0138.JPG","thumb": "http://localhost:8080/1/DSC_0138.JPG","label": ""},"gallery":{  "item_0": {"orig": "http://localhost:8080/1/DSC_0138.JPG","main": "http://localhost:8080/1/DSC_0138.JPG","thumb": "http://localhost:8080/1/DSC_0138.JPG","label": ""}, "item_1": {"orig": "http://localhost:8080/1/DSC_0139.JPG","main": "http://localhost:8080/1/DSC_0139.JPG","thumb": "http://localhost:8080/1/DSC_0139.JPG","label": ""}, "item_2": {"orig": "http://localhost:8080/1/DSC_0140.JPG","main": "http://localhost:8080/1/DSC_0140.JPG","thumb": "http://localhost:8080/1/DSC_0140.JPG","label": ""}}}}
+[
+  {
+    "id": 1,
+    "receiverName": "朱轲",
+    "phoneNumber": "18883283704",
+    "detailAddress": "重庆市南岸区重庆邮电大学",
+    "postCode": 400065
+  },
+  {
+    "id": 2,
+    "receiverName": "张三",
+    "phoneNumber": "18883283704",
+    "detailAddress": "重庆市南岸区重庆邮电大学",
+    "postCode": 400065
+  },
+  {
+    "id": 3,
+    "receiverName": "李四",
+    "phoneNumber": "18883283704",
+    "detailAddress": "重庆市南岸区重庆邮电大学",
+    "postCode": 400065
+  },
+  {
+    "id": 4,
+    "receiverName": "王老五",
+    "phoneNumber": "18883283704",
+    "detailAddress": "重庆市南岸区重庆邮电大学",
+    "postCode": 400065
+  },
+  {
+    "id": 5,
+    "receiverName": "zhangzhang",
+    "phoneNumber": "12346",
+    "detailAddress": "重庆市南岸区重庆邮电大学",
+    "postCode": 123456
+  }
+]

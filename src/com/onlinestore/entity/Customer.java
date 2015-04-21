@@ -19,7 +19,6 @@ public class Customer {
     private String email;
     private Date reg_date;//注册时间
     private Set<Address> Addresses;//收货地址
-    private Set<COrder> orders;//订单
     private int level;
 
     @Override
@@ -120,11 +119,4 @@ public class Customer {
         Addresses = addresses;
     }
 
-    public Set<COrder> getOrders() {
-        return orders;
-    }
-
-    public void setOrders(Set<COrder> orders) {
-        this.orders = orders;
-    }
 }

@@ -13,7 +13,7 @@ import java.util.Set;
  */
 @Component
 @Scope("prototype")
-public class Shop {
+public class Shop implements Comparable {
     private int id;
     private String name;
     private String pwd;
@@ -132,5 +132,15 @@ public class Shop {
 
     public void setBrief(String brief) {
         this.brief = brief;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        if (this.getId() == ((Shop) o).getId()) {
+            return 0;
+        } else if (this.getId() > ((Shop) o).getId()) {
+            return 1;
+        }
+        return -1;
     }
 }

@@ -714,7 +714,7 @@
                         <br><br><br><br><br><br><br><br><br><br><br><br>
 
                         <div class="widget-box">
-                            <button class="btn btn-info" type="button" onblur="return $('#add_goods_form').submit()">
+                            <button class="btn btn-info" type="button" onclick="return $('#add_goods_form').submit()">
                                 <i class="icon-ok bigger-110"></i>
                                 Submit
                             </button>

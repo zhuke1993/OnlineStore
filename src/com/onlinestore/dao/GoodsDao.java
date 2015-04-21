@@ -1,8 +1,10 @@
 package com.onlinestore.dao;
 
 import com.onlinestore.entity.Goods;
+import com.onlinestore.entity.Shop;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -15,13 +17,19 @@ public interface GoodsDao {
 
     public List allList(int shop_id);
 
+    public List allList();
+
     public Goods findGoods(int id);
 
     public Goods findGoods(String name);
+
+    public List<Goods> findGoods_Search(String name);
 
     public void modifyGoods(Goods goods);
 
     public void deleteGoods(int goods_id);
 
-    public ArrayList<Goods> getGoodsPage(int page, int rows);
+    public ArrayList<Goods> getGoodsPage(int shop_id, int page, int rows);
+
+    public HashMap<Goods, Shop> findShopids(int[] goods_ids);
 }

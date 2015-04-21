@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -77,6 +78,17 @@ public class GoodsDaoImpl implements GoodsDao {
     }
 
     @Override
+    public List allList() {
+        Session session = sessionFactory.getCurrentSession();
+        ArrayList<Goods> list = new ArrayList<Goods>();
+        String s;
+        s = "from Goods as g";
+        Query q = session.createQuery(s);
+        list = (ArrayList<Goods>) q.list();
+        return list;
+    }
+
+    @Override
     public Goods findGoods(int id) {
         Session session = sessionFactory.getCurrentSession();
         return (Goods) session.get(Goods.class, id);
@@ -89,6 +101,17 @@ public class GoodsDaoImpl implements GoodsDao {
         query.setParameter(0, name);
         if (query.list().size() > 0) {
             return (Goods) query.list().get(0);
+        }
+        return null;
+    }
+
+    @Override
+    public List<Goods> findGoods_Search(String name) {
+        Session session = sessionFactory.getCurrentSession();
+        Query query = session.createQuery("from Goods where name like ?");
+        query.setParameter(0, "%" + name + "%");
+        if (query.list().size() > 0) {
+            return query.list();
         }
         return null;
     }
@@ -121,15 +144,32 @@ public class GoodsDaoImpl implements GoodsDao {
      * @return 存储有一页goods信息的arraylist
      */
     @Override
-    public ArrayList<Goods> getGoodsPage(int page, int rows) {
+    public ArrayList<Goods> getGoodsPage(int shop_id, int page, int rows) {
         Session session = sessionFactory.getCurrentSession();
         ArrayList<Goods> list = new ArrayList<Goods>();
         String s;
-        s = "from Goods";
+        s = "from Goods where id=?";
         Query q = session.createQuery(s);
+        q.setParameter(0, shop_id);
         int total = q.list().size();
         q.setFirstResult(rows * (page - 1));
         q.setMaxResults(rows * page);
         return (ArrayList<Goods>) q.list();
+    }
+
+    /**
+     * 得到shop_ids
+     *
+     * @param goods_ids 商品id列表
+     * @return 商店id列表
+     */
+    @Override
+    public HashMap<Goods, Shop> findShopids(int[] goods_ids) {
+        Session session = sessionFactory.getCurrentSession();
+        HashMap<Goods, Shop> shopHashMap = new HashMap<Goods, Shop>();
+        for (int i : goods_ids) {
+            shopHashMap.put((Goods) session.get(Goods.class, i), ((Goods) session.get(Goods.class, i)).getShop());
+        }
+        return shopHashMap;
     }
 }

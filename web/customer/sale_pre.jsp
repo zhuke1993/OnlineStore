@@ -13,22 +13,21 @@
     <script src="js/jquery.min.js"></script>
 </head>
 <body>
-<c:if test="${empty goodsPage}">
-    <script>
-        jQuery.ajax({
-            url: 'getPage.action',
-            type: 'post',
-            dataType: 'text',
-            data: {
-                "flag": "customer",
-                "page": 1,
-                "rows": 12
-            },
-            success: function (data) {
-                window.location.href = "sale.jsp";
-            }
-        });
-    </script>
-</c:if>
+
+<script>
+    jQuery.ajax({
+        url: 'getPage.action',
+        type: 'post',
+        dataType: 'text',
+        data: {
+            "flag": "customer",
+            "page": 1,
+            "rows": 12
+        },
+        success: function (data) {
+            window.location.href = "sale.jsp";
+        }
+    });
+</script>
 </body>
 </html>

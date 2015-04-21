@@ -128,8 +128,8 @@ public class AddGoodsAction extends DefaultActionSupport {
     public String execute() throws Exception {
         Map session = ServletActionContext.getContext().getSession();
         int lg_id = 0;
-        if (session.get("lg_id").toString() != null) {
-            lg_id = Integer.parseInt(session.get("lg_id").toString());
+        if (session.get("shop_lg_id").toString() != null) {
+            lg_id = Integer.parseInt(session.get("shop_lg_id").toString());
         }
         String server_path = ServletActionContext.getRequest().getRealPath("/");
         Set<GoodsPicture> goodsPictures = new HashSet<GoodsPicture>();

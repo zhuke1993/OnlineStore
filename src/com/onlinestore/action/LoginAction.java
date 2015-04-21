@@ -68,6 +68,7 @@ public class LoginAction extends DefaultActionSupport {
 
     @Override
     public String execute() throws Exception {
+        //商家登陆
         if (flag == null) {
             Shop shop = new Shop();
             shop.setName(login_name);
@@ -76,7 +77,7 @@ public class LoginAction extends DefaultActionSupport {
             int id = dao.findLogin(shop);
             if (id > 0) {
                 //在session中加入登陆信息
-                session.put("lg_id", id);
+                session.put("shop_lg_id", id);
                 return SUCCESS;
             } else {
                 session.put("lg_msg", "登陆失败");
@@ -91,7 +92,7 @@ public class LoginAction extends DefaultActionSupport {
             int id = c_dao.findLogin(customer);
             if (id > 0) {
                 //在session中加入登陆信息
-                session.put("lg_id", id);
+                session.put("cus_lg_id", id);
                 return "c_success";
             } else {
                 session.put("lg_msg", "登陆失败");

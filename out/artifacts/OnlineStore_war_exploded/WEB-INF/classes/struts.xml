@@ -3,7 +3,6 @@
 <!DOCTYPE struts PUBLIC
         "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
         "http://struts.apache.org/dtds/struts-2.0.dtd">
-
 <struts>
     <constant name="struts.multipart.maxSize" value="1000000000"/>
     <constant name="struts.objectFactory" value="spring"/>
@@ -35,8 +34,21 @@
         </action>
         <!--付款-->
         <action name="pay" class="payAction">
-            <result name="success">/customer/pay_result.jsp</result>
+            <result type="redirect" name="success">/customer/orders.jsp</result>
         </action>
+        <!--查找商品-->
+        <action name="searchGoods" class="searchGoods">
+            <result name="success" type="redirect">/customer/sale.jsp</result>
+        </action>
+
+        <!--订单详情显示-->
+        <action name="orderDetail" class="orderDetailAction">
+            <result type="redirect" name="cus_order">/customer/orderDetails.jsp</result>
+            <result type="redirect" name="shop_order">/admin/orderDetails.jsp</result>
+            <result name="error">/error.html</result>
+        </action>
+
+
         <action name="getPage" class="getPage">
             <result name="null"></result>
         </action>
@@ -53,6 +65,9 @@
             <result name="null"></result>
         </action>
         <action name="address" class="addressAction">
+            <result name="null"></result>
+        </action>
+        <action name="orderGenerate" class="orderGenerate">
             <result name="null"></result>
         </action>
     </package>

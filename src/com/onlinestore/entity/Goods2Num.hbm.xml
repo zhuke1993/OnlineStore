@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class table="goods2num" name="com.onlinestore.entity.Goods2Num">
+        <id name="id" type="java.lang.Integer" column="goods2num_id">
+            <generator class="increment"/>
+        </id>
+        <many-to-one name="goods" class="com.onlinestore.entity.Goods"/>
+        <property name="num"/>
+    </class>
+</hibernate-mapping>

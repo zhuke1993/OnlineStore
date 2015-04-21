@@ -225,8 +225,8 @@
                                 <h4>规格:&nbsp;&nbsp;&nbsp;${detail_goods.specification}</h4>
                                 <h4>剩余库存:&nbsp;&nbsp;&nbsp;${detail_goods.inventory}</h4>
                                 <h4>邮费:&nbsp;&nbsp;&nbsp;${detail_goods.postage}</h4>
-                                <h4>购买数量:&nbsp;&nbsp;&nbsp;<select id="buy_num">
-                                    <option>1</option>
+                                <h4>购买数量:&nbsp;&nbsp;&nbsp;<select id="buy_num" >
+                                    <option selected>1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
@@ -252,7 +252,7 @@
                                     var arr = document.cookie.split("; ");
                                     for (var i = 0, len = arr.length; i < len; i++) {
                                         var item = arr[i].split("=");
-                                        $("#cart_item").append("<a href=details.jsp?goods_id=" + item[0] + ">商品id：" + item[0] + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数量：" + item[1] + "</a><br>");
+                                        $("#").append("<a href=details.jsp?goods_id=" + item[0] + ">商品id：" + item[0] + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数量：" + item[1] + "</a><br>");
                                     }
                                     $("#cart_item").append("<input type='button' value='结账' onclick='window.location.href=\"pay.jsp\"'>");
                                 </script>

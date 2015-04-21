@@ -1,7 +1,6 @@
 package com.onlinestore.test;
 
 import com.onlinestore.dao.GoodsDao;
-import com.onlinestore.entity.Goods;
 import org.hibernate.SessionFactory;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,4 +30,5 @@ public class TestGetpage extends SpringWebBaseTest {
     public void getPageTest() {
         System.out.println(dao.allList(1, 1, 10));
     }
+
 }

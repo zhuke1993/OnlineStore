@@ -12,10 +12,10 @@
 </head>
 <body>
 <%
-  Cookie[] cookies = request.getCookies();
-  for(Cookie c: cookies){
-    out.print(c.getName()+"\t"+c.getValue()+"<br>");
-  }
+    for (String s : request.getParameterValues("goods_ids")) {
+        out.println(s);
+    }
+    out.println(request.getParameter("address_id"));
 %>
 </body>
 </html>
