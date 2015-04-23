@@ -25,6 +25,8 @@ public interface GoodsDao {
 
     public List<Goods> findGoods_Search(String name);
 
+    public Goods findGoods_Search(int id);
+
     public void modifyGoods(Goods goods);
 
     public void deleteGoods(int goods_id);

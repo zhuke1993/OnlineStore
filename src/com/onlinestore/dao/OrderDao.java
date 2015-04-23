@@ -12,5 +12,11 @@ public interface OrderDao {
 
     public List<COrder> findCusOrder(int customer_id);
 
-    public List<COrder> findShopOrder(int shop_id);
+    public List<COrder> findShopOrder(int shop_id, int page, int row);
+
+    public void statusOrder(int id);
+
+    public void shop_deleOrder(int id);
+
+    public void cus_deleOrder(int id);
 }

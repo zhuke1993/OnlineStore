@@ -117,6 +117,11 @@ public class GoodsDaoImpl implements GoodsDao {
     }
 
     @Override
+    public Goods findGoods_Search(int id) {
+        return null;
+    }
+
+    @Override
     public void modifyGoods(Goods goods) {
         Session session = sessionFactory.getCurrentSession();
         Goods goods1 = (Goods) session.get(Goods.class, goods.getId());

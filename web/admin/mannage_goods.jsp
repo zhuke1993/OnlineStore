@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Administrator
+  User: zhuke
   Date: 2015/3/30
   Time: 15:51
   To change this
@@ -8,6 +8,13 @@
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+<c:if test="${empty shop_lg_id}">
+    <script>
+        alert("你还未登陆登录，请先登录");
+        window.location.href = "login.jsp";
+    </script>
+</c:if>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>

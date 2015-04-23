@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,8 +20,18 @@ import java.util.List;
 @Scope("request")
 public class SearchGoods extends DefaultActionSupport {
     private String info;
+    private int id;
+
     @Autowired
     private GoodsDao dao;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getInfo() {
         return info;
@@ -32,13 +43,26 @@ public class SearchGoods extends DefaultActionSupport {
 
     @Override
     public String execute() throws Exception {
-        List<Goods> goodsList = dao.findGoods_Search(info);
-        HttpServletRequest request = ServletActionContext.getRequest();
-        HttpServletResponse response = ServletActionContext.getResponse();
-        request.setCharacterEncoding("UTF-8");
-        response.setCharacterEncoding("UTF-8");
-        System.out.println("用户请求查找：" + info);
-        request.getSession().setAttribute("goodsPage", goodsList);
-        return SUCCESS;
+        if (info != null) {
+            List<Goods> goodsList = dao.findGoods_Search(info);
+            HttpServletRequest request = ServletActionContext.getRequest();
+            HttpServletResponse response = ServletActionContext.getResponse();
+            request.setCharacterEncoding("UTF-8");
+            response.setCharacterEncoding("UTF-8");
+            System.out.println("用户通过name请求查找：" + info);
+            request.getSession().setAttribute("goodsPage", goodsList);
+            return SUCCESS;
+        } else if (id != 0) {
+            List<Goods> goodsList = new ArrayList<Goods>();
+            goodsList.add(dao.findGoods(id));
+            HttpServletRequest request = ServletActionContext.getRequest();
+            HttpServletResponse response = ServletActionContext.getResponse();
+            request.setCharacterEncoding("UTF-8");
+            response.setCharacterEncoding("UTF-8");
+            System.out.println("用户通过id请求查找：" + id);
+            request.getSession().setAttribute("goodsPage", goodsList);
+            return SUCCESS;
+        }
+        return ERROR;
     }
 }

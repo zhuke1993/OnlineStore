@@ -65,7 +65,7 @@ public class GetPage extends DefaultActionSupport {
         Map session = ServletActionContext.getContext().getSession();
         if (flag == null) {
             int lg_id = 0;
-            if (session.get("lg_id").toString() != null) {
+            if (session.get("shop_lg_id").toString() != null) {
                 lg_id = Integer.parseInt(session.get("shop_lg_id").toString());
             }
             HttpServletRequest request = ServletActionContext.getRequest();

@@ -19,6 +19,24 @@ import javax.servlet.http.HttpSession;
 public class OrderDetailAction extends DefaultActionSupport {
     @Autowired
     private OrderDao dao;
+    private int row;
+    private int page;
+
+    public int getRow() {
+        return row;
+    }
+
+    public void setRow(int row) {
+        this.row = row;
+    }
+
+    public int getPage() {
+        return page;
+    }
+
+    public void setPage(int page) {
+        this.page = page;
+    }
 
     @Override
     public String execute() throws Exception {
@@ -32,7 +50,7 @@ public class OrderDetailAction extends DefaultActionSupport {
             return "cus_order";
         }
         if (session.getAttribute("shop_lg_id") != null) {
-            session.setAttribute("order_list", dao.findCusOrder(Integer.parseInt(session.getAttribute("shop_lg_id").toString())));
+            session.setAttribute("order_list", dao.findShopOrder(Integer.parseInt(session.getAttribute("shop_lg_id").toString()), page, row));
             return "shop_order";
         }
         return ERROR;

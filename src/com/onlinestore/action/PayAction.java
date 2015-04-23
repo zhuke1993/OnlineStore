@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
+import javax.servlet.http.HttpSession;
 import java.util.Map;
 
 /**
@@ -50,12 +51,13 @@ public class PayAction extends DefaultActionSupport {
     public String execute() throws Exception {
         //一个订单的必要条件为：
         //得到商品id列表，进行订单的数据库操作
-        Map session = ServletActionContext.getContext().getSession();
+        HttpSession session = ServletActionContext.getRequest().getSession();
         int lg_id = 0;
-        if (session.get("lg_id").toString() != null) {
-            lg_id = Integer.parseInt(session.get("cus_lg_id").toString());
+        if (session.getAttribute("cus_lg_id") != null) {
+            lg_id = Integer.parseInt(session.getAttribute("cus_lg_id").toString());
         }
         dao.addOrder(lg_id, goods_ids, goods_nums, address_id);
+        ServletActionContext.getRequest().getCookies();
         return SUCCESS;
     }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
@@ -56,10 +57,11 @@
                     </div>
 
                     <div class="space-6"></div>
-
-                    <%
-                        out.print("<p style='color:red'>"+session.getAttribute("lg_msg")+"</p>");
-                    %>
+                    <c:if test="${!empty lg_msg}">
+                        <p style='color:red'>
+                            <c:out value="${lg_msg}"></c:out>
+                        </p>
+                    </c:if>
 
                     <div class="row-fluid">
                         <div class="position-relative">

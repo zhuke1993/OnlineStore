@@ -3,11 +3,13 @@ package com.onlinestore.dao.impl;
 import com.onlinestore.dao.AddressDao;
 import com.onlinestore.entity.Address;
 import com.onlinestore.entity.Customer;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import java.util.Calendar;
 import java.util.Set;
 
 /**
@@ -17,11 +19,16 @@ import java.util.Set;
 public class AddressDaoImpl implements AddressDao {
     @Autowired
     private SessionFactory sessionFactory;
-
     @Override
     public Set<Address> findAddress(int customer_id) {
         Session session = sessionFactory.getCurrentSession();
         return ((Customer) session.get(Customer.class, customer_id)).getAddresses();
+    }
+
+    @Override
+    public Address findAddressByaddressId(int address_id) {
+        Session session = sessionFactory.getCurrentSession();
+        return (Address) session.get(Address.class, address_id);
     }
 
     @Override

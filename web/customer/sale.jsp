@@ -13,6 +13,11 @@
     <!-- start gallery_sale -->
     <script type="text/javascript" src="js/jquery.easing.min.js"></script>
     <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <c:if test="${empty goodsPage}">
+        <script>
+            window.location.href = "getPage.action?flag=customer&page=1&rows=12";
+        </script>
+    </c:if>
     <script type="text/javascript">
         $(function () {
 
@@ -77,13 +82,12 @@
             <div class="logo">
                 <a href="index.jsp"><img src="images/logo.png" alt=""/> </a>
             </div>
-            <div class="h_icon">
+            <div class="h_icon" id="cart_status">
                 <ul class="icon1 sub-icon1">
-                    <li><a class="active-icon c1" href="#"><i>$300</i></a>
-                        <ul class="sub-icon1 list">
-                            <li></li>
-                            <li></li>
+                    <li><a class="active-icon c1"></a>
+                        <ul class="sub-icon1 list" id="cart_item">
                         </ul>
+                        购物车
                     </li>
                 </ul>
             </div>
@@ -125,28 +129,6 @@
                     <li><a href="contact.html">Contact us</a></li>
                 </ul>
             </div>
-            <div class="top-nav">
-                <nav class="nav">
-                    <a href="#" id="w3-menu-trigger"> </a>
-                    <ul class="nav-list" style="">
-                        <li class="nav-item"><a class="active" href="index.jsp">Home</a></li>
-                        <li class="nav-item"><a href="sale.jsp">Sale</a></li>
-                        <li class="nav-item"><a href="handbags.html">Handbags</a></li>
-                        <li class="nav-item"><a href="accessories.html">Accessories</a></li>
-                        <li class="nav-item"><a href="shoes.html">Shoes</a></li>
-                        <li class="nav-item"><a href="service.html">Services</a></li>
-                        <li class="nav-item"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="search_box">
-                    <form>
-                        <input type="text" value="Search" onfocus="this.value = '';"
-                               onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
-                    </form>
-                </div>
-                <div class="clear"></div>
-                <script src="js/responsive.menu.js"></script>
-            </div>
             <div class="clear"></div>
         </div>
     </div>
@@ -158,13 +140,6 @@
             <!-- start gallery_sale  -->
             <div class="gallery1">
                 <div class="container">
-                    <ul id="filters" class="clearfix">
-                        <li><span class="filter active" data-filter="app card icon logo web">All</span></li>
-                        <li><span class="filter" data-filter="app card web">men</span></li>
-                        <li><span class="filter" data-filter="icon web card">women</span></li>
-                        <li><span class="filter" data-filter="web app icon card">Watches</span></li>
-                        <li><span class="filter" data-filter="icon app web logo">Accessories</span></li>
-                    </ul>
                     <div id="portfoliolist">
                         <c:forEach items="${goodsPage}" var="g">
                             <div class="portfolio card" data-cat="card">
@@ -174,11 +149,10 @@
                                             <img src="${p.url}" alt="${g.name}"/>
                                         </c:forEach>
                                     </a>
-
                                     <div class="label">
                                         <div class="label-text">
-                                            <a class="text-title">${g.name}</a>
-                                            <span class="text-category">${g.briefIntroduction}--￥${g.price}</span>
+                                            <p style="font-size: 15px;color: blue">${g.name}</p>
+                                            <p style="font-size: 15px;color: red">${g.briefIntroduction}--￥${g.price}</p>
                                         </div>
                                         <div class="label-bg"></div>
                                     </div>
@@ -193,69 +167,6 @@
                 <div class="clear"></div>
             </div>
             <!---End-gallery----->
-        </div>
-    </div>
-</div>
-<!-- start footer -->
-<div class="footer_bg">
-    <div class="wrap">
-        <div class="footer">
-            <!-- start grids_of_4 -->
-            <div class="grids_of_4">
-                <div class="grid1_of_4">
-                    <h4>featured sale</h4>
-                    <ul class="f_nav">
-                        <li><a href="">alexis Hudson</a></li>
-                        <li><a href="">american apparel</a></li>
-                        <li><a href="">ben sherman</a></li>
-                        <li><a href="">big buddha</a></li>
-                        <li><a href="">channel</a></li>
-                        <li><a href="">christian audigier</a></li>
-                        <li><a href="">coach</a></li>
-                        <li><a href="">cole haan</a></li>
-                    </ul>
-                </div>
-                <div class="grid1_of_4">
-                    <h4>mens store</h4>
-                    <ul class="f_nav">
-                        <li><a href="">alexis Hudson</a></li>
-                        <li><a href="">american apparel</a></li>
-                        <li><a href="">ben sherman</a></li>
-                        <li><a href="">big buddha</a></li>
-                        <li><a href="">channel</a></li>
-                        <li><a href="">christian audigier</a></li>
-                        <li><a href="">coach</a></li>
-                        <li><a href="">cole haan</a></li>
-                    </ul>
-                </div>
-                <div class="grid1_of_4">
-                    <h4>women store</h4>
-                    <ul class="f_nav">
-                        <li><a href="">alexis Hudson</a></li>
-                        <li><a href="">american apparel</a></li>
-                        <li><a href="">ben sherman</a></li>
-                        <li><a href="">big buddha</a></li>
-                        <li><a href="">channel</a></li>
-                        <li><a href="">christian audigier</a></li>
-                        <li><a href="">coach</a></li>
-                        <li><a href="">cole haan</a></li>
-                    </ul>
-                </div>
-                <div class="grid1_of_4">
-                    <h4>quick links</h4>
-                    <ul class="f_nav">
-                        <li><a href="">alexis Hudson</a></li>
-                        <li><a href="">american apparel</a></li>
-                        <li><a href="">ben sherman</a></li>
-                        <li><a href="">big buddha</a></li>
-                        <li><a href="">channel</a></li>
-                        <li><a href="">christian audigier</a></li>
-                        <li><a href="">coach</a></li>
-                        <li><a href="">cole haan</a></li>
-                    </ul>
-                </div>
-                <div class="clear"></div>
-            </div>
         </div>
     </div>
 </div>
@@ -282,10 +193,7 @@
             <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
             <!--end scroll_top_btn -->
             <div class="copy">
-                <p class="link">Copyright &copy; 2014.Company name All rights reserved.<a target="_blank"
-                                                                                          href="http://www.cssmoban.com/">
-                    &#x7F51;&#x9875;&#x6A21;&#x677F;</a> - More Templates <a href="http://www.cssmoban.com/"
-                                                                             target="_blank" title="模板之家">模板之家</a></p>
+                <p class="link">Copyright &copy; 2015.Company 余健华 All rights reserved.</p>
             </div>
             <div class="clear"></div>
         </div>

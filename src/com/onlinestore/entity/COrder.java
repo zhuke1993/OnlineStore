@@ -18,7 +18,8 @@ public class COrder {
     private Date confirmDate;//确认时间
     private Set<Goods2Num> goods2NumSet;//商品列表
     private Address address;//邮寄地址*/
-
+    private int shop_delete;//店家的逻辑删除，0-未删除，1-已删除
+    private int cus_delete;//用户的逻辑删除，同上
     public COrder() {
     }
 
@@ -29,6 +30,22 @@ public class COrder {
         this.bargainDate = bargainDate;
         this.paymentDate = paymentDate;
         this.confirmDate = confirmDate;
+    }
+
+    public int getShop_delete() {
+        return shop_delete;
+    }
+
+    public void setShop_delete(int shop_delete) {
+        this.shop_delete = shop_delete;
+    }
+
+    public int getCus_delete() {
+        return cus_delete;
+    }
+
+    public void setCus_delete(int cus_delete) {
+        this.cus_delete = cus_delete;
     }
 
     public int getId() {

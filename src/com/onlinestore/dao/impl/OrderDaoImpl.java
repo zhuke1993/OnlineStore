@@ -73,16 +73,44 @@ public class OrderDaoImpl implements OrderDao {
     @Override
     public List<COrder> findCusOrder(int customer_id) {
         Session session = sessionFactory.getCurrentSession();
-        Query query = session.createQuery("from COrder where customer = ?");
+        Query query = session.createQuery("from COrder where customer = ? and cus_delete = 0");
         query.setParameter(0, session.get(Customer.class, customer_id));
         return query.list();
     }
 
     @Override
-    public List<COrder> findShopOrder(int shop_id) {
+    public List<COrder> findShopOrder(int shop_id, int page, int row) {
         Session session = sessionFactory.getCurrentSession();
-        Query query = session.createQuery("from COrder where customer = ?");
+        Query query = session.createQuery("from COrder where shop = ? and shop_delete = 0");
         query.setParameter(0, session.get(Shop.class, shop_id));
+        query.setFirstResult(row * (page - 1));
+        query.setMaxResults(row * page);
         return query.list();
     }
+
+    @Override
+    public void statusOrder(int id) {
+        Session session = sessionFactory.getCurrentSession();
+        COrder cOrder = (COrder) session.get(COrder.class, id);
+        cOrder.setStatus(1);
+        session.update(cOrder);
+    }
+
+    @Override
+    public void shop_deleOrder(int id) {
+        Session session = sessionFactory.getCurrentSession();
+        COrder cOrder = (COrder) session.get(COrder.class, id);
+        cOrder.setShop_delete(1);
+        session.update(cOrder);
+    }
+
+    @Override
+    public void cus_deleOrder(int id) {
+        Session session = sessionFactory.getCurrentSession();
+        COrder cOrder = (COrder) session.get(COrder.class, id);
+        cOrder.setCus_delete(1);
+        session.update(cOrder);
+    }
+
+
 }

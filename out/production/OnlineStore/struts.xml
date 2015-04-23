@@ -66,8 +66,9 @@
         </action>
         <action name="address" class="addressAction">
             <result name="null"></result>
+            <result name="find_success">/admin/address_detail.jsp</result>
         </action>
-        <action name="orderGenerate" class="orderGenerate">
+        <action name="orderModify" class="orderModify">
             <result name="null"></result>
         </action>
     </package>

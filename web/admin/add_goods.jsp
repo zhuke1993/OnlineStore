@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 <html>
 <head>
     <meta charset="utf-8"/>
@@ -40,7 +41,12 @@
     <!--inline styles related to this page-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 </head>
-
+<c:if test="${empty shop_lg_id}">
+    <script>
+        alert("你还未登陆登录，请先登录");
+        window.location.href = "login.jsp";
+    </script>
+</c:if>
 <body>
 <div class="navbar">
     <div class="navbar-inner">

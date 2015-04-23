@@ -26,4 +26,11 @@ public class OrderTest extends SpringWebBaseTest {
         }
     }
 
+    @Test
+    public void testGetPageOrder() {
+        for (COrder order : dao.findShopOrder(1, 1, 3)) {
+            System.out.println(order);
+        }
+    }
+
 }

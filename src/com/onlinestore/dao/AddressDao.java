@@ -10,5 +10,7 @@ import java.util.Set;
 public interface AddressDao {
     public Set<Address> findAddress(int customer_id);
 
+    public Address findAddressByaddressId(int address_id);
+
     public void addAddress(int customer_id, Address address);
 }
