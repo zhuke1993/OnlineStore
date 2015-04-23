@@ -35,4 +35,6 @@ public interface CustomerDao {
     public List<Customer> findAllCustomer();
 
     public int findLogin(Customer customer);
+
+    public int isNameExist(String name);
 }

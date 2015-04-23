@@ -7,16 +7,12 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>index.jsp</title>
-  </head>
-  <body>
-    <form action="deleteGoods.action">
-      <input type="text" name="id">
-      <input type="text" name="id">
-      <input type="text" name="id">
-      <input type="text" name="id">
-      <input type="submit">
-    </form>
-  </body>
+<head>
+    <title>index</title>
+</head>
+<body>
+<script>
+    window.location.href = "customer/login.jsp";
+</script>
+</body>
 </html>

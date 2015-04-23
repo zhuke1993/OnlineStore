@@ -72,4 +72,12 @@ public class CustomerDaoImpl implements CustomerDao {
             return customer.getId();
         }
     }
+
+    @Override
+    public int isNameExist(String name) {
+        Session session = sessionFactory.getCurrentSession();
+        Query query = session.createQuery("from Customer where name=?");
+        query.setString(0, name);
+        return query.list().size();
+    }
 }

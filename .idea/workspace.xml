@@ -2,102 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9ec4158-f767-4576-b187-e2ba577b652b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/onlinestore/test/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/address_detail.jsp" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\blank.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\buttons.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\calendar.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\elements.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\error-404.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\error-500.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\form-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\form-wizard.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\gallery.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\grid.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\invoice.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\label.inline.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\pricing.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\profile.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\resize.colorbox.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\tables.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\treeview.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\typography.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\widgets.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\admin\wysiwyg.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\customer\accessories.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\customer\contact.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\customer\handbags.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\customer\service.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\customer\shoes.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\out\artifacts\OnlineStore_war_exploded\customer\wallets.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\blank.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\buttons.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\calendar.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\elements.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\error-404.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\error-500.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\form-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\form-wizard.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\gallery.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\grid.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\invoice.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\label.inline.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\pricing.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\profile.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\resize.colorbox.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\tables.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\treeview.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\typography.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\widgets.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\admin\wysiwyg.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\customer\accessories.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\customer\blank.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\customer\contact.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\customer\handbags.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\customer\service.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\customer\shoes.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Users\zhuke\OnlineStore\web\customer\wallets.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/COrder.class" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/COrder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/COrder.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/COrder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/dao/GoodsDao.class" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/dao/GoodsDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/dao/GoodsDao.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/dao/GoodsDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/dao/impl/GoodsDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/dao/impl/GoodsDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/dao/impl/GoodsDaoImpl.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/dao/impl/GoodsDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/test/TestGetpage.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/test/TestGetpage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/action/AddressAction.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/AddressAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/dao/AddressDao.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/dao/AddressDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/dao/impl/AddressDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/dao/impl/AddressDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/COrder.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/entity/COrder.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/COrder.hbm.xml" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/entity/COrder.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/account.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/action/AddGoodsAction.class" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/action/AddGoodsAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/action/AddGoodsAction.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/action/AddGoodsAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/dao/CustomerDao.class" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/dao/CustomerDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/dao/CustomerDao.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/dao/CustomerDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/dao/impl/CustomerDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/dao/impl/CustomerDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/dao/impl/CustomerDaoImpl.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/dao/impl/CustomerDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/action/LoginAction.class" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/com/onlinestore/action/LoginAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/action/LoginAction.class" afterPath="$PROJECT_DIR$/out/production/OnlineStore/com/onlinestore/action/LoginAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/customer/images/logo.png" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/customer/images/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/images/logo.png" afterPath="$PROJECT_DIR$/web/customer/images/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/1.jsp" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/1.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/1.jsp" afterPath="$PROJECT_DIR$/web/1.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/action/AddGoodsAction.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/AddGoodsAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/entity/COrder.hbm.xml" afterPath="$PROJECT_DIR$/src/com/onlinestore/entity/COrder.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/entity/COrder.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/entity/COrder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/action/GetPage.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/GetPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/dao/GoodsDao.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/dao/GoodsDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/dao/impl/GoodsDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/dao/impl/GoodsDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/dao/OrderDao.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/dao/OrderDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/dao/impl/OrderDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/dao/impl/OrderDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/dao/CustomerDao.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/dao/CustomerDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/dao/impl/CustomerDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/dao/impl/CustomerDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/entity/Goods2Num.hbm.xml" afterPath="$PROJECT_DIR$/src/com/onlinestore/entity/Goods2Num.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/action/LoginAction.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/LoginAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/action/OrderDetailAction.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/OrderDetailAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/test/OrderTest.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/test/OrderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/action/PayAction.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/PayAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/action/SearchGoods.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/SearchGoods.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/onlinestore/test/TestGetpage.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/test/TestGetpage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/admin/add_goods.jsp" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/admin/add_goods.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/add_goods.jsp" afterPath="$PROJECT_DIR$/web/admin/add_goods.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/assets/css/ace.min.css" afterPath="$PROJECT_DIR$/web/customer/assets/css/ace.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/details.jsp" afterPath="$PROJECT_DIR$/web/customer/details.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/index.jsp" afterPath="$PROJECT_DIR$/web/customer/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/admin/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/admin/login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/login.jsp" afterPath="$PROJECT_DIR$/web/admin/login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/login.jsp" afterPath="$PROJECT_DIR$/web/customer/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/mannage_goods.jsp" afterPath="$PROJECT_DIR$/web/admin/mannage_goods.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/orderDetails.jsp" afterPath="$PROJECT_DIR$/web/admin/orderDetails.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/logout.jsp" afterPath="$PROJECT_DIR$/web/customer/logout.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/orderDetails.jsp" afterPath="$PROJECT_DIR$/web/customer/orderDetails.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/pay.jsp" afterPath="$PROJECT_DIR$/web/customer/pay.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/sale.jsp" afterPath="$PROJECT_DIR$/web/customer/sale.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/sale_pre.jsp" afterPath="$PROJECT_DIR$/web/customer/sale_pre.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/struts.xml" afterPath="$PROJECT_DIR$/conf/struts.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/OnlineStore_war_exploded/WEB-INF/classes/struts.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OnlineStore/struts.xml" afterPath="$PROJECT_DIR$/out/production/OnlineStore/struts.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\Users\zhuke\OnlineStore\src\com\onlinestore\action\OrderGenerate.java" afterPath="$PROJECT_DIR$/src/com/onlinestore/action/OrderModify.java" />
     </list>
     <ignored path="OnlineStore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -139,7 +79,20 @@
     <favorites_list name="OnlineStore" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="pay.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/customer/pay.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="2.52809" vertical-offset="0" max-vertical-offset="7425">
+              <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+              <folding>
+                <marker date="1429803011521" expanded="true" signature="8244:8359" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -147,29 +100,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/Goods2Num.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/Goods2Num.java" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/test/COrderTest.java" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/Customer.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/Customer.java" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/OLOrder.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/DingDan.java" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/Dingdan.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/dao/impl/DingdanDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/test/DingdanTest.java" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/action/Testis.java" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/action/OrderGenerate.java" />
-        <option value="$PROJECT_DIR$/web/customer/index.jsp" />
         <option value="$PROJECT_DIR$/web/customer/search_result.jsp" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/test/GoodsTest.java" />
         <option value="$PROJECT_DIR$/web/customer/mannage_goods.jsp" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/action/LoginAction.java" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/action/AddGoodsAction.java" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/action/FileUploadAction.java" />
         <option value="$PROJECT_DIR$/web/error.html" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/test/OrderTest.java" />
         <option value="$PROJECT_DIR$/web/customer/sale_pre.jsp" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/action/OrderDetailAction.java" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/dao/AddressDao.java" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/action/AddressAction.java" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/dao/impl/AddressDaoImpl.java" />
@@ -179,25 +120,37 @@
         <option value="$PROJECT_DIR$/web/admin/add_goods.jsp" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/dao/impl/GoodsDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/action/SearchGoods.java" />
-        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/COrder.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/entity/COrder.java" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/dao/OrderDao.java" />
-        <option value="$PROJECT_DIR$/web/customer/login.jsp" />
-        <option value="$PROJECT_DIR$/conf/struts.xml" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/action/OrderModify.java" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/test/Test.java" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/dao/impl/OrderDaoImpl.java" />
         <option value="$PROJECT_DIR$/web/admin/orderDetails.jsp" />
         <option value="$PROJECT_DIR$/web/customer/handbags.html" />
-        <option value="$PROJECT_DIR$/web/customer/sale.jsp" />
-        <option value="$PROJECT_DIR$/web/customer/details.jsp" />
-        <option value="$PROJECT_DIR$/web/customer/orderDetails.jsp" />
         <option value="$PROJECT_DIR$/web/admin/1" />
-        <option value="$PROJECT_DIR$/web/customer/pay.jsp" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/action/PayAction.java" />
         <option value="$PROJECT_DIR$/web/admin/mannage_goods.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/login.jsp" />
         <option value="$PROJECT_DIR$/src/com/onlinestore/action/GetPage.java" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/dao/CustomerDao.java" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/dao/impl/CustomerDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/action/LoginAction.java" />
+        <option value="$PROJECT_DIR$/web/customer/login.jsp" />
+        <option value="$PROJECT_DIR$/web/admin/login.jsp" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/action/AddGoodsAction.java" />
+        <option value="$PROJECT_DIR$/web/1.jsp" />
+        <option value="$PROJECT_DIR$/web/customer/account.jsp" />
+        <option value="$PROJECT_DIR$/web/customer/logout.jsp" />
+        <option value="$PROJECT_DIR$/web/customer/assets/css/ace.min.css" />
+        <option value="$PROJECT_DIR$/web/customer/details.jsp" />
+        <option value="$PROJECT_DIR$/web/customer/sale.jsp" />
+        <option value="$PROJECT_DIR$/web/customer/index.jsp" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/action/OrderDetailAction.java" />
+        <option value="$PROJECT_DIR$/conf/struts.xml" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/Goods2Num.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/com/onlinestore/entity/COrder.hbm.xml" />
+        <option value="$PROJECT_DIR$/web/customer/orderDetails.jsp" />
+        <option value="$PROJECT_DIR$/web/customer/pay.jsp" />
       </list>
     </option>
   </component>
@@ -303,29 +256,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OnlineStore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OnlineStore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="customer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -340,10 +271,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onlinestore" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -966,12 +893,12 @@
       <workItem from="1429664851632" duration="18192000" />
       <workItem from="1429704679591" duration="6026000" />
       <workItem from="1429710793580" duration="535000" />
-      <workItem from="1429772873721" duration="11857000" />
+      <workItem from="1429772873721" duration="25991000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162528000" />
+    <option name="totallyTimeSpent" value="176662000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -994,7 +921,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1057,73 +984,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/customer/pay_result.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/test/GoodsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46312177" vertical-offset="0" max-vertical-offset="729">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/customer/jquery-easyui-1.4.1/src/easyloader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6631579" vertical-offset="0" max-vertical-offset="11205">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1858" max-vertical-offset="5319">
-          <caret line="76" column="7" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/customer/mannage_goods.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.505618" vertical-offset="972" max-vertical-offset="10152">
-          <caret line="46" column="67" selection-start-line="46" selection-start-column="63" selection-end-line="46" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/AddGoodsAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1620" max-vertical-offset="3348">
-          <caret line="130" column="35" selection-start-line="130" selection-start-column="35" selection-end-line="130" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/FileUploadAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1539">
-          <caret line="52" column="155" selection-start-line="52" selection-start-column="155" selection-end-line="52" selection-end-column="155" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/FindGoodsAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="767" max-vertical-offset="1431">
-          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/RegisterAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1442" max-vertical-offset="2025">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/error.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14808044" vertical-offset="0" max-vertical-offset="547">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1139,20 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2041166" vertical-offset="0" max-vertical-offset="1053">
           <caret line="29" column="23" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/LoginAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21269296" vertical-offset="1280" max-vertical-offset="2214">
-          <caret line="79" column="39" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/Goods2Num.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="1323">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1241,57 +1091,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/COrder.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3516295" vertical-offset="119" max-vertical-offset="837">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/COrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56842107" vertical-offset="243" max-vertical-offset="3132">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#971#972#0" expanded="false" />
-            <element signature="e#1005#1006#0" expanded="false" />
-            <element signature="e#1056#1057#0" expanded="false" />
-            <element signature="e#1102#1103#0" expanded="false" />
-            <element signature="e#1136#1137#0" expanded="false" />
-            <element signature="e#1169#1170#0" expanded="false" />
-            <element signature="e#1218#1219#0" expanded="false" />
-            <element signature="e#1262#1263#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/OrderDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7409949" vertical-offset="54" max-vertical-offset="702">
           <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/customer/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.75" vertical-offset="1539" max-vertical-offset="9666">
-          <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/add_goods.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29588014" vertical-offset="13855" max-vertical-offset="29754">
-          <caret line="519" column="34" selection-start-line="519" selection-start-column="33" selection-end-line="519" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/customer/sale_pre.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6416819" vertical-offset="405" max-vertical-offset="1026">
-          <caret line="28" column="7" selection-start-line="16" selection-start-column="4" selection-end-line="28" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1302,28 +1105,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/struts.xml">
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5368782" vertical-offset="1577" max-vertical-offset="2160">
-          <caret line="70" column="33" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/DeleteGoodsAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.4819897" vertical-offset="524" max-vertical-offset="1188">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/OrderDetailAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7105263" vertical-offset="162" max-vertical-offset="1269">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1349,47 +1134,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/customer/details.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15168539" vertical-offset="0" max-vertical-offset="8613">
-          <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
-          <folding>
-            <marker date="1429779998635" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/customer/sale.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55575866" vertical-offset="5096" max-vertical-offset="5643">
-          <caret line="200" column="6" selection-start-line="173" selection-start-column="0" selection-end-line="200" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/customer/test.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="729">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/PayAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6672385" vertical-offset="0" max-vertical-offset="1323">
-          <caret line="56" column="74" selection-start-line="56" selection-start-column="74" selection-end-line="56" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/customer/orderDetails.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49438202" vertical-offset="2409" max-vertical-offset="6912">
-          <caret line="99" column="55" selection-start-line="99" selection-start-column="55" selection-end-line="99" selection-end-column="55" />
-          <folding>
-            <marker date="1429780596727" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1419,22 +1168,284 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/customer/pay.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/impl/CustomerDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30337077" vertical-offset="1053" max-vertical-offset="6858">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="50" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.5831904" vertical-offset="1334" max-vertical-offset="1917">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/dao/CustomerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3516295" vertical-offset="551" max-vertical-offset="1188">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/LoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49056605" vertical-offset="2495" max-vertical-offset="3078">
+          <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
           <folding>
-            <marker date="1429783707635" expanded="true" signature="-1:-1" placeholder="..." />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1160#1161#0" expanded="true" />
+            <element signature="e#1191#1192#0" expanded="true" />
+            <element signature="e#1217#1218#0" expanded="true" />
+            <element signature="e#1256#1257#0" expanded="true" />
+            <element signature="e#1286#1287#0" expanded="true" />
+            <element signature="e#1323#1324#0" expanded="true" />
+            <element signature="e#1356#1357#0" expanded="true" />
+            <element signature="e#1408#1409#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+            <element signature="e#1488#1489#0" expanded="true" />
+            <element signature="e#1520#1521#0" expanded="true" />
+            <element signature="e#1570#1571#0" expanded="true" />
+            <element signature="e#1612#1613#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49360147" vertical-offset="0" max-vertical-offset="648">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7404022" vertical-offset="0" max-vertical-offset="675">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/AddGoodsAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42631578" vertical-offset="3294" max-vertical-offset="4860">
+          <caret line="131" column="67" selection-start-line="131" selection-start-column="67" selection-end-line="131" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#1570#1571#0" expanded="true" />
+            <element signature="e#1616#1617#0" expanded="true" />
+            <element signature="e#1650#1651#0" expanded="true" />
+            <element signature="e#1696#1697#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1796#1797#0" expanded="true" />
+            <element signature="e#1846#1847#0" expanded="true" />
+            <element signature="e#1895#1896#0" expanded="true" />
+            <element signature="e#1934#1935#0" expanded="true" />
+            <element signature="e#2004#2005#0" expanded="true" />
+            <element signature="e#2060#2061#0" expanded="true" />
+            <element signature="e#2097#2098#0" expanded="true" />
+            <element signature="e#2130#2131#0" expanded="true" />
+            <element signature="e#2182#2183#0" expanded="true" />
+            <element signature="e#2226#2227#0" expanded="true" />
+            <element signature="e#2264#2265#0" expanded="true" />
+            <element signature="e#2298#2299#0" expanded="true" />
+            <element signature="e#2352#2353#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2436#2437#0" expanded="true" />
+            <element signature="e#2470#2471#0" expanded="true" />
+            <element signature="e#2524#2525#0" expanded="true" />
+            <element signature="e#2570#2571#0" expanded="true" />
+            <element signature="e#2606#2607#0" expanded="true" />
+            <element signature="e#2638#2639#0" expanded="true" />
+            <element signature="e#2688#2689#0" expanded="true" />
+            <element signature="e#2730#2731#0" expanded="true" />
+            <element signature="e#2772#2773#0" expanded="true" />
+            <element signature="e#2810#2811#0" expanded="true" />
+            <element signature="e#2872#2873#0" expanded="true" />
+            <element signature="e#2926#2927#0" expanded="true" />
+            <element signature="e#2966#2967#0" expanded="true" />
+            <element signature="e#3002#3003#0" expanded="true" />
+            <element signature="e#3060#3061#0" expanded="true" />
+            <element signature="e#3110#3111#0" expanded="true" />
+            <element signature="e#3547#3561#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5449438" vertical-offset="8079" max-vertical-offset="13959">
+          <caret line="310" column="38" selection-start-line="310" selection-start-column="38" selection-end-line="310" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/admin/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.893967" vertical-offset="9065" max-vertical-offset="9612">
-          <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.3539326" vertical-offset="2727" max-vertical-offset="5103">
+          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding>
-            <marker date="1429784173285" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429790983600" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/add_goods.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.043071162" vertical-offset="17419" max-vertical-offset="29754">
+          <caret line="646" column="23" selection-start-line="646" selection-start-column="23" selection-end-line="646" selection-end-column="23" />
+          <folding>
+            <marker date="1429691227610" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429691227610" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/sale_pre.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11151737" vertical-offset="479" max-vertical-offset="1026">
+          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/logout.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.88848263" vertical-offset="0" max-vertical-offset="756">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/account.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49360147" vertical-offset="0" max-vertical-offset="594">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/assets/css/ace.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38551858" vertical-offset="883" max-vertical-offset="353295">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/details.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3333335" vertical-offset="789" max-vertical-offset="7641">
+          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+          <folding>
+            <marker date="1429794998326" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="351">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/sale.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19744058" vertical-offset="2106" max-vertical-offset="5292">
+          <caret line="82" column="37" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34552103" vertical-offset="0" max-vertical-offset="547">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/struts.xml">
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6086956" vertical-offset="636" max-vertical-offset="2160">
+          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/OrderDetailAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43157893" vertical-offset="672" max-vertical-offset="1350">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+          <folding>
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/action/PayAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="443" max-vertical-offset="1323">
+          <caret line="56" column="74" selection-start-line="56" selection-start-column="74" selection-end-line="56" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/Goods2Num.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41680962" vertical-offset="0" max-vertical-offset="583">
+          <caret line="9" column="82" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/COrder.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43157893" vertical-offset="267" max-vertical-offset="837">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/COrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="2916">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/onlinestore/entity/Goods2Num.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09262436" vertical-offset="243" max-vertical-offset="1323">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/orderDetails.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19101124" vertical-offset="5892" max-vertical-offset="9666">
+          <caret line="222" column="44" selection-start-line="222" selection-start-column="44" selection-end-line="222" selection-end-column="44" />
+          <folding>
+            <marker date="1429800620378" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/pay.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.52809" vertical-offset="0" max-vertical-offset="7425">
+          <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+          <folding>
+            <marker date="1429803011521" expanded="true" signature="8244:8359" placeholder="..." />
           </folding>
         </state>
       </provider>

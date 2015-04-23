@@ -5,6 +5,7 @@ import com.onlinestore.dao.ShopDao;
 import com.onlinestore.entity.Customer;
 import com.onlinestore.entity.Shop;
 import com.opensymphony.xwork2.ActionContext;
+import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.dispatcher.DefaultActionSupport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -69,7 +70,7 @@ public class LoginAction extends DefaultActionSupport {
     @Override
     public String execute() throws Exception {
         //商家登陆
-        if (flag == null) {
+        if (flag.equals("shop")) {
             Shop shop = new Shop();
             shop.setName(login_name);
             shop.setPwd(login_pwd);
@@ -83,7 +84,7 @@ public class LoginAction extends DefaultActionSupport {
                 session.put("lg_msg", "登陆失败");
                 return INPUT;
             }
-        } else {
+        } else if (flag.equals("customer")) {
             //普通用户登陆
             Customer customer = new Customer();
             customer.setName(login_name);
@@ -98,6 +99,10 @@ public class LoginAction extends DefaultActionSupport {
                 session.put("lg_msg", "登陆失败");
                 return "c_input";
             }
+        } else if (flag.equals("isnameexist")) {
+            int isnameexist = c_dao.isNameExist(login_name);
+            ServletActionContext.getResponse().getWriter().print(isnameexist);
         }
+        return null;
     }
 }

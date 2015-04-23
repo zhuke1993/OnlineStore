@@ -1,5 +1,7 @@
 <%@ page import="com.onlinestore.entity.COrder" %>
-<%@ page import="java.util.List" %>
+<%@ page import="com.onlinestore.entity.Goods2Num" %>
+<%@ page import="java.util.Iterator" %>
+<%@ page import="java.util.Set" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
@@ -21,8 +23,6 @@
 
     <!--fonts-->
 
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300"/>
-
     <!--ace styles-->
 
     <link rel="stylesheet" href="assets/css/ace.min.css"/>
@@ -35,6 +35,69 @@
 
     <!--inline styles related to this page-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+
+    <script src="js/jquery.min.js"></script>
+    <!-- start gallery_sale -->
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            var filterList = {
+
+                init: function () {
+
+                    // MixItUp plugin
+                    // http://mixitup.io
+                    $('#portfoliolist').mixitup({
+                        targetSelector: '.portfolio',
+                        filterSelector: '.filter',
+                        effects: ['fade'],
+                        easing: 'snap',
+                        // call the hover effect
+                        onMixEnd: filterList.hoverEffect()
+                    });
+
+                },
+
+                hoverEffect: function () {
+
+                    // Simple parallax effect
+                    $('#portfoliolist .portfolio').hover(
+                            function () {
+                                $(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+                                $(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
+                            },
+                            function () {
+                                $(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+                                $(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
+                            }
+                    );
+
+                }
+
+            };
+
+            // Run the show!
+            filterList.init();
+
+
+        });
+    </script>
+    <!-- start top_js_button -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1200);
+            });
+        });
+    </script>
 </head>
 <c:if test="${empty cus_lg_id}">
     <script>
@@ -42,13 +105,53 @@
         window.location.href = "login.jsp";
     </script>
 </c:if>
-<c:if test="${empty order_list}">
-    <script>
-        window.location.href = "orderDetail.action";
-    </script>
-</c:if>
 <body>
-<div class="main-container container-fluid">
+<!-- start header -->
+<div class="header_bg">
+    <div class="wrap">
+        <div class="header">
+            <div class="logo">
+                <a href="sale_pre.jsp"><img src="images/logo.png" alt=""/> </a>
+            </div>
+            <div class="h_icon" id="cart_status">
+                <ul class="icon1 sub-icon1">
+                    <li><a class="active-icon c1"></a>
+                        <ul class="sub-icon1 list" id="cart_item">
+                        </ul>
+                        购物车
+                    </li>
+                </ul>
+            </div>
+            <div class="h_search">
+                <form method="post" action="searchGoods.action">
+                    <input type="text" name="info">
+                    <input type="submit" value="">
+                </form>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div class="header_btm">
+    <div class="wrap">
+        <div class="header_sub">
+            <div class="h_menu">
+                <ul>
+                    <li class="active"><a href="sale_pre.jsp">所有商品</a></li>
+                    |
+                    <li><a href="../orderDetail.action">我的订单</a></li>
+                    |
+                    <li><a href="account.jsp">我的账户</a></li>
+                    |
+                    <li><a href="logout.jsp">退出登陆</a></li>
+                    |
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div class="main-container container-fluid" style="width: 100%" align="center">
     <a class="menu-toggler" id="menu-toggler" href="#">
         <span class="menu-text"></span>
     </a>
@@ -58,7 +161,6 @@
             <div class="row-fluid">
                 <div class="span12">
                     <div class="row-fluid">
-                        <h3 class="header smaller lighter blue">所有订单</h3>
 
                         <div class="table-header">
                             订单详情
@@ -99,11 +201,13 @@
                                     </td>
                                     <td>${i.price}</td>
                                     <td class="hidden-480">${i.bargainDate}</td>
-                                    <td class="hidden-phone">
+                                    <td>
                                         <%
-                                            List<COrder> orderList = (List<COrder>) session.getAttribute("order_list");
-                                            for (int i = 0; i < orderList.size(); i++) {
-                                                out.print("<a target='_blank' href=\"searchGoods.action?id=" + orderList.get(i).getId() + "\">&nbsp;" + orderList.get(i).getId() + "&nbsp;</a>");
+                                            Set<Goods2Num> goods2NumSet = ((COrder) pageContext.getAttribute("i")).getGoods2NumSet();
+                                            Iterator<Goods2Num> iterator = goods2NumSet.iterator();
+                                            while (iterator.hasNext()) {
+                                                int id = iterator.next().getGoods().getId();
+                                                out.print("<a target='_blank' href=\"../searchGoods.action?id=" + id + "\">&nbsp;" + id + "&nbsp;</a>");
                                             }
                                         %>
                                     </td>
@@ -116,7 +220,7 @@
                                         </c:if>
                                     </td>
                                     <td class="hidden-480"><a
-                                            href="address.action?flag=find&address_id=${i.address.id}"> ${i.address.detailAddress}</a>
+                                            href="../address.action?flag=find&address_id=${i.address.id}"> ${i.address.detailAddress}</a>
                                     </td>
 
                                 </tr>
@@ -154,7 +258,7 @@
                         },
                         success: function (data) {
                             alert(data);
-                            window.location.reload();
+                            window.location.href = "../orderDetail.action";
                         }
                     }
             );
@@ -169,12 +273,10 @@
 
     <!--[if !IE]>-->
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <!--<![endif]-->
 
     <!--[if IE]>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <![endif]-->
 
     <!--[if !IE]>-->

@@ -53,6 +53,7 @@ public class OrderDetailAction extends DefaultActionSupport {
             session.setAttribute("order_list", dao.findShopOrder(Integer.parseInt(session.getAttribute("shop_lg_id").toString()), page, row));
             return "shop_order";
         }
+        session.setAttribute("lg_msg", "您未登录，请登录。");
         return ERROR;
     }
 }

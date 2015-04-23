@@ -14,5 +14,9 @@
 <%
     session.invalidate();
 %>
+<script>
+    alert("退出登陆成功");
+    window.location.href = "sale_pre.jsp";
+</script>
 </body>
 </html>

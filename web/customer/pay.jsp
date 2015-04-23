@@ -136,10 +136,31 @@
     }
     $("#goods_item").append("<br><button id='pay_order_btn' onclick='return pay_btn_fun();'>添加订单</button><hr>");
 
+    //设置cookie
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+    //清除cookie
+    function clearCookie(name) {
+        setCookie(name, "", -1);
+    }
+
     /*添加到订单*/
     function pay_btn_fun() {
 //        给地址赋值
-        $("#pay_form").append("<input name='address_id' value= " + $("#address_id_se").val() + ">");
+        $("#pay_form").append("<input id='test' name='address_id' value= " + $("#address_id_se").val() + ">");
+        //清除cookie信息
+        <%--从cookies中读取购买信息，并添加到相关的div中进行显示--%>
+        var arr = document.cookie.split("; ");
+        for (var i = 0, len = arr.length; i < len; i++) {
+            var item = arr[i].split("=");
+            if (item[1].indexOf("undefined") < 0) {
+                clearCookie(item[0]);
+            }
+        }
         $("#pay_form").submit();
     }
 

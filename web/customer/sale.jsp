@@ -80,7 +80,7 @@
     <div class="wrap">
         <div class="header">
             <div class="logo">
-                <a href="index.jsp"><img src="images/logo.png" alt=""/> </a>
+                <a href="sale_pre.jsp"><img src="images/logo.png" alt=""/> </a>
             </div>
             <div class="h_icon" id="cart_status">
                 <ul class="icon1 sub-icon1">
@@ -106,27 +106,14 @@
         <div class="header_sub">
             <div class="h_menu">
                 <ul>
-                    <li><a href="index.jsp">Home</a></li>
+                    <li class="active"><a href="sale_pre.jsp">所有商品</a></li>
                     |
-                    <li class="active"><a href="sale.jsp">sale</a></li>
+                    <li><a href="../orderDetail.action">我的订单</a></li>
                     |
-                    <li><a href="handbags.html">handbags</a></li>
+                    <li><a href="account.jsp">我的账户</a></li>
                     |
-                    <li><a href="accessories.html">accessories</a></li>
+                    <li><a href="logout.jsp">退出登陆</a></li>
                     |
-                    <li><a href="wallets.html">wallets</a></li>
-                    |
-                    <li><a href="sale.jsp">sale</a></li>
-                    |
-                    <li><a href="index.jsp">mens store</a></li>
-                    |
-                    <li><a href="shoes.html">shoes</a></li>
-                    |
-                    <li><a href="sale.jsp">vintage</a></li>
-                    |
-                    <li><a href="service.html">services</a></li>
-                    |
-                    <li><a href="contact.html">Contact us</a></li>
                 </ul>
             </div>
             <div class="clear"></div>

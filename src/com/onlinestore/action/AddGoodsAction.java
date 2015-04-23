@@ -19,10 +19,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by zhuke on 2015/3/27.
@@ -147,7 +144,8 @@ public class AddGoodsAction extends DefaultActionSupport {
                     if (!f.exists()) {
                         f.mkdirs();
                     }
-                    savePath = savePath + "/" + filesFileName.get(i);
+                    String realName = new Integer(lg_id).toString() + "-" + new Date().getTime() + ".png";
+                    savePath = savePath + "/" + realName;
                     FileOutputStream fos = new FileOutputStream(savePath);
                     byte[] buf = new byte[1024];
                     int len = 0;
@@ -155,18 +153,18 @@ public class AddGoodsAction extends DefaultActionSupport {
                         fos.write(buf, 0, len);
                     }
                     fos.flush();
-                    String url = Conf.pictureUrlBase + "/" + new Integer(lg_id).toString() + "/" + filesFileName.get(i);
+                    String url = Conf.pictureUrlBase + "/" + new Integer(lg_id).toString() + "/" + realName;
                     GoodsPicture goodsPicture = new GoodsPicture(goods, url);
                     pictureDao.addGoodsPicture(goodsPicture);
                     goodsPictures.add(goodsPicture);
-                    ServletActionContext.getRequest().getSession().setAttribute("add_goods_msg","上传成功");
+                    ServletActionContext.getRequest().getSession().setAttribute("add_goods_msg", "上传成功");
                 } else {
                     System.out.println("用户未登陆，或者登陆时限过期");
-                   ServletActionContext.getRequest().getSession().setAttribute("add_goods_msg","用户未登陆，或者登陆时限过期");
+                    ServletActionContext.getRequest().getSession().setAttribute("add_goods_msg", "用户未登陆，或者登陆时限过期");
                 }
             } else {
                 System.out.println("用户上传了非法文件类型");
-               ServletActionContext.getRequest().getSession().setAttribute("add_goods_msg","用户上传了非法文件类型");
+                ServletActionContext.getRequest().getSession().setAttribute("add_goods_msg", "用户上传了非法文件类型");
             }
             goods.setPictureSet(goodsPictures);
         }

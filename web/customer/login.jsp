@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>Login Page - Ace Admin</title>
+    <title>登陆</title>
 
     <meta name="description" content="User login page"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -37,6 +37,43 @@
 
     <!--inline styles related to this page-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!--basic scripts-->
+
+    <!--[if !IE]>-->
+
+    <script src="assets/jquery.min.js"></script>
+
+    <!--<![endif]-->
+
+    <!--[if IE]>
+    <script src="assets/jquery1.min.js"></script>
+    <![endif]-->
+
+    <!--[if !IE]>-->
+
+    <script type="text/javascript">
+        window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
+    </script>
+
+    <!--<![endif]-->
+
+    <!--[if IE]>
+    <script type="text/javascript">
+        window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>" + "<" + "/script>");
+    </script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        if ("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+    </script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--page specific plugin scripts-->
+
+    <!--ace scripts-->
+
+    <script src="assets/js/ace-elements.min.js"></script>
+    <script src="assets/js/ace.min.js"></script>
 </head>
 
 <body class="login-layout">
@@ -49,10 +86,10 @@
                         <div class="center">
                             <h1>
                                 <i class="icon-leaf green"></i>
-                                <span class="red">Ace</span>
-                                <span class="white">Application</span>
+                                <span class="red">网上商城</span>
+                                <span class="white">购物系统</span>
                             </h1>
-                            <h4 class="blue">&copy; Company Name</h4>
+                            <h4 class="blue">&copy; 余健华</h4>
                         </div>
                     </div>
 
@@ -74,8 +111,7 @@
                                         </h4>
 
                                         <div class="space-6"></div>
-                                        <form name="login_form" method="post" action="login.action">
-                                            <input type="hidden" name="flag" value="customer">
+                                        <form name="login_form" method="post" action="login.action?flag=customer">
                                             <fieldset>
                                                 <label>
 															<span class="block input-icon input-icon-right">
@@ -111,24 +147,6 @@
                                                 <div class="space-4"></div>
                                             </fieldset>
                                         </form>
-
-                                        <div class="social-or-login center">
-                                            <span class="bigger-110">合作媒体登陆</span>
-                                        </div>
-
-                                        <div class="social-login center">
-                                            <a class="btn btn-primary">
-                                                <i class="icon-facebook"></i>
-                                            </a>
-
-                                            <a class="btn btn-info">
-                                                <i class="icon-twitter"></i>
-                                            </a>
-
-                                            <a class="btn btn-danger">
-                                                <i class="icon-google-plus"></i>
-                                            </a>
-                                        </div>
                                     </div>
                                     <!--/widget-main-->
 
@@ -216,40 +234,50 @@
                                             <fieldset>
                                                 <label>
 															<span class="block input-icon input-icon-right">
-																<input name="rg_email" type="email" class="span12"
+																<input id="email" name="rg_email" type="email"
+                                                                       class="span12"
                                                                        placeholder="Email"/>
+                                                                <label style="color: red" id="lemail"></label>
 																<i class="icon-envelope"></i>
 															</span>
                                                 </label>
                                                 <label>
 															<span class="block input-icon input-icon-right">
-																<input name="rg_phone" type="phone" class="span12"
+																<input id="phone" name="rg_phone" type="phone"
+                                                                       class="span12"
                                                                        placeholder="Phone"/>
+                                                                <label style="color: red" id="lphone"></label>
 																<i class="icon-phone"></i>
 															</span>
                                                 </label>
 
                                                 <label>
 															<span class="block input-icon input-icon-right">
-																<input name="rg_name" type="text" class="span12"
+																<input id="name" name="rg_name" type="text"
+                                                                       class="span12"
                                                                        placeholder="Username"/>
+                                                                 <label style="color: red" id="lname"></label>
 																<i class="icon-user"></i>
 															</span>
                                                 </label>
 
                                                 <label>
 															<span class="block input-icon input-icon-right">
-																<input name="rg_pwd" type="password" class="span12"
+																<input id="pwd" name="rg_pwd" type="password"
+                                                                       class="span12"
                                                                        placeholder="Password"/>
+                                                                 <label style="color: red" id="lpwd"></label>
 																<i class="icon-lock"></i>
 															</span>
                                                 </label>
 
                                                 <label>
 															<span class="block input-icon input-icon-right">
-																<input name="rg_repwd" type="password" class="span12"
+																<input id="repwd" name="rg_repwd" type="password"
+                                                                       class="span12"
                                                                        placeholder="Repeat password"/>
 																<i class="icon-retweet"></i>
+                                                                 <label style="color: red" id="lrepwd"></label>
 															</span>
                                                 </label>
 
@@ -269,7 +297,7 @@
                                                         重置
                                                     </button>
 
-                                                    <button onclick="return $('#rg_form').submit();"
+                                                    <button type="submit" onclick="return check()"
                                                             class="width-65 pull-right btn btn-small btn-success">
                                                         注册
                                                         <i class="icon-arrow-right icon-on-right"></i>
@@ -300,45 +328,176 @@
         <!--/.row-fluid-->
     </div>
 </div>
+<script type="text/javascript">
+    //CharMode函数
+    //测试某个字符是属于哪一类
+    function CharMode(iN) {
+        if (iN >= 48 && iN <= 57) //数字
+            return 1;
+        if (iN >= 65 && iN <= 90) //大写字母
+            return 2;
+        if (iN >= 97 && iN <= 122) //小写
+            return 4;
+        else
+            return 8; //特殊字符
+    }
+
+    function isext() {
+        jQuery.ajax({
+            url: "login.action",
+            type: "post",
+            dataType: "text",
+            data: {
+                "flag": "isnameexist",
+                "login_name": $("#name").val()
+            },
+            success: function (data) {
+                if (data == 1) {
+                    $("#lname").text("用户名已存在");
+                    return true;
+                } else {
+                    $("#lname").text("可以注册");
+                    return false;
+                }
+            }
+        });
+    }
+
+    $(function () {
+        $("#name").blur(function () {
+            if ($("#name").val() == "") {
+                $("#lname").text("用户名不能为空");
+                return false;
+            } else {
+                return isext();
+                $("#lname").text("");
+                return true;
+            }
+        });
+
+        $("#pwd").blur(function () {
+            var pwd = $.trim($("#pwd").val());
+            if ($("#pwd").val() == "") {
+                $("#lpwd").text("密码不能为空");
+                return false;
+            } else if (!/^[\w\W]{6,18}$/.test(pwd)) {
+                $("#lpwd").text("输入6-18位密码");
+                return false;
+            } else {
+                $("#lpwd").text("");
+                return true;
+            }
+        });
+
+        $("#pwd").keyup(function () {
+            var pwd = $.trim($("#pwd").val());
+            O_color = "#eeeeee";
+            L_color = "#FF0000";
+            M_color = "#FF9900";
+            H_color = "#33CC00";
+            if (pwd == null || pwd == '') {
+                Lcolor = Mcolor = Hcolor = O_color;
+            } else {
+                S_level = checkStrong(pwd);
+                switch (S_level) {
+                    case 0:
+                        Lcolor = Mcolor = Hcolor = O_color;
+                    case 1:
+                        Lcolor = L_color;
+                        Mcolor = Hcolor = O_color;
+                        break;
+                    case 2:
+                        Lcolor = Mcolor = M_color;
+                        Hcolor = O_color;
+                        break;
+                    default:
+                        Lcolor = Mcolor = Hcolor = H_color;
+                }
+            }
+            document.getElementById("strength_L").style.background = Lcolor;
+            document.getElementById("strength_M").style.background = Mcolor;
+            document.getElementById("strength_H").style.background = Hcolor;
+            return;
+        });
+
+        $("#repwd").blur(function () {
+            if ($("#repwd").val() == "") {
+                $("#lrepwd").text("请再次输入密码");
+                return false;
+            } else if ($("#pwd").val() != $("#repwd").val()) {
+                $("#lrepwd").text("两次输入的密码不一致");
+                return false;
+            } else {
+                $("#lrepwd").text("");
+                return true;
+            }
+        });
+
+        $("#phone").blur(function () {
+            var phone = $.trim($("#phone").val());
+            if ($("#phone").val() == "") {
+                $("#lphone").text("联系电话不能为空");
+                return false;
+            } else {
+                //匹配格式：11位手机号码，3-4位区号，7-8位电话号码，1-4位分机号，如：12345678901、1234-12345678-1234
+                if (!/((\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)/.test(phone)) {
+                    $("#lphone").text("输入正确格式的联系电话");
+                    return false;
+                } else {
+                    $("#lphone").text("");
+                    return true;
+                }
+            }
+        });
+
+        $("#email").blur(function () {
+            var email = $.trim($("#email").val());
+            if ($("#email").val() == "") {
+                $("#lemail").text("电子邮箱不能为空");
+                return false;
+            } else {
+                if (!/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/.test(email)) {
+                    $("#lemail").text("输入正确格式的电子邮箱");
+                    return false;
+                } else {
+                    $("#lemail").text("");
+                    return true;
+                }
+            }
+        });
+
+    });
+
+    //在提交前进行检查
+    function check() {
+        if ($("#name").val() == "") {
+            $("#lname").text("用户名不能为空");
+            return false;
+        }
+        if ($("#pwd").val() == "") {
+            $("#lpwd").text("密码不能为空");
+            return false;
+        }
+        if ($("#repwd").val() == "") {
+            $("#lrepwd").text("请再次输入密码");
+            return false;
+        } else if ($("#pwd").val() != $("#repwd").val()) {
+            $("#lrepwd").text("两次输入的密码不一致");
+            return false;
+        }
+        if ($("#phone").val() == "") {
+            $("#lphone").text("联系电话不能为空");
+            return false;
+        }
+        if ($("#email").val() == "") {
+            $("#lemail").text("电子邮件不能为空");
+            return false;
+        }
+        return true;
+
+    }
+</script>
 <!--/.main-container-->
-
-<!--basic scripts-->
-
-<!--[if !IE]>-->
-
-<script src="assets/jquery.min.js"></script>
-
-<!--<![endif]-->
-
-<!--[if IE]>
-<script src="assets/jquery1.min.js"></script>
-<![endif]-->
-
-<!--[if !IE]>-->
-
-<script type="text/javascript">
-    window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
-</script>
-
-<!--<![endif]-->
-
-<!--[if IE]>
-<script type="text/javascript">
-    window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>" + "<" + "/script>");
-</script>
-<![endif]-->
-
-<script type="text/javascript">
-    if ("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
-</script>
-<script src="assets/js/bootstrap.min.js"></script>
-
-<!--page specific plugin scripts-->
-
-<!--ace scripts-->
-
-<script src="assets/js/ace-elements.min.js"></script>
-<script src="assets/js/ace.min.js"></script>
 
 <!--inline scripts related to this page-->
 

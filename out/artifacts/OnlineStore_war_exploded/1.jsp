@@ -13,10 +13,7 @@
 </head>
 <body>
 <%
-  Cookie[] cookies = request.getCookies();
-  for(Cookie c: cookies){
-    out.print(c.getName()+"\t"+c.getValue());
-  }
+    out.print(request.getRealPath("/"));
 %>
 </body>
 </html>

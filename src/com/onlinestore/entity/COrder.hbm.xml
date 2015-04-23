@@ -17,7 +17,7 @@
         <property name="confirmDate"/>
         <property name="shop_delete"/>
         <property name="cus_delete"/>
-        <set name="goods2NumSet">
+        <set name="goods2NumSet" lazy="false">
             <key column="order_id"></key>
             <one-to-many class="com.onlinestore.entity.Goods2Num"/>
         </set>

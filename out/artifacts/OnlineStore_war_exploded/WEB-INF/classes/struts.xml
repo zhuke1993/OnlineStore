@@ -21,7 +21,7 @@
         <action name="login" class="loginAction">
             <result name="success" type="redirect">/admin/index.jsp</result>
             <result name="input" type="redirect">/admin/login.jsp</result>
-            <result name="c_success" type="redirect">/customer/index.jsp</result>
+            <result name="c_success" type="redirect">/customer/sale_pre.jsp</result>
             <result name="c_input" type="redirect">/customer/login.jsp</result>
         </action>
         <action name="fileUpload" class="fileUploadAction">
@@ -34,7 +34,7 @@
         </action>
         <!--付款-->
         <action name="pay" class="payAction">
-            <result type="redirect" name="success">/customer/orders.jsp</result>
+            <result type="redirect" name="success">/orderDetail.action</result>
         </action>
         <!--查找商品-->
         <action name="searchGoods" class="searchGoods">
@@ -45,7 +45,7 @@
         <action name="orderDetail" class="orderDetailAction">
             <result type="redirect" name="cus_order">/customer/orderDetails.jsp</result>
             <result type="redirect" name="shop_order">/admin/orderDetails.jsp</result>
-            <result name="error">/error.html</result>
+            <result type="redirect" name="error">/customer/login.jsp</result>
         </action>
 
 
