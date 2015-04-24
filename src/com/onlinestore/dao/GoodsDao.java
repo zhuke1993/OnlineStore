@@ -34,4 +34,6 @@ public interface GoodsDao {
     public ArrayList<Goods> getGoodsPage(int shop_id, int page, int rows);
 
     public HashMap<Goods, Shop> findShopids(int[] goods_ids);
+
+    public void modifyDownInv(int goods_id, int num);
 }

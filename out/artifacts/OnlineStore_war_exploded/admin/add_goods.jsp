@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
-<html>
+<html lang="utf-8">
 <head>
     <meta charset="utf-8"/>
-    <title>Form Elements - Ace Admin</title>
+    <title>网上商城购物系统后台管理</title>
+    <meta name="description" content="overview &amp; stats"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+    <!--basic styles-->
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
+
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css"/>
+    <![endif]-->
+
+    <!--page specific plugin styles-->
+
+    <!--fonts-->
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300"/>
+
+    <!--ace styles-->
+
+    <link rel="stylesheet" href="assets/css/ace.min.css"/>
+    <link rel="stylesheet" href="assets/css/ace-responsive.min.css"/>
+    <link rel="stylesheet" href="assets/css/ace-skins.min.css"/>
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="assets/css/ace-ie.min.css"/>
+    <![endif]-->
+
+    <!--inline styles related to this page-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css"
+          href="jquery-easyui-1.4.1/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css"
+          href="jquery-easyui-1.4.1/themes/icon.css">
+    <link rel="stylesheet" type="text/css"
+          href="jquery-easyui-1.4.1/demo/demo.css">
+    <script type="text/javascript"
+            src="jquery-easyui-1.4.1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="jquery-easyui-1.4.1/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="jquery-easyui-1.4.1/locale/easyui-lang-zh_CN.js"></script>
     <meta name="description" content="Common form elements and layouts"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -40,240 +81,31 @@
 
     <!--inline styles related to this page-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
 </head>
-<c:if test="${empty shop_lg_id}">
-    <script>
-        alert("你还未登陆登录，请先登录");
-        window.location.href = "login.jsp";
-    </script>
-</c:if>
 <body>
 <div class="navbar">
+    <c:if test="${empty shop_lg_id}">
+        <script>
+            alert("你还未登陆登录，请先登录");
+            window.location.href = "login.jsp";
+        </script>
+    </c:if>
     <div class="navbar-inner">
         <div class="container-fluid">
             <a href="#" class="brand">
                 <small>
                     <i class="icon-leaf"></i>
-                    Ace Admin
+                    网上商城后台管理系统
                 </small>
             </a><!--/.brand-->
 
             <ul class="nav ace-nav pull-right">
-                <li class="grey">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <i class="icon-tasks"></i>
-                        <span class="badge badge-grey">4</span>
-                    </a>
-
-                    <ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-closer">
-                        <li class="nav-header">
-                            <i class="icon-ok"></i>
-                            4 Tasks to complete
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div class="clearfix">
-                                    <span class="pull-left">Software Update</span>
-                                    <span class="pull-right">65%</span>
-                                </div>
-
-                                <div class="progress progress-mini ">
-                                    <div style="width:65%" class="bar"></div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div class="clearfix">
-                                    <span class="pull-left">Hardware Upgrade</span>
-                                    <span class="pull-right">35%</span>
-                                </div>
-
-                                <div class="progress progress-mini progress-danger">
-                                    <div style="width:35%" class="bar"></div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div class="clearfix">
-                                    <span class="pull-left">Unit Testing</span>
-                                    <span class="pull-right">15%</span>
-                                </div>
-
-                                <div class="progress progress-mini progress-warning">
-                                    <div style="width:15%" class="bar"></div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div class="clearfix">
-                                    <span class="pull-left">Bug Fixes</span>
-                                    <span class="pull-right">90%</span>
-                                </div>
-
-                                <div class="progress progress-mini progress-success progress-striped active">
-                                    <div style="width:90%" class="bar"></div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                See tasks with details
-                                <i class="icon-arrow-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="purple">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <i class="icon-bell-alt icon-animated-bell"></i>
-                        <span class="badge badge-important">8</span>
-                    </a>
-
-                    <ul class="pull-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-closer">
-                        <li class="nav-header">
-                            <i class="icon-warning-sign"></i>
-                            8 Notifications
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div class="clearfix">
-											<span class="pull-left">
-												<i class="btn btn-mini no-hover btn-pink icon-comment"></i>
-												New Comments
-											</span>
-                                    <span class="pull-right badge badge-info">+12</span>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <i class="btn btn-mini btn-primary icon-user"></i>
-                                Bob just signed up as an editor ...
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div class="clearfix">
-											<span class="pull-left">
-												<i class="btn btn-mini no-hover btn-success icon-shopping-cart"></i>
-												New Orders
-											</span>
-                                    <span class="pull-right badge badge-success">+8</span>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div class="clearfix">
-											<span class="pull-left">
-												<i class="btn btn-mini no-hover btn-info icon-twitter"></i>
-												Followers
-											</span>
-                                    <span class="pull-right badge badge-info">+11</span>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                See all notifications
-                                <i class="icon-arrow-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="green">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <i class="icon-envelope icon-animated-vertical"></i>
-                        <span class="badge badge-success">5</span>
-                    </a>
-
-                    <ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-closer">
-                        <li class="nav-header">
-                            <i class="icon-envelope-alt"></i>
-                            5 Messages
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <img src="assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar"/>
-										<span class="msg-body">
-											<span class="msg-title">
-												<span class="blue">Alex:</span>
-												Ciao sociis natoque penatibus et auctor ...
-											</span>
-
-											<span class="msg-time">
-												<i class="icon-time"></i>
-												<span>a moment ago</span>
-											</span>
-										</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <img src="assets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar"/>
-										<span class="msg-body">
-											<span class="msg-title">
-												<span class="blue">Susan:</span>
-												Vestibulum id ligula porta felis euismod ...
-											</span>
-
-											<span class="msg-time">
-												<i class="icon-time"></i>
-												<span>20 minutes ago</span>
-											</span>
-										</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <img src="assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar"/>
-										<span class="msg-body">
-											<span class="msg-title">
-												<span class="blue">Bob:</span>
-												Nullam quis risus eget urna mollis ornare ...
-											</span>
-
-											<span class="msg-time">
-												<i class="icon-time"></i>
-												<span>3:15 pm</span>
-											</span>
-										</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                See all messages
-                                <i class="icon-arrow-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
                 <li class="light-blue">
                     <a data-toggle="dropdown" href="#" class="dropdown-toggle">
                         <img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo"/>
 								<span class="user-info">
 									<small>Welcome,</small>
-									Jason
 								</span>
 
                         <i class="icon-caret-down"></i>
@@ -281,25 +113,17 @@
 
                     <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-closer">
                         <li>
-                            <a href="#">
+                            <a href="account.jsp">
                                 <i class="icon-cog"></i>
-                                Settings
+                                设置
                             </a>
                         </li>
-
-                        <li>
-                            <a href="#">
-                                <i class="icon-user"></i>
-                                Profile
-                            </a>
-                        </li>
-
                         <li class="divider"></li>
 
                         <li>
-                            <a href="#">
+                            <a href="logout.jsp">
                                 <i class="icon-off"></i>
-                                Logout
+                                退出登陆
                             </a>
                         </li>
                     </ul>
@@ -313,339 +137,53 @@
 </div>
 
 <div class="main-container container-fluid">
-    <a class="menu-toggler" name="menu-toggler" href="#">
+    <a class="menu-toggler" id="menu-toggler" href="#">
         <span class="menu-text"></span>
     </a>
 
-    <div class="sidebar" name="sidebar">
-        <div class="sidebar-shortcuts" name="sidebar-shortcuts">
-            <div class="sidebar-shortcuts-large" name="sidebar-shortcuts-large">
-                <button class="btn btn-small btn-success">
-                    <i class="icon-signal"></i>
-                </button>
-
-                <button class="btn btn-small btn-info">
-                    <i class="icon-pencil"></i>
-                </button>
-
-                <button class="btn btn-small btn-warning">
-                    <i class="icon-group"></i>
-                </button>
-
-                <button class="btn btn-small btn-danger">
-                    <i class="icon-cogs"></i>
-                </button>
-            </div>
-
-            <div class="sidebar-shortcuts-mini" name="sidebar-shortcuts-mini">
-                <span class="btn btn-success"></span>
-
-                <span class="btn btn-info"></span>
-
-                <span class="btn btn-warning"></span>
-
-                <span class="btn btn-danger"></span>
-            </div>
-        </div>
+    <div class="sidebar" id="sidebar">
         <!--#sidebar-shortcuts-->
-
         <ul class="nav nav-list">
-            <li>
+            <li class="active">
                 <a href="index.jsp">
                     <i class="icon-dashboard"></i>
-                    <span class="menu-text"> Dashboard </span>
+                    <span class="menu-text"> 管理商品 </span>
                 </a>
             </li>
-
             <li>
-                <a href="typography.html">
+                <a href="add_goods.jsp">
                     <i class="icon-text-width"></i>
-                    <span class="menu-text"> Typography </span>
+                    <span class="menu-text"> 增加商品 </span>
                 </a>
             </li>
 
             <li>
-                <a href="#" class="dropdown-toggle">
+                <a href="../orderDetail.action" class="dropdown-toggle">
                     <i class="icon-desktop"></i>
-                    <span class="menu-text"> UI Elements </span>
-
+                    <span class="menu-text"> 订单处理 </span>
                     <b class="arrow icon-angle-down"></b>
                 </a>
 
-                <ul class="submenu">
-                    <li>
-                        <a href="elements.html">
-                            <i class="icon-double-angle-right"></i>
-                            Elements
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="buttons.html">
-                            <i class="icon-double-angle-right"></i>
-                            Buttons &amp; Icons
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="treeview.html">
-                            <i class="icon-double-angle-right"></i>
-                            Treeview
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="dropdown-toggle">
-                            <i class="icon-double-angle-right"></i>
-
-                            Three Level Menu
-                            <b class="arrow icon-angle-down"></b>
-                        </a>
-
-                        <ul class="submenu">
-                            <li>
-                                <a href="#">
-                                    <i class="icon-leaf"></i>
-                                    Item #1
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="dropdown-toggle">
-                                    <i class="icon-pencil"></i>
-
-                                    4th level
-                                    <b class="arrow icon-angle-down"></b>
-                                </a>
-
-                                <ul class="submenu">
-                                    <li>
-                                        <a href="#">
-                                            <i class="icon-plus"></i>
-                                            Add Product
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">
-                                            <i class="icon-eye-open"></i>
-                                            View Products
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-
-            <li>
-                <a href="tables.html">
-                    <i class="icon-list"></i>
-                    <span class="menu-text"> Tables </span>
-                </a>
-            </li>
-
-            <li class="active open">
-                <a href="#" class="dropdown-toggle">
-                    <i class="icon-edit"></i>
-                    <span class="menu-text"> Forms </span>
-
-                    <b class="arrow icon-angle-down"></b>
-                </a>
-
-                <ul class="submenu">
-                    <li class="active">
-                        <a href="form-elements.html">
-                            <i class="icon-double-angle-right"></i>
-                            Form Elements
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="form-wizard.html">
-                            <i class="icon-double-angle-right"></i>
-                            Wizard &amp; Validation
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="wysiwyg.html">
-                            <i class="icon-double-angle-right"></i>
-                            Wysiwyg &amp; Markdown
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li>
-                <a href="widgets.html">
-                    <i class="icon-list-alt"></i>
-                    <span class="menu-text"> Widgets </span>
-                </a>
-            </li>
-
-            <li>
-                <a href="calendar.html">
-                    <i class="icon-calendar"></i>
-
-							<span class="menu-text">
-								Calendar
-								<span class="badge badge-transparent tooltip-error"
-                                      title="2&nbsp;Important&nbsp;Events">
-									<i class="icon-warning-sign red bigger-130"></i>
-								</span>
-							</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="gallery.html">
-                    <i class="icon-picture"></i>
-                    <span class="menu-text"> Gallery </span>
-                </a>
-            </li>
-
-            <li>
-                <a href="#" class="dropdown-toggle">
-                    <i class="icon-tag"></i>
-                    <span class="menu-text"> More Pages </span>
-
-                    <b class="arrow icon-angle-down"></b>
-                </a>
-
-                <ul class="submenu">
-                    <li>
-                        <a href="profile.html">
-                            <i class="icon-double-angle-right"></i>
-                            User Profile
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="pricing.html">
-                            <i class="icon-double-angle-right"></i>
-                            Pricing Tables
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="invoice.html">
-                            <i class="icon-double-angle-right"></i>
-                            Invoice
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="login.jsp">
-                            <i class="icon-double-angle-right"></i>
-                            Login &amp; Register
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li>
-                <a href="#" class="dropdown-toggle">
-                    <i class="icon-file-alt"></i>
-
-							<span class="menu-text">
-								Other Pages
-								<span class="badge badge-primary ">4</span>
-							</span>
-
-                    <b class="arrow icon-angle-down"></b>
-                </a>
-
-                <ul class="submenu">
-                    <li>
-                        <a href="error-404.html">
-                            <i class="icon-double-angle-right"></i>
-                            Error 404
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="error-500.html">
-                            <i class="icon-double-angle-right"></i>
-                            Error 500
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="grid.html">
-                            <i class="icon-double-angle-right"></i>
-                            Grid
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="blank.html">
-                            <i class="icon-double-angle-right"></i>
-                            Blank Page
-                        </a>
-                    </li>
-                </ul>
             </li>
         </ul>
         <!--/.nav-list-->
 
-        <div class="sidebar-collapse" name="sidebar-collapse">
+        <div class="sidebar-collapse" id="sidebar-collapse">
             <i class="icon-double-angle-left"></i>
         </div>
     </div>
-
     <div class="main-content">
-        <div class="breadcrumbs" name="breadcrumbs">
+        <div class="breadcrumbs" id="breadcrumbs">
             <ul class="breadcrumb">
-                <li>
-                    <i class="icon-home home-icon"></i>
-                    <a href="#">Home</a>
-
-							<span class="divider">
-								<i class="icon-angle-right arrow-icon"></i>
-							</span>
-                </li>
-
-                <li>
-                    <a href="#">Forms</a>
-
-							<span class="divider">
-								<i class="icon-angle-right arrow-icon"></i>
-							</span>
-                </li>
-                <li class="active">Form Elements</li>
+                <li class="active">管理商品</li>
             </ul>
             <!--.breadcrumb-->
 
-            <div class="nav-search" name="nav-search">
-                <form class="form-search"/>
-							<span class="input-icon">
-								<input type="text" placeholder="Search ..." class="input-small nav-search-input"
-                                       name="nav-search-input" autocomplete="off"/>
-								<i class="icon-search nav-search-icon"></i>
-							</span>
-                </form>
-            </div>
-            <!--#nav-search-->
         </div>
-
         <div class="page-content">
-            <div class="page-header position-relative">
-                <h1>
-                    Form Elements
-                    <small>
-                        <i class="icon-double-angle-right"></i>
-                        Common form elements and layouts
-                    </small>
-                </h1>
-            </div>
-            <!--/.page-header-->
-
             <div class="row-fluid">
                 <div class="span12">
                     <!--PAGE CONTENT BEGINS-->
-
                     <form id="add_goods_form" class="form-horizontal" method="post" action="addGoods.action"
                           enctype="multipart/form-data">
                         <div class="control-group">
@@ -733,364 +271,672 @@
                         </div>
                         <br><br>
                     </form>
+                    <!--PAGE CONTENT ENDS-->
+                </div>
+                <!--/.span-->
+            </div>
+            <!--/.row-fluid-->
+        </div>
+        <!--/.page-content-->
+
+        <div class="ace-settings-container" id="ace-settings-container">
+            <div class="btn btn-app btn-mini btn-warning ace-settings-btn" id="ace-settings-btn">
+                <i class="icon-cog bigger-150"></i>
+            </div>
+
+            <div class="ace-settings-box" id="ace-settings-box">
+                <div>
+                    <div class="pull-left">
+                        <select id="skin-colorpicker" class="hide" style="display: none;">
+                            <option data-class="default" value="#438EB9">#438EB9
+                            </option>
+                            <option data-class="skin-1" value="#222A2D">#222A2D
+                            </option>
+                            <option data-class="skin-2" value="#C6487E">#C6487E
+                            </option>
+                            <option data-class="skin-3" value="#D0D0D0">#D0D0D0
+                            </option>
+                        </select>
+
+                        <div class="dropdown dropdown-colorpicker"><a data-toggle="dropdown" class="dropdown-toggle"
+                                                                      href="#"><span class="btn-colorpicker"
+                                                                                     style="background-color:#438EB9"></span></a>
+                            <ul class="dropdown-menu dropdown-caret">
+                                <li><a class="colorpick-btn selected" href="#" style="background-color:#438EB9;"
+                                       data-color="#438EB9"></a></li>
+                                <li><a class="colorpick-btn" href="#" style="background-color:#222A2D;"
+                                       data-color="#222A2D"></a></li>
+                                <li><a class="colorpick-btn" href="#" style="background-color:#C6487E;"
+                                       data-color="#C6487E"></a></li>
+                                <li><a class="colorpick-btn" href="#" style="background-color:#D0D0D0;"
+                                       data-color="#D0D0D0"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span>&nbsp; Choose Skin</span>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="ace-checkbox-2" id="ace-settings-header">
+                    <label class="lbl" for="ace-settings-header"> Fixed Header</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="ace-checkbox-2" id="ace-settings-sidebar">
+                    <label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="ace-checkbox-2" id="ace-settings-breadcrumbs">
+                    <label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="ace-checkbox-2" id="ace-settings-rtl">
+                    <label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
                 </div>
             </div>
-            <!--/.main-content-->
         </div>
-        <!--/.main-container-->
+        <!--/#ace-settings-container-->
+    </div>
 
-        <a href="#" name="btn-scroll-up" class="btn-scroll-up btn btn-small btn-inverse">
-            <i class="icon-double-angle-up icon-only bigger-110"></i>
-        </a>
+    <!--/.main-content-->
+</div>
+<!--/.main-container-->
 
-        <!--basic scripts-->
+<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-small btn-inverse">
+    <i class="icon-double-angle-up icon-only bigger-110"></i>
+</a>
 
-        <!--[if !IE]>-->
+<!--basic scripts-->
 
-        <script src="assets/js/notie-jquery.mini.js"></script>
+<!--[if !IE]>-->
 
-        <!--<![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
-        <!--[if IE]>
-        <script src="assets/js/ie-jquery.mini.js"></script>
-        <![endif]-->
+<!--<![endif]-->
 
-        <!--[if !IE]>-->
+<!--[if IE]>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<![endif]-->
 
-        <script type="text/javascript">
-            window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
-        </script>
+<!--[if !IE]>-->
 
-        <!--<![endif]-->
+<script type="text/javascript">
+    window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
+</script>
 
-        <!--[if IE]>
-        <script type="text/javascript">
-            window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>" + "<" + "/script>");
-        </script>
-        <![endif]-->
+<!--<![endif]-->
 
-        <script type="text/javascript">
-            if ("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
-        </script>
-        <script src="assets/js/bootstrap.min.js"></script>
+<!--[if IE]>
+<script type="text/javascript">
+    window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>" + "<" + "/script>");
+</script>
+<![endif]-->
 
-        <!--page specific plugin scripts-->
+<script type="text/javascript">
+    if ("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+</script>
+<script src="assets/js/bootstrap.min.js"></script>
 
-        <!--[if lte IE 8]>
-        <script src="assets/js/excanvas.min.js"></script>
-        <![endif]-->
+<!--page specific plugin scripts-->
 
-        <script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
-        <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
-        <script src="assets/js/chosen.jquery.min.js"></script>
-        <script src="assets/js/fuelux/fuelux.spinner.min.js"></script>
-        <script src="assets/js/date-time/bootstrap-datepicker.min.js"></script>
-        <script src="assets/js/date-time/bootstrap-timepicker.min.js"></script>
-        <script src="assets/js/date-time/moment.min.js"></script>
-        <script src="assets/js/date-time/daterangepicker.min.js"></script>
-        <script src="assets/js/bootstrap-colorpicker.min.js"></script>
-        <script src="assets/js/jquery.knob.min.js"></script>
-        <script src="assets/js/jquery.autosize-min.js"></script>
-        <script src="assets/js/jquery.inputlimiter.1.3.1.min.js"></script>
-        <script src="assets/js/jquery.maskedinput.min.js"></script>
-        <script src="assets/js/bootstrap-tag.min.js"></script>
+<!--[if lte IE 8]>
+<script src="assets/js/excanvas.min.js"></script>
+<![endif]-->
 
-        <!--ace scripts-->
+<script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+<script src="assets/js/jquery.slimscroll.min.js"></script>
+<script src="assets/js/jquery.easy-pie-chart.min.js"></script>
+<script src="assets/js/jquery.sparkline.min.js"></script>
+<script src="assets/js/flot/jquery.flot.min.js"></script>
+<script src="assets/js/flot/jquery.flot.pie.min.js"></script>
+<script src="assets/js/flot/jquery.flot.resize.min.js"></script>
 
-        <script src="assets/js/ace-elements.min.js"></script>
-        <script src="assets/js/ace.min.js"></script>
+<!--ace scripts-->
 
-        <!--inline scripts related to this page-->
+<script src="assets/js/ace-elements.min.js"></script>
+<script src="assets/js/ace.min.js"></script>
 
-        <script type="text/javascript">
-            $(function () {
-                $('#id-disable-check').on('click', function () {
-                    var inp = $('#form-input-readonly').get(0);
-                    if (inp.hasAttribute('disabled')) {
-                        inp.setAttribute('readonly', 'true');
-                        inp.removeAttribute('disabled');
-                        inp.value = "This text field is readonly!";
+<!--inline scripts related to this page-->
+
+<script type="text/javascript">
+    $(function () {
+        $('.easy-pie-chart.percentage').each(function () {
+            var $box = $(this).closest('.infobox');
+            var barColor = $(this).data('color') || (!$box.hasClass('infobox-dark') ? $box.css('color') : 'rgba(255,255,255,0.95)');
+            var trackColor = barColor == 'rgba(255,255,255,0.95)' ? 'rgba(255,255,255,0.25)' : '#E2E2E2';
+            var size = parseInt($(this).data('size')) || 50;
+            $(this).easyPieChart({
+                barColor: barColor,
+                trackColor: trackColor,
+                scaleColor: false,
+                lineCap: 'butt',
+                lineWidth: parseInt(size / 10),
+                animate: /msie\s*(8|7|6)/.test(navigator.userAgent.toLowerCase()) ? false : 1000,
+                size: size
+            });
+        })
+
+        $('.sparkline').each(function () {
+            var $box = $(this).closest('.infobox');
+            var barColor = !$box.hasClass('infobox-dark') ? $box.css('color') : '#FFF';
+            $(this).sparkline('html', {
+                tagValuesAttribute: 'data-values',
+                type: 'bar',
+                barColor: barColor,
+                chartRangeMin: $(this).data('min') || 0
+            });
+        });
+
+
+        var placeholder = $('#piechart-placeholder').css({'width': '90%', 'min-height': '150px'});
+        var data = [
+            {label: "social networks", data: 38.7, color: "#68BC31"},
+            {label: "search engines", data: 24.5, color: "#2091CF"},
+            {label: "ad campaings", data: 8.2, color: "#AF4E96"},
+            {label: "direct traffic", data: 18.6, color: "#DA5430"},
+            {label: "other", data: 10, color: "#FEE074"}
+        ]
+
+        function drawPieChart(placeholder, data, position) {
+            $.plot(placeholder, data, {
+                series: {
+                    pie: {
+                        show: true,
+                        tilt: 0.8,
+                        highlight: {
+                            opacity: 0.25
+                        },
+                        stroke: {
+                            color: '#fff',
+                            width: 2
+                        },
+                        startAngle: 2
                     }
-                    else {
-                        inp.setAttribute('disabled', 'disabled');
-                        inp.removeAttribute('readonly');
-                        inp.value = "This text field is disabled!";
+                },
+                legend: {
+                    show: true,
+                    position: position || "ne",
+                    labelBoxBorderColor: null,
+                    margin: [-30, 15]
+                }
+                ,
+                grid: {
+                    hoverable: true,
+                    clickable: true
+                }
+            })
+        }
+
+        drawPieChart(placeholder, data);
+
+        /**
+         we saved the drawing function and the data to redraw with different position later when switching to RTL mode dynamically
+         so that's not needed actually.
+         */
+        placeholder.data('chart', data);
+        placeholder.data('draw', drawPieChart);
+
+
+        var $tooltip = $("<div class='tooltip top in hide'><div class='tooltip-inner'></div></div>").appendTo('body');
+        var previousPoint = null;
+
+        placeholder.on('plothover', function (event, pos, item) {
+            if (item) {
+                if (previousPoint != item.seriesIndex) {
+                    previousPoint = item.seriesIndex;
+                    var tip = item.series['label'] + " : " + item.series['percent'] + '%';
+                    $tooltip.show().children(0).text(tip);
+                }
+                $tooltip.css({top: pos.pageY + 10, left: pos.pageX + 10});
+            } else {
+                $tooltip.hide();
+                previousPoint = null;
+            }
+
+        });
+
+
+        var d1 = [];
+        for (var i = 0; i < Math.PI * 2; i += 0.5) {
+            d1.push([i, Math.sin(i)]);
+        }
+
+        var d2 = [];
+        for (var i = 0; i < Math.PI * 2; i += 0.5) {
+            d2.push([i, Math.cos(i)]);
+        }
+
+        var d3 = [];
+        for (var i = 0; i < Math.PI * 2; i += 0.2) {
+            d3.push([i, Math.tan(i)]);
+        }
+
+
+        var sales_charts = $('#sales-charts').css({'width': '100%', 'height': '220px'});
+        $.plot("#sales-charts", [
+            {label: "Domains", data: d1},
+            {label: "Hosting", data: d2},
+            {label: "Services", data: d3}
+        ], {
+            hoverable: true,
+            shadowSize: 0,
+            series: {
+                lines: {show: true},
+                points: {show: true}
+            },
+            xaxis: {
+                tickLength: 0
+            },
+            yaxis: {
+                ticks: 10,
+                min: -2,
+                max: 2,
+                tickDecimals: 3
+            },
+            grid: {
+                backgroundColor: {colors: ["#fff", "#fff"]},
+                borderWidth: 1,
+                borderColor: '#555'
+            }
+        });
+
+
+        $('#recent-box [data-rel="tooltip"]').tooltip({placement: tooltip_placement});
+        function tooltip_placement(context, source) {
+            var $source = $(source);
+            var $parent = $source.closest('.tab-content')
+            var off1 = $parent.offset();
+            var w1 = $parent.width();
+
+            var off2 = $source.offset();
+            var w2 = $source.width();
+
+            if (parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2)) return 'right';
+            return 'left';
+        }
+
+
+        $('.dialogs,.comments').slimScroll({
+            height: '300px'
+        });
+
+
+        //Android's default browser somehow is confused when tapping on label which will lead to dragging the task
+        //so disable dragging when clicking on label
+        var agent = navigator.userAgent.toLowerCase();
+        if ("ontouchstart" in document && /applewebkit/.test(agent) && /android/.test(agent))
+            $('#tasks').on('touchstart', function (e) {
+                var li = $(e.target).closest('#tasks li');
+                if (li.length == 0)return;
+                var label = li.find('label.inline').get(0);
+                if (label == e.target || $.contains(label, e.target)) e.stopImmediatePropagation();
+            });
+
+        $('#tasks').sortable({
+                    opacity: 0.8,
+                    revert: true,
+                    forceHelperSize: true,
+                    placeholder: 'draggable-placeholder',
+                    forcePlaceholderSize: true,
+                    tolerance: 'pointer',
+                    stop: function (event, ui) {//just for Chrome!!!! so that dropdowns on items don't appear below other items after being moved
+                        $(ui.item).css('z-index', 'auto');
                     }
-                });
+                }
+        );
+        $('#tasks').disableSelection();
+        $('#tasks input:checkbox').removeAttr('checked').on('click', function () {
+            if (this.checked) $(this).closest('li').addClass('selected');
+            else $(this).closest('li').removeClass('selected');
+        });
 
 
-                $(".chzn-select").chosen();
+    })
+</script>
+<script src="assets/js/notie-jquery.mini.js"></script>
 
-                $('[data-rel=tooltip]').tooltip({container: 'body'});
-                $('[data-rel=popover]').popover({container: 'body'});
+<!--<![endif]-->
 
-                $('textarea[class*=autosize]').autosize({append: "\n"});
-                $('textarea[class*=limited]').each(function () {
-                    var limit = parseInt($(this).attr('data-maxlength')) || 100;
-                    $(this).inputlimiter({
-                        "limit": limit,
-                        remText: '%n character%s remaining...',
-                        limitText: 'max allowed : %n.'
-                    });
-                });
+<!--[if IE]>
+<script src="assets/js/ie-jquery.mini.js"></script>
+<![endif]-->
 
-                $.mask.definitions['~'] = '[+-]';
-                $('.input-mask-date').mask('99/99/9999');
-                $('.input-mask-phone').mask('(999) 999-9999');
-                $('.input-mask-eyescript').mask('~9.99 ~9.99 999');
-                $(".input-mask-product").mask("a*-999-a999", {
-                    placeholder: " ", completed: function () {
-                        alert("You typed the following: " + this.val());
-                    }
-                });
+<!--[if !IE]>-->
 
+<script type="text/javascript">
+    window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
+</script>
 
-                $("#input-size-slider").css('width', '200px').slider({
-                    value: 1,
-                    range: "min",
-                    min: 1,
-                    max: 6,
-                    step: 1,
-                    slide: function (event, ui) {
-                        var sizing = ['', 'input-mini', 'input-small', 'input-medium', 'input-large', 'input-xlarge', 'input-xxlarge'];
-                        var val = parseInt(ui.value);
-                        $('#form-field-4').attr('class', sizing[val]).val('.' + sizing[val]);
-                    }
-                });
+<!--<![endif]-->
 
-                $("#input-span-slider").slider({
-                    value: 1,
-                    range: "min",
-                    min: 1,
-                    max: 11,
-                    step: 1,
-                    slide: function (event, ui) {
-                        var val = parseInt(ui.value);
-                        $('#form-field-5').attr('class', 'span' + val).val('.span' + val).next().attr('class', 'span' + (12 - val)).val('.span' + (12 - val));
-                    }
-                });
-                $("#slider-range").css('height', '200px').slider({
-                    orientation: "vertical",
-                    range: true,
-                    min: 0,
-                    max: 100,
-                    values: [17, 67],
-                    slide: function (event, ui) {
-                        var val = ui.values[$(ui.handle).index() - 1] + "";
+<!--[if IE]>
+<script type="text/javascript">
+    window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>" + "<" + "/script>");
+</script>
+<![endif]-->
 
-                        if (!ui.handle.firstChild) {
-                            $(ui.handle).append("<div class='tooltip right in' style='display:none;left:15px;top:-8px;'><div class='tooltip-arrow'></div><div class='tooltip-inner'></div></div>");
-                        }
-                        $(ui.handle.firstChild).show().children().eq(1).text(val);
-                    }
-                }).find('a').on('blur', function () {
-                    $(this.firstChild).hide();
-                });
+<script type="text/javascript">
+    if ("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+</script>
+<script src="assets/js/bootstrap.min.js"></script>
 
-                $("#slider-range-max").slider({
-                    range: "max",
-                    min: 1,
-                    max: 10,
-                    value: 2
-                });
+<!--page specific plugin scripts-->
 
-                $("#eq > span").css({width: '90%', 'float': 'left', margin: '15px'}).each(function () {
-                    // read initial values from markup and remove that
-                    var value = parseInt($(this).text(), 10);
-                    $(this).empty().slider({
-                        value: value,
-                        range: "min",
-                        animate: true
+<!--[if lte IE 8]>
+<script src="assets/js/excanvas.min.js"></script>
+<![endif]-->
 
-                    });
-                });
+<script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+<script src="assets/js/chosen.jquery.min.js"></script>
+<script src="assets/js/fuelux/fuelux.spinner.min.js"></script>
+<script src="assets/js/date-time/bootstrap-datepicker.min.js"></script>
+<script src="assets/js/date-time/bootstrap-timepicker.min.js"></script>
+<script src="assets/js/date-time/moment.min.js"></script>
+<script src="assets/js/date-time/daterangepicker.min.js"></script>
+<script src="assets/js/bootstrap-colorpicker.min.js"></script>
+<script src="assets/js/jquery.knob.min.js"></script>
+<script src="assets/js/jquery.autosize-min.js"></script>
+<script src="assets/js/jquery.inputlimiter.1.3.1.min.js"></script>
+<script src="assets/js/jquery.maskedinput.min.js"></script>
+<script src="assets/js/bootstrap-tag.min.js"></script>
+
+<!--ace scripts-->
+
+<script src="assets/js/ace-elements.min.js"></script>
+<script src="assets/js/ace.min.js"></script>
+
+<!--inline scripts related to this page-->
+
+<script type="text/javascript">
+    $(function () {
+        $('#id-disable-check').on('click', function () {
+            var inp = $('#form-input-readonly').get(0);
+            if (inp.hasAttribute('disabled')) {
+                inp.setAttribute('readonly', 'true');
+                inp.removeAttribute('disabled');
+                inp.value = "This text field is readonly!";
+            }
+            else {
+                inp.setAttribute('disabled', 'disabled');
+                inp.removeAttribute('readonly');
+                inp.value = "This text field is disabled!";
+            }
+        });
 
 
-                $('#id-input-file-1 , #id-input-file-2').ace_file_input({
-                    no_file: 'No File ...',
-                    btn_choose: 'Choose',
-                    btn_change: 'Change',
-                    droppable: false,
-                    onchange: null,
-                    thumbnail: false //| true | large
-                    //whitelist:'gif|png|jpg|jpeg'
-                    //blacklist:'exe|php'
-                    //onchange:''
-                    //
-                });
+        $(".chzn-select").chosen();
 
-                $('#id-input-file-3').ace_file_input({
-                    style: 'well',
-                    btn_choose: 'Drop files here or click to choose',
-                    btn_change: null,
-                    no_icon: 'icon-cloud-upload',
-                    droppable: true,
-                    thumbnail: 'small'
-                    //,icon_remove:null//set null, to hide remove/reset button
-                    /**,before_change:function(files, dropped) {
+        $('[data-rel=tooltip]').tooltip({container: 'body'});
+        $('[data-rel=popover]').popover({container: 'body'});
+
+        $('textarea[class*=autosize]').autosize({append: "\n"});
+        $('textarea[class*=limited]').each(function () {
+            var limit = parseInt($(this).attr('data-maxlength')) || 100;
+            $(this).inputlimiter({
+                "limit": limit,
+                remText: '%n character%s remaining...',
+                limitText: 'max allowed : %n.'
+            });
+        });
+
+        $.mask.definitions['~'] = '[+-]';
+        $('.input-mask-date').mask('99/99/9999');
+        $('.input-mask-phone').mask('(999) 999-9999');
+        $('.input-mask-eyescript').mask('~9.99 ~9.99 999');
+        $(".input-mask-product").mask("a*-999-a999", {
+            placeholder: " ", completed: function () {
+                alert("You typed the following: " + this.val());
+            }
+        });
+
+
+        $("#input-size-slider").css('width', '200px').slider({
+            value: 1,
+            range: "min",
+            min: 1,
+            max: 6,
+            step: 1,
+            slide: function (event, ui) {
+                var sizing = ['', 'input-mini', 'input-small', 'input-medium', 'input-large', 'input-xlarge', 'input-xxlarge'];
+                var val = parseInt(ui.value);
+                $('#form-field-4').attr('class', sizing[val]).val('.' + sizing[val]);
+            }
+        });
+
+        $("#input-span-slider").slider({
+            value: 1,
+            range: "min",
+            min: 1,
+            max: 11,
+            step: 1,
+            slide: function (event, ui) {
+                var val = parseInt(ui.value);
+                $('#form-field-5').attr('class', 'span' + val).val('.span' + val).next().attr('class', 'span' + (12 - val)).val('.span' + (12 - val));
+            }
+        });
+        $("#slider-range").css('height', '200px').slider({
+            orientation: "vertical",
+            range: true,
+            min: 0,
+            max: 100,
+            values: [17, 67],
+            slide: function (event, ui) {
+                var val = ui.values[$(ui.handle).index() - 1] + "";
+
+                if (!ui.handle.firstChild) {
+                    $(ui.handle).append("<div class='tooltip right in' style='display:none;left:15px;top:-8px;'><div class='tooltip-arrow'></div><div class='tooltip-inner'></div></div>");
+                }
+                $(ui.handle.firstChild).show().children().eq(1).text(val);
+            }
+        }).find('a').on('blur', function () {
+            $(this.firstChild).hide();
+        });
+
+        $("#slider-range-max").slider({
+            range: "max",
+            min: 1,
+            max: 10,
+            value: 2
+        });
+
+        $("#eq > span").css({width: '90%', 'float': 'left', margin: '15px'}).each(function () {
+            // read initial values from markup and remove that
+            var value = parseInt($(this).text(), 10);
+            $(this).empty().slider({
+                value: value,
+                range: "min",
+                animate: true
+
+            });
+        });
+
+
+        $('#id-input-file-1 , #id-input-file-2').ace_file_input({
+            no_file: 'No File ...',
+            btn_choose: 'Choose',
+            btn_change: 'Change',
+            droppable: false,
+            onchange: null,
+            thumbnail: false //| true | large
+            //whitelist:'gif|png|jpg|jpeg'
+            //blacklist:'exe|php'
+            //onchange:''
+            //
+        });
+
+        $('#id-input-file-3').ace_file_input({
+            style: 'well',
+            btn_choose: 'Drop files here or click to choose',
+            btn_change: null,
+            no_icon: 'icon-cloud-upload',
+            droppable: true,
+            thumbnail: 'small'
+            //,icon_remove:null//set null, to hide remove/reset button
+            /**,before_change:function(files, dropped) {
 						//Check an example below
 						//or examples/file-upload.html
 						return true;
 					}*/
-                    /**,before_remove : function() {
+            /**,before_remove : function() {
 						return true;
 					}*/
-                    ,
-                    preview_error: function (filename, error_code) {
-                        //name of the file that failed
-                        //error_code values
-                        //1 = 'FILE_LOAD_FAILED',
-                        //2 = 'IMAGE_LOAD_FAILED',
-                        //3 = 'THUMBNAIL_FAILED'
-                        //alert(error_code);
-                    }
+            ,
+            preview_error: function (filename, error_code) {
+                //name of the file that failed
+                //error_code values
+                //1 = 'FILE_LOAD_FAILED',
+                //2 = 'IMAGE_LOAD_FAILED',
+                //3 = 'THUMBNAIL_FAILED'
+                //alert(error_code);
+            }
 
-                }).on('change', function () {
-                    //console.log($(this).data('ace_input_files'));
-                    //console.log($(this).data('ace_input_method'));
-                });
+        }).on('change', function () {
+            //console.log($(this).data('ace_input_files'));
+            //console.log($(this).data('ace_input_method'));
+        });
 
 
-                //dynamically change allowed formats by changing before_change callback function
-                $('#id-file-format').removeAttr('checked').on('change', function () {
-                    var before_change
-                    var btn_choose
-                    var no_icon
-                    if (this.checked) {
-                        btn_choose = "Drop images here or click to choose";
-                        no_icon = "icon-picture";
-                        before_change = function (files, dropped) {
-                            var allowed_files = [];
-                            for (var i = 0; i < files.length; i++) {
-                                var file = files[i];
-                                if (typeof file === "string") {
-                                    //IE8 and browsers that don't support File Object
-                                    if (!(/\.(jpe?g|png|gif|bmp)$/i).test(file)) return false;
-                                }
-                                else {
-                                    var type = $.trim(file.type);
-                                    if (( type.length > 0 && !(/^image\/(jpe?g|png|gif|bmp)$/i).test(type) )
-                                            || ( type.length == 0 && !(/\.(jpe?g|png|gif|bmp)$/i).test(file.name) )//for android's default browser which gives an empty string for file.type
-                                    ) continue;//not an image so don't keep this file
-                                }
-
-                                allowed_files.push(file);
-                            }
-                            if (allowed_files.length == 0) return false;
-
-                            return allowed_files;
+        //dynamically change allowed formats by changing before_change callback function
+        $('#id-file-format').removeAttr('checked').on('change', function () {
+            var before_change
+            var btn_choose
+            var no_icon
+            if (this.checked) {
+                btn_choose = "Drop images here or click to choose";
+                no_icon = "icon-picture";
+                before_change = function (files, dropped) {
+                    var allowed_files = [];
+                    for (var i = 0; i < files.length; i++) {
+                        var file = files[i];
+                        if (typeof file === "string") {
+                            //IE8 and browsers that don't support File Object
+                            if (!(/\.(jpe?g|png|gif|bmp)$/i).test(file)) return false;
                         }
-                    }
-                    else {
-                        btn_choose = "Drop files here or click to choose";
-                        no_icon = "icon-cloud-upload";
-                        before_change = function (files, dropped) {
-                            return files;
+                        else {
+                            var type = $.trim(file.type);
+                            if (( type.length > 0 && !(/^image\/(jpe?g|png|gif|bmp)$/i).test(type) )
+                                    || ( type.length == 0 && !(/\.(jpe?g|png|gif|bmp)$/i).test(file.name) )//for android's default browser which gives an empty string for file.type
+                            ) continue;//not an image so don't keep this file
                         }
+
+                        allowed_files.push(file);
                     }
-                    var file_input = $('#id-input-file-3');
-                    file_input.ace_file_input('update_settings', {
-                        'before_change': before_change,
-                        'btn_choose': btn_choose,
-                        'no_icon': no_icon
-                    })
-                    file_input.ace_file_input('reset_input');
-                });
+                    if (allowed_files.length == 0) return false;
 
-
-                $('#spinner1').ace_spinner({
-                    value: 0,
-                    min: 0,
-                    max: 200,
-                    step: 10,
-                    btn_up_class: 'btn-info',
-                    btn_down_class: 'btn-info'
-                })
-                        .on('change', function () {
-                            //alert(this.value)
-                        });
-                $('#spinner2').ace_spinner({
-                    value: 0,
-                    min: 0,
-                    max: 10000,
-                    step: 100,
-                    icon_up: 'icon-caret-up',
-                    icon_down: 'icon-caret-down'
-                });
-                $('#spinner3').ace_spinner({
-                    value: 0,
-                    min: -100,
-                    max: 100,
-                    step: 10,
-                    icon_up: 'icon-plus',
-                    icon_down: 'icon-minus',
-                    btn_up_class: 'btn-success',
-                    btn_down_class: 'btn-danger'
-                });
-
-
-                $('.date-picker').datepicker().next().on(ace.click_event, function () {
-                    $(this).prev().focus();
-                });
-                $('#id-date-range-picker-1').daterangepicker().prev().on(ace.click_event, function () {
-                    $(this).next().focus();
-                });
-
-                $('#timepicker1').timepicker({
-                    minuteStep: 1,
-                    showSeconds: true,
-                    showMeridian: false
-                })
-
-                $('#colorpicker1').colorpicker();
-                $('#simple-colorpicker-1').ace_colorpicker();
-
-
-                $(".knob").knob();
-
-
-                //we could just set the data-provide="tag" of the element inside HTML, but IE8 fails!
-                var tag_input = $('#form-field-tags');
-                if (!( /msie\s*(8|7|6)/.test(navigator.userAgent.toLowerCase())))
-                    tag_input.tag({placeholder: tag_input.attr('placeholder')});
-                else {
-                    //display a textarea for old IE, because it doesn't support this plugin or another one I tried!
-                    tag_input.after('<textarea name="' + tag_input.attr('id') + '" name="' + tag_input.attr('name') + '" rows="3">' + tag_input.val() + '</textarea>').remove();
-                    //$('#form-field-tags').autosize({append: "\n"});
+                    return allowed_files;
                 }
+            }
+            else {
+                btn_choose = "Drop files here or click to choose";
+                no_icon = "icon-cloud-upload";
+                before_change = function (files, dropped) {
+                    return files;
+                }
+            }
+            var file_input = $('#id-input-file-3');
+            file_input.ace_file_input('update_settings', {
+                'before_change': before_change,
+                'btn_choose': btn_choose,
+                'no_icon': no_icon
+            })
+            file_input.ace_file_input('reset_input');
+        });
 
 
-                /////////
-                $('#modal-form input[type=file]').ace_file_input({
-                    style: 'well',
-                    btn_choose: 'Drop files here or click to choose',
-                    btn_change: null,
-                    no_icon: 'icon-cloud-upload',
-                    droppable: true,
-                    thumbnail: 'large'
-                })
+        $('#spinner1').ace_spinner({
+            value: 0,
+            min: 0,
+            max: 200,
+            step: 10,
+            btn_up_class: 'btn-info',
+            btn_down_class: 'btn-info'
+        })
+                .on('change', function () {
+                    //alert(this.value)
+                });
+        $('#spinner2').ace_spinner({
+            value: 0,
+            min: 0,
+            max: 10000,
+            step: 100,
+            icon_up: 'icon-caret-up',
+            icon_down: 'icon-caret-down'
+        });
+        $('#spinner3').ace_spinner({
+            value: 0,
+            min: -100,
+            max: 100,
+            step: 10,
+            icon_up: 'icon-plus',
+            icon_down: 'icon-minus',
+            btn_up_class: 'btn-success',
+            btn_down_class: 'btn-danger'
+        });
 
-                //chosen plugin inside a modal will have a zero width because the select element is originally hidden
-                //and its width cannot be determined.
-                //so we set the width after modal is show
-                $('#modal-form').on('show', function () {
-                    $(this).find('.chzn-container').each(function () {
-                        $(this).find('a:first-child').css('width', '200px');
-                        $(this).find('.chzn-drop').css('width', '210px');
-                        $(this).find('.chzn-search input').css('width', '200px');
-                    });
-                })
-                /**
-                 //or you can activate the chosen plugin after modal is shown
-                 //this way select element has a width now and chosen works as expected
-                 $('#modal-form').on('shown', function () {
+
+        $('.date-picker').datepicker().next().on(ace.click_event, function () {
+            $(this).prev().focus();
+        });
+        $('#id-date-range-picker-1').daterangepicker().prev().on(ace.click_event, function () {
+            $(this).next().focus();
+        });
+
+        $('#timepicker1').timepicker({
+            minuteStep: 1,
+            showSeconds: true,
+            showMeridian: false
+        })
+
+        $('#colorpicker1').colorpicker();
+        $('#simple-colorpicker-1').ace_colorpicker();
+
+
+        $(".knob").knob();
+
+
+        //we could just set the data-provide="tag" of the element inside HTML, but IE8 fails!
+        var tag_input = $('#form-field-tags');
+        if (!( /msie\s*(8|7|6)/.test(navigator.userAgent.toLowerCase())))
+            tag_input.tag({placeholder: tag_input.attr('placeholder')});
+        else {
+            //display a textarea for old IE, because it doesn't support this plugin or another one I tried!
+            tag_input.after('<textarea name="' + tag_input.attr('id') + '" name="' + tag_input.attr('name') + '" rows="3">' + tag_input.val() + '</textarea>').remove();
+            //$('#form-field-tags').autosize({append: "\n"});
+        }
+
+
+        /////////
+        $('#modal-form input[type=file]').ace_file_input({
+            style: 'well',
+            btn_choose: 'Drop files here or click to choose',
+            btn_change: null,
+            no_icon: 'icon-cloud-upload',
+            droppable: true,
+            thumbnail: 'large'
+        })
+
+        //chosen plugin inside a modal will have a zero width because the select element is originally hidden
+        //and its width cannot be determined.
+        //so we set the width after modal is show
+        $('#modal-form').on('show', function () {
+            $(this).find('.chzn-container').each(function () {
+                $(this).find('a:first-child').css('width', '200px');
+                $(this).find('.chzn-drop').css('width', '210px');
+                $(this).find('.chzn-search input').css('width', '200px');
+            });
+        })
+        /**
+         //or you can activate the chosen plugin after modal is shown
+         //this way select element has a width now and chosen works as expected
+         $('#modal-form').on('shown', function () {
 					$(this).find('.modal-chosen').chosen();
 				})
-                 */
-
-            });
-        </script>
-    </div>
-</div>
+         */
+    });
+</script>
 </body>
 </html>

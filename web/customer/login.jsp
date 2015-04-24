@@ -111,7 +111,7 @@
                                         </h4>
 
                                         <div class="space-6"></div>
-                                        <form name="login_form" method="post" action="login.action?flag=customer">
+                                        <form name="login_form" method="post" action="../login.action?flag=customer">
                                             <fieldset>
                                                 <label>
 															<span class="block input-icon input-icon-right">
@@ -229,7 +229,7 @@
                                         <div class="space-6"></div>
                                         <p> 输入以下信息注册： </p>
 
-                                        <form name="rg_form" method="post" action="register.action">
+                                        <form name="rg_form" method="post" action="../register.action">
                                             <input type="hidden" name="flag" value="customer">
                                             <fieldset>
                                                 <label>
@@ -344,7 +344,7 @@
 
     function isext() {
         jQuery.ajax({
-            url: "login.action",
+            url: "../login.action",
             type: "post",
             dataType: "text",
             data: {

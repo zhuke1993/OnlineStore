@@ -35,6 +35,13 @@ public class Shop implements Comparable {
         this.reg_date = reg_date;
         this.credit = credit;
     }
+    public Shop(String name, String pwd, String phone, String email,  int credit) {
+        this.name = name;
+        this.pwd = pwd;
+        this.phone = phone;
+        this.email = email;
+        this.credit = credit;
+    }
 
     public Shop(String name, String pwd, String phone, String email, Date reg_date, int credit, String bief) {
         this.name = name;

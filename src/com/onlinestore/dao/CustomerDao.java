@@ -37,4 +37,6 @@ public interface CustomerDao {
     public int findLogin(Customer customer);
 
     public int isNameExist(String name);
+
+    public void modifyCustomer(Customer customer);
 }

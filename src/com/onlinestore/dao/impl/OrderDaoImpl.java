@@ -39,6 +39,7 @@ public class OrderDaoImpl implements OrderDao {
         Set<Goods2Num> goodsSet = new HashSet<Goods2Num>();
         double totalPay = 0;
         for (int i = 0; i < goods_ids.length; i++) {
+            goodsDao.modifyDownInv(goods_ids[i], goods_nums[i]);
             Goods goods = (Goods) session.get(Goods.class, goods_ids[i]);
             shopTreeSet.add(goods.getShop());
             goodsSet.add(new Goods2Num(goods, goods_nums[i]));

@@ -14,7 +14,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
-import javax.persistence.metamodel.SetAttribute;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

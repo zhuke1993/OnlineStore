@@ -44,10 +44,14 @@
         <!--订单详情显示-->
         <action name="orderDetail" class="orderDetailAction">
             <result type="redirect" name="cus_order">/customer/orderDetails.jsp</result>
-            <result type="redirect" name="shop_order">/admin/orderDetails.jsp</result>
+            <result type="redirect" name="shop_order">/admin/order_detail.jsp</result>
             <result type="redirect" name="error">/customer/login.jsp</result>
         </action>
 
+        <!--修改-->
+        <action name="account" class="accountAction">
+            <result name="null"></result>
+        </action>
 
         <action name="getPage" class="getPage">
             <result name="null"></result>

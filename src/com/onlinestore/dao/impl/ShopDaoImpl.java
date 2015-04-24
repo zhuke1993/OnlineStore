@@ -72,4 +72,23 @@ public class ShopDaoImpl implements ShopDao {
         }
     }
 
+    @Override
+    public void modifyShop(Shop shop) {
+        Session session = sessionFactory.getCurrentSession();
+        Shop shop1 = (Shop) session.get(Shop.class, shop.getId());
+        shop1.setName(shop.getName());
+        shop1.setEmail(shop.getEmail());
+        shop1.setPhone(shop.getPhone());
+        shop1.setPwd(shop.getPwd());
+        session.save(shop1);
+    }
+
+    @Override
+    public int isNameExist(String name) {
+        Session session = sessionFactory.getCurrentSession();
+        Query query = session.createQuery("from Shop where name=?");
+        query.setString(0, name);
+        return query.list().size();
+    }
+
 }

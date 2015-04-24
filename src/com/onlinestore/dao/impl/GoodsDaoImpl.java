@@ -177,4 +177,14 @@ public class GoodsDaoImpl implements GoodsDao {
         }
         return shopHashMap;
     }
+
+    @Override
+    public void modifyDownInv(int goods_id, int num) {
+        Session session = sessionFactory.getCurrentSession();
+        Goods goods = (Goods) session.get(Goods.class, goods_id);
+        if (goods.getInventory() - num >= 0) {
+            goods.setInventory(goods.getInventory() - num);
+        }
+        session.save(goods);
+    }
 }

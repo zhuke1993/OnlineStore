@@ -31,4 +31,8 @@ public interface ShopDao {
     public int delShop(int id);
 
     public int findLogin(Shop shop);
+
+    public void modifyShop(Shop shop);
+
+    public int isNameExist(String name);
 }

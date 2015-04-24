@@ -101,7 +101,10 @@ public class LoginAction extends DefaultActionSupport {
             }
         } else if (flag.equals("isnameexist")) {
             int isnameexist = c_dao.isNameExist(login_name);
-            ServletActionContext.getResponse().getWriter().print(isnameexist);
+            ServletActionContext.getResponse().getWriter().print(isnameexist+"");
+        }else if(flag.equals("shop_isexist")){
+            int isnameexist = dao.isNameExist(login_name);
+            ServletActionContext.getResponse().getWriter().print(isnameexist+"");
         }
         return null;
     }

@@ -9,15 +9,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
-<c:if test="${empty shop_lg_id}">
-    <script>
-        alert("你还未登陆登录，请先登录");
-        window.location.href = "login.jsp";
-    </script>
-</c:if>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+    <c:if test="${empty shop_lg_id}">
+        <script>
+            alert("你还未登陆登录，请先登录");
+            window.location.href = "login.jsp";
+        </script>
+    </c:if>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>商品管理</title>
     <link rel="stylesheet" type="text/css"
@@ -58,7 +58,7 @@
         <th data-options="field:'specification',width:50, align:'center'">规格</th>
         <th data-options="field:'inventory',width:100,align:'center'">库存量</th>
         <th data-options="field:'postage',width:100,align:'center'">邮费</th>
-        <th data-options="field:'pictureSet',width:100,align:'center'">图片</th>
+        <%--<th data-options="field:'pictureSet',width:100,align:'center'">图片</th>--%>
         <th data-options="field:'categorySet',width:100,align:'center'">类别</th>
     </tr>
     </thead>

@@ -4,6 +4,12 @@
 <html>
 <head>
     <title>我的账户</title>
+    <c:if test="${empty shop_lg_id}">
+        <script>
+            alert("请先登录。");
+            window.location.href = "login.jsp";
+        </script>
+    </c:if>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet"/>
@@ -15,12 +21,6 @@
     <!-- start gallery_sale -->
     <script type="text/javascript" src="js/jquery.easing.min.js"></script>
     <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-    <c:if test="${empty cus_lg_id}">
-        <script>
-            alert("请先登录");
-            window.location.href="login.jsp";
-        </script>
-    </c:if>
     <script type="text/javascript">
         $(function () {
 
@@ -79,50 +79,6 @@
 </head>
 <body>
 <!-- start header -->
-<div class="header_bg">
-    <div class="wrap">
-        <div class="header">
-            <div class="logo">
-                <a href="sale_pre.jsp"><img src="images/logo.png" alt=""/> </a>
-            </div>
-            <div class="h_icon" id="cart_status">
-                <ul class="icon1 sub-icon1">
-                    <li><a class="active-icon c1"></a>
-                        <ul class="sub-icon1 list" id="cart_item">
-                        </ul>
-                        购物车
-                    </li>
-                </ul>
-            </div>
-            <div class="h_search">
-                <form method="post" action="searchGoods.action">
-                    <input type="text" name="info">
-                    <input type="submit" value="">
-                </form>
-            </div>
-            <div class="clear"></div>
-        </div>
-    </div>
-</div>
-<div class="header_btm">
-    <div class="wrap">
-        <div class="header_sub">
-            <div class="h_menu">
-                <ul>
-                    <li><a href="sale_pre.jsp">所有商品</a></li>
-                    |
-                    <li><a href="../orderDetail.action">我的订单</a></li>
-                    |
-                    <li class="active"><a href="account.jsp">我的账户</a></li>
-                    |
-                    <li><a href="logout.jsp">退出登陆</a></li>
-                    |
-                </ul>
-            </div>
-            <div class="clear"></div>
-        </div>
-    </div>
-</div>
 <!-- start main -->
 <div class="main_bg">
     <div class="wrap">
@@ -186,7 +142,7 @@
                                 重置
                             </button>
 
-                            <button  onclick="return sub_modify();"
+                            <button onclick="return sub_modify();"
                                     class="width-65 pull-right btn btn-small btn-success">
                                 修改
                                 <i class="icon-arrow-right icon-on-right"></i>
@@ -203,35 +159,7 @@
         </div>
     </div>
 </div>
-<!-- start footer -->
-<div class="footer_bg1">
-    <div class="wrap">
-        <div class="footer">
-            <!-- scroll_top_btn -->
-            <script type="text/javascript">
-                $(document).ready(function () {
 
-                    var defaults = {
-                        containerID: 'toTop', // fading element id
-                        containerHoverID: 'toTopHover', // fading element hover id
-                        scrollSpeed: 1200,
-                        easingType: 'linear'
-                    };
-
-
-                    $().UItoTop({easingType: 'easeOutQuart'});
-
-                });
-            </script>
-            <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
-            <!--end scroll_top_btn -->
-            <div class="copy">
-                <p class="link">Copyright &copy; 2015.Company 余健华 All rights reserved.</p>
-            </div>
-            <div class="clear"></div>
-        </div>
-    </div>
-</div>
 <script type="text/javascript">
     //CharMode函数
     //测试某个字符是属于哪一类
@@ -252,7 +180,7 @@
             type: "post",
             dataType: "text",
             data: {
-                "flag": "isnameexist",
+                "flag": "shop_isexist",
                 "login_name": $("#name").val()
             },
             success: function (data) {

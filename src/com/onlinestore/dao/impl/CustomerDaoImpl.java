@@ -80,4 +80,15 @@ public class CustomerDaoImpl implements CustomerDao {
         query.setString(0, name);
         return query.list().size();
     }
+
+    @Override
+    public void modifyCustomer(Customer customer) {
+        Session session = sessionFactory.getCurrentSession();
+        Customer customer1 = (Customer) session.get(Customer.class, customer.getId());
+        customer1.setPwd(customer.getPwd());
+        customer1.setName(customer.getName());
+        customer1.setEmail(customer.getEmail());
+        customer1.setPhone(customer.getPhone());
+        session.save(customer1);
+    }
 }

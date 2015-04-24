@@ -1,8 +1,8 @@
 <%@ page import="com.onlinestore.entity.COrder" %>
 <%@ page import="java.util.List" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -48,95 +48,93 @@
     </script>
 </c:if>
 <body>
-<div class="main-container container-fluid">
-    <a class="menu-toggler" id="menu-toggler" href="#">
-        <span class="menu-text"></span>
-    </a>
+<a class="menu-toggler" id="menu-toggler" href="#">
+    <span class="menu-text"></span>
+</a>
 
-    <div class="main-content">
-        <div class="page-content">
-            <div class="row-fluid">
-                <div class="span12">
-                    <div class="row-fluid">
-                        <h3 class="header smaller lighter blue">所有订单</h3>
+<div class="main-content" style="margin-left:0px">
+    <div class="page-content">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="row-fluid">
+                    <h3 class="header smaller lighter blue">所有订单</h3>
 
-                        <div class="table-header">
-                            订单详情
-                        </div>
-                        <table id="sample-table-2" class="table table-striped table-bordered table-hover">
-                            <thead>
+                    <div class="table-header">
+                        订单详情
+                    </div>
+                    <table id="sample-table-2" class="table table-striped table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th class="center">
+                                <label>
+                                    <input type="checkbox"/>
+                                    <span class="lbl"></span>
+                                </label>
+                            </th>
+                            <th>订单id</th>
+                            <th>金额</th>
+                            <th class="hidden-480">
+                                <i class="icon-time bigger-110 hidden-phone"></i>
+                                下单时间
+                            </th>
+
+                            <th class="hidden-phone">
+                                商品列表
+                            </th>
+                            <th class="hidden-480">订单状态</th>
+                            <th class="hidden-480">邮寄地址</th>
+                        </tr>
+                        </thead>
+                        <c:forEach items="${order_list}" var="i">
                             <tr>
-                                <th class="center">
+                                <td class="center">
                                     <label>
-                                        <input type="checkbox"/>
+                                        <input type="checkbox" id="select_id" name="select_id" value="${i.id}"/>
                                         <span class="lbl"></span>
                                     </label>
-                                </th>
-                                <th>订单id</th>
-                                <th>金额</th>
-                                <th class="hidden-480">
-                                    <i class="icon-time bigger-110 hidden-phone"></i>
-                                    下单时间
-                                </th>
+                                </td>
+                                <td>
+                                    <p>${i.id}</p>
+                                </td>
+                                <td>${i.price}</td>
+                                <td class="hidden-480">${i.bargainDate}</td>
+                                <td class="hidden-phone">
+                                    <%
+                                        List<COrder> orderList = (List<COrder>) session.getAttribute("order_list");
+                                        for (int i = 0; i < orderList.size(); i++) {
+                                            out.print("<a href=\"searchGoods.action?id=" + orderList.get(i).getId() + "\">" + orderList.get(i).getId() + "</a>");
+                                        }
+                                    %>
+                                </td>
+                                <td class="td-actions">
+                                    <c:if test="${i.status eq 0}">
+                                        <p>未处理</p>
+                                    </c:if>
+                                    <c:if test="${i.status eq 1}">
+                                        <p>已处理</p>
+                                    </c:if>
+                                </td>
+                                <td class="hidden-480"><a
+                                        href="address.action?flag=find&address_id=${i.address.id}"> ${i.address.detailAddress}</a>
+                                </td>
 
-                                <th class="hidden-phone">
-                                    商品列表
-                                </th>
-                                <th class="hidden-480">订单状态</th>
-                                <th class="hidden-480">邮寄地址</th>
                             </tr>
-                            </thead>
-                            <c:forEach items="${order_list}" var="i">
-                                <tr>
-                                    <td class="center">
-                                        <label>
-                                            <input type="checkbox" id="select_id" name="select_id" value="${i.id}"/>
-                                            <span class="lbl"></span>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <p>${i.id}</p>
-                                    </td>
-                                    <td>${i.price}</td>
-                                    <td class="hidden-480">${i.bargainDate}</td>
-                                    <td class="hidden-phone">
-                                        <%
-                                            List<COrder> orderList = (List<COrder>) session.getAttribute("order_list");
-                                            for (int i = 0; i < orderList.size(); i++) {
-                                                out.print("<a href=\"searchGoods.action?id=" + orderList.get(i).getId() + "\">" + orderList.get(i).getId() + "</a>");
-                                            }
-                                        %>
-                                    </td>
-                                    <td class="td-actions">
-                                        <c:if test="${i.status eq 0}">
-                                            <p>未处理</p>
-                                        </c:if>
-                                        <c:if test="${i.status eq 1}">
-                                            <p>已处理</p>
-                                        </c:if>
-                                    </td>
-                                    <td class="hidden-480"><a
-                                            href="address.action?flag=find&address_id=${i.address.id}"> ${i.address.detailAddress}</a>
-                                    </td>
-
-                                </tr>
-                            </c:forEach>
-                        </table>
-                    </div>
+                        </c:forEach>
+                    </table>
                 </div>
+            </div>
 
-                <div class="modal-footer">
-                    <button class="btn btn-small btn-danger pull-left" data-dismiss="modal" id="status_btn"
-                            onclick="return status_modify()">
-                        <i class="icon-remove"></i>
-                        状态处理
-                    </button>
-                    <button class="btn btn-small btn-danger pull-left" data-dismiss="modal" id="shop_delete_btn"
-                            onclick="return shop_delete()">
-                        <i class="icon-remove"></i>
-                        删除
-                    </button>
-                </div>
+            <div class="modal-footer">
+                <button class="btn btn-small btn-danger pull-left" data-dismiss="modal" id="status_btn"
+                        onclick="return status_modify()">
+                    <i class="icon-remove"></i>
+                    状态处理
+                </button>
+                <button class="btn btn-small btn-danger pull-left" data-dismiss="modal" id="shop_delete_btn"
+                        onclick="return shop_delete()">
+                    <i class="icon-remove"></i>
+                    删除
+                </button>
             </div>
         </div>
     </div>

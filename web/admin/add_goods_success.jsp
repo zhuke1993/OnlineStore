@@ -7,6 +7,9 @@
     <title>add_goods_success</title>
 </head>
 <body>
-${add_goods_msg}
+<script>
+    alert("${add_goods_msg}");
+    window.location.href = "index.jsp";
+</script>
 </body>
 </html>
